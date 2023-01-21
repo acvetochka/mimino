@@ -1,0 +1,37 @@
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    // max-width: 414px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+ 
+    @media screen and (min-width:1024px) {
+        padding-left: 85px;
+        padding-right: 85px;
+    } 
+
+}
