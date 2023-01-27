@@ -1,0 +1,94 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url('../fonts/#{$file_name}.woff') format('woff'),
+      url('../fonts/#{$file_name}.woff2') format('woff2');
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+/**
+//* Mobile
+*/
+@mixin maxW-Phone {
+  @media screen and (max-width: $phoneMax) {
+    @content;
+  }
+}
+
+@mixin minW-Phone {
+  @media screen and (min-width: $phoneMin) {
+    @content;
+  }
+}
+
+/**
+//* Tablet
+*/
+
+@mixin maxW-Tablet {
+  @media screen and (max-width: $tabletMax) {
+    @content;
+  }
+}
+
+@mixin minW-Tablet {
+  @media screen and (min-width: $tabletMin) {
+    @content;
+  }
+}
+
+/**
+//* Desktop
+*/
+
+@mixin maxW-Dt {
+  @media screen and (max-width: $desktopMax) {
+    @content;
+  }
+}
+
+@mixin minW-Dt {
+  @media screen and (min-width: $desktopMin) {
+    @content;
+  }
+}
+
+// використання
+// зміна кольору коли екран більше 1200px
+// .test-class {
+//     color: #fff;
+
+//     @include minW-Dt {
+//         color: #000;
+//     }
+// }
+
+/////////////////////////////
+
+/**
+//* Custom media
+*/
+
+@mixin minW($widthValue) {
+  @media screen and (min-width: $widthValue) {
+    @content;
+  }
+}
+
+@mixin maxW($widthValue) {
+  @media screen and (max-width: $widthValue) {
+    @content;
+  }
+}
+
+// використання Custom media
+// .test-class {
+//     color: #fff;
+
+//     @include minW(1366px) {
+//         color: #000;
+//     }
+// }

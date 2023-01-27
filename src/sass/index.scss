@@ -1,6 +1,42 @@
-@import './common';
+// Utils
+@import './vendors/common';
+@import './utils/variables';
+@import './utils/mixins';
+
+// Base styles
 @import './base/fonts';
 @import './base/base';
-@import './components/section-slider';
-@import './layout/header';
+@import './base/helper';
 
+// Components styles
+@import './components/logo';
+@import './components/address';
+@import './components/icons';
+@import './components/buttons';
+
+// Multipage styles
+@import './layout/header';
+@import './layout/hero-section';
+@import './layout/about-section';
+@import './layout/footer';
+
+// Home-page styles
+@import './layout/details-section';
+@import './layout/contacts-section';
+
+// Restaurant styles
+@import './layout/menu-section';
+
+// Hotel styles
+@import './layout/hotel-section';
+
+
+// Room styles
+@import './layout/room-hero';
+@import './layout/room-section';
+
+// Modal styles
+@import './layout/modal/form';
+@import './layout/modal/price-modal';
+@import './layout/modal/room-modal';
+@import './layout/modal/table-modal';

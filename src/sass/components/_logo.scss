@@ -1,0 +1,38 @@
+.logo {
+    font-family: 'FilmP3', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.075;   
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: $logo-color;
+
+    @include minW-Tablet {
+        font-size: 64px;
+        line-height: 1.08;
+    }
+
+    &--white {
+        color: $contrast-color;
+    }
+
+    &--footer {
+        color: $accent-color;
+    }
+}
+
+.header__logo {
+    margin-right: auto;
+    font-size: 36px;
+    line-height: 1.08;
+    color: $contrast-color;
+
+    @include minW-Tablet {
+        font-size: 40px;
+        line-height: 1.075;
+    }
+
+    @include maxW-Phone {
+        font-size: 30px;
+    }
+}

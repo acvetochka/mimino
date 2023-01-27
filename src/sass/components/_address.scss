@@ -1,0 +1,39 @@
+.address {
+    width: 210px;
+    padding: 8px 6px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+
+    @include minW-Tablet {
+        width: 285px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.25;
+
+        letter-spacing: 0.01em;
+
+        color: $address-color;
+
+        @include minW-Tablet {
+            font-size: 16px;
+        }
+    }
+
+    &__icon {
+        fill: $accent-color;
+        width: 20px;
+        height: 20px;
+
+        @include minW-Tablet {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

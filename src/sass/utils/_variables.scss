@@ -1,0 +1,41 @@
+$primary-color: #7A7A7A;
+$secondary-color: #000000;
+$accent-color: #F3C653;
+$accent-color-second: #C79002;
+
+$contrast-color: #FFFFFF;
+$contrast-color-descr: #BABABA;
+
+$address-color: #E5E5E5;
+$span-color: #B4B4B4;
+$logo-color: #494848;
+$placeholder-color: #808080;
+
+// background
+$primary-background: #FFFDEE;
+$secondary-background: #F0ECD6 ;
+$footer-background: #0E0C07;
+
+
+// shadows/ gradients
+$button-opacity-bg: rgba(0, 0, 0, 0.4);
+$room-gradient: linear-gradient(180deg, #000000 0%,  rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
+$gradient: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+$img-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+
+// breakpoints
+$phoneMax: 413px;
+$phoneMin: 414px;
+
+$tabletMax: 1023px;
+$tabletMin: 1024px;
+
+$desktopMax: 1279px;
+$desktopMin: 1280px;
+
+// padding-container
+$paddingPhone: 15px;
+$paddingTablet: 47px;
+$paddingDt: 85px;
+

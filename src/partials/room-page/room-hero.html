@@ -1,0 +1,119 @@
+<section class="room-hero" data-slider="room-slider">
+  <!-- <div class="container"> -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="
+              ./images/room-page/room-slide1-desktop.jpg    1x,
+              ./images/room-page/room-slide1-desktop@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/room-page/room-slide1-tablet.jpg    1x,
+              ./images/room-page/room-slide1-tablet@2x.jpg 2x
+            "
+            media="(min-width: 481px)"
+          />
+          <img
+            class="swiper-slide__img"
+            srcset="
+              ./images/room-page/room-slide1-mobile.jpg    1x,
+              ./images/room-page/room-slide1-mobile@2x.jpg 2x
+            "
+            src="./images/room-page/room-slide1-mobile.jpg"
+            alt="Двомісний номер люкс"
+          />
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="
+              ./images/room-page/room-slide2-desktop.jpg    1x,
+              ./images/room-page/room-slide2-desktop@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/room-page/room-slide2-tablet.jpg    1x,
+              ./images/room-page/room-slide2-tablet@2x.jpg 2x
+            "
+            media="(min-width: 481px)"
+          />
+          <img
+            class="swiper-slide__img"
+            srcset="
+              ./images/room-page/room-slide2-mobile.jpg    1x,
+              ./images/room-page/room-slide2-mobile@2x.jpg 2x
+            "
+            src="./images/room-page/room-slide2-mobile.jpg"
+            alt="Двомісний номер люкс"
+          />
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source
+            srcset="
+              ./images/room-page/room-slide3-desktop.jpg    1x,
+              ./images/room-page/room-slide3-desktop@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/room-page/room-slide3-tablet.jpg    1x,
+              ./images/room-page/room-slide3-tablet@2x.jpg 2x
+            "
+            media="(min-width: 481px)"
+          />
+          <img
+            class="swiper-slide__img"
+            srcset="
+              ./images/room-page/room-slide3-mobile.jpg    1x,
+              ./images/room-page/room-slide3-mobile@2x.jpg 2x
+            "
+            src="./images/room-page/room-slide3-mobile.jpg"
+            alt="Двомісний номер люкс"
+          />
+        </picture>
+      </div>
+    </div>
+    <!-- <div class="swiper-pagination"></div> -->
+    <button type="button" class="swiper-button-prev room-btn-prev">
+      <svg width="40" height="40">
+        <use href="./images/icons.svg#icon-arrow-left"></use>
+      </svg>
+    </button>
+    <button type="button" class="swiper-button-next room-btn-next">
+      <svg width="40" height="40">
+        <use href="./images/icons.svg#icon-arrow-right"></use>
+      </svg>
+    </button>
+    <!-- <div class="swiper-scrollbar"></div> -->
+  </div>
+  <div class="room-head">
+    <div class="room-head__container">
+      <h1 class="room-head__title"><span class="room-head__span">Двомісний номер </span>люкс</h1>
+      <p class="room-head__descr">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+      </p>
+      <!-- <div class="room-icons"> -->
+      <div class="room-hero__bottom">
+        <include src="./partials/blocks/address.html"></include>
+        <include src="./partials/blocks/icons.html"></include>
+        <button class="room-head__button">Переглянути ціни</button>
+      </div>
+
+      <!-- </div>  -->
+    </div>
+  </div>
+
+  <!-- </div> -->
+</section>

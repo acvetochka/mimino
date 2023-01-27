@@ -4,8 +4,10 @@ body {
     padding: 0;
 }
 
+/* Скидання базових властивостей для посилань (a або клас .link */
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 h1,
@@ -19,19 +21,20 @@ p {
     padding: 0;
 }
 
+/* Скидання базових властивостей у списків (ul або клас .list) */
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.container {
-    // max-width: 414px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
- 
-    @media screen and (min-width:1024px) {
-        padding-left: 85px;
-        padding-right: 85px;
-    } 
-
+/* Властивості для коректного відображення зображень */
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+/* Свойства для обнуления курсива у address */
+address {
+	font-style: normal;
 }

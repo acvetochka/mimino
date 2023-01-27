@@ -1,0 +1,223 @@
+.room-hero {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 143px;
+    z-index: 10;
+    background: $room-gradient;
+
+    @include minW-Tablet {
+      height: 116px;
+    }
+
+    @include minW-Dt {
+      height: 147px;
+    }
+  }
+}
+
+.room-hero .swiper {
+  position: relative;
+  height: 100vh;
+
+  &-slide {
+    &__img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+.room-btn-next.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: rgba(0, 0, 0, 0.65);
+  color: $accent-color;
+  right: $paddingPhone;
+
+  @include minW-Tablet {
+    right: $paddingTablet;
+  }
+
+  @include minW-Dt {
+    right: $paddingDt;
+  }
+
+  &::after {
+    content: '';
+  }
+
+  &.swiper-button-disabled {
+    color: $contrast-color;
+  }
+
+  & svg {
+    fill: currentColor;
+  }
+}
+
+.room-btn-prev.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: rgba(0, 0, 0, 0.65);
+  color: #f3c653;
+  left: $paddingPhone;
+
+  @include minW-Tablet {
+    left: $paddingTablet;
+  }
+
+  @include minW-Dt {
+    left: $paddingDt;
+  }
+
+  &::after {
+    content: '';
+  }
+
+  &.swiper-button-disabled {
+    color: #fff;
+  }
+
+  & svg {
+    fill: currentColor;
+  }
+}
+
+.room-head {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  bottom: 14px;
+  // max-width: 325px;
+
+  @include minW-Tablet {
+    bottom: 24px;
+  }
+
+  @include minW-Dt {
+    bottom: 48px;
+  }
+
+  &__container {
+    padding-left: $paddingPhone;
+    padding-right: $paddingPhone;
+    margin: 0 auto;
+
+    @include minW-Tablet {
+        padding-left: $paddingTablet;
+        padding-right: $paddingTablet;
+    }
+ 
+    @include minW-Dt {
+        padding-left: $paddingDt;
+        padding-right: $paddingDt;
+    } 
+  }
+
+  &__title {
+    font-family: 'Time New Roman';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    color: $contrast-color;
+    margin-bottom: 14px;
+
+    @include minW-Tablet {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 41px;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__span {
+    text-transform: uppercase;
+  }
+
+  &__descr {
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $contrast-color;
+    max-width: 325px;
+
+    margin-bottom: 17px;
+
+    @include minW-Tablet {
+      max-width: 400px;
+    }
+  }
+}
+
+.room-hero__bottom {
+  display: flex;
+  align-items: center;
+}
+
+.room-hero .social {
+  @include maxW-Tablet {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+  }
+
+  @include minW-Dt {
+    display: none;
+  }
+}
+
+.room-hero .address {
+  display: none;
+
+  @include minW-Tablet {
+    display: block;
+    margin-right: 40px;
+  }
+
+  @include minW-Dt {
+    display: none;
+  }
+}
+
+.room-head__button {
+  padding: 14px 35px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+
+  background: $button-opacity-bg;
+  border: 2px solid $contrast-color;
+  border-radius: 25px;
+
+  @include minW-Tablet {
+    position: absolute;
+    bottom: 64px;
+    right: $paddingTablet;
+  }
+
+  @include minW-Dt {
+    position: absolute;
+    bottom: 66px;
+    right: $paddingDt;
+  }
+}

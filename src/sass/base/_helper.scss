@@ -1,0 +1,32 @@
+.container {
+    max-width: $phoneMin;
+    padding-left: $paddingPhone;
+    padding-right: $paddingPhone;
+    margin: 0 auto;
+
+    @include minW-Tablet {
+        max-width: $tabletMin;
+        padding-left: $paddingTablet;
+        padding-right: $paddingTablet;
+    }
+ 
+    @include minW-Dt {
+        max-width: $desktopMin;
+        padding-left: $paddingDt;
+        padding-right: $paddingDt;
+    } 
+
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
