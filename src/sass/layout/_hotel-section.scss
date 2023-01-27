@@ -44,6 +44,16 @@
 
   padding-bottom: 32px;
   padding-right: 141px;
+
+  @media screen and (min-width: $tabletMin) {
+    padding-right: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+  }
 }
 .rooms__img {
   margin-left: auto;
@@ -58,6 +68,7 @@
 // SLIDER ??///
 .slider-section {
   padding-bottom: 20px;
+  max-width: 388px;
 }
 // ??///////////
 .rooms__button {
@@ -68,4 +79,24 @@
 }
 .rooms__button--fix {
   margin-bottom: 0;
+}
+
+// TABLET-MOD !!!!!???/////
+.position-wrapper {
+  @media screen and (min-width: $tabletMin) {
+    display: flex;
+    gap: 26px;
+  }
+}
+.text-item-wrapper {
+  @media screen and (min-width: $tabletMin) {
+    max-width: 439px;
+  }
+}
+.second-position-wrapper {
+  @media screen and (min-width: $tabletMin) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

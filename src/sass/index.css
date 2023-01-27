@@ -399,6 +399,17 @@ address {
   padding-bottom: 32px;
   padding-right: 141px;
 }
+@media screen and (min-width: 1024px) {
+  .rooms__text {
+    padding-right: 0;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+  }
+}
 
 .rooms__img {
   margin-left: auto;
@@ -414,6 +425,7 @@ address {
 
 .slider-section {
   padding-bottom: 20px;
+  max-width: 388px;
 }
 
 .rooms__button {
@@ -425,6 +437,27 @@ address {
 
 .rooms__button--fix {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .position-wrapper {
+    display: flex;
+    gap: 26px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .text-item-wrapper {
+    max-width: 439px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .second-position-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .room-hero {
