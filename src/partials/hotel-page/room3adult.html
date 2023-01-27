@@ -1,12 +1,29 @@
 <section class="container rooms">
   <span class="rooms__phrase">Amet minim mollit non</span>
-  <span class="rooms__logo">MIMIHO</span>
+  <span class="logo rooms__logo">MIMIHO</span>
   <h2 class="rooms__title">ДВОМІСНИЙ НОМЕР</h2>
   <p class="rooms__text">
     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
     consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
   </p>
+  <img class="rooms__img" src="/src/images/main-slide-mobile.png" alt="основне-фото" />
+  <!-- SWIPER-ДОДАТИ ФОТО -->
+  <section class="slider-section" data-slider="details-slider">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="/src/images/slide-1.png" alt="firstslide" />
+        </div>
+        <div class="swiper-slide"><img src="/src/images/slide-2.png" alt="firstslide" /></div>
+        <div class="swiper-slide"><img src="/src/images/slide-3.png" alt="firstslide" /></div>
+      </div>
 
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
   <button class="rooms__button" type="button">Детальніше</button>
-  <button class="rooms__button" type="button">Переглянути ціни</button>
+  <button class="rooms__button rooms__button--fix" type="button">Переглянути ціни</button>
 </section>

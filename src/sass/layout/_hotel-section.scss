@@ -1,7 +1,71 @@
 .rooms {
   background-color: $primary-background;
-  padding: 32px 15px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .rooms--colorfix {
   background-color: $secondary-background;
+}
+.rooms__phrase {
+  display: block;
+
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  padding-bottom: 8px;
+  color: $span-color;
+}
+.rooms__logo {
+  display: block;
+  padding-bottom: 32px;
+}
+.rooms__title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: $secondary-color;
+
+  padding-bottom: 12px;
+  color: $secondary-color;
+}
+.rooms__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $primary-color;
+
+  padding-bottom: 32px;
+  padding-right: 141px;
+}
+.rooms__img {
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 32px;
+  box-shadow: $img-shadow;
+}
+.rooms__img--fix {
+  margin-left: 0;
+  margin-right: auto;
+}
+// SLIDER ??///
+.slider-section {
+  padding-bottom: 20px;
+}
+// ??///////////
+.rooms__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+.rooms__button--fix {
+  margin-bottom: 0;
 }
