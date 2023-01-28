@@ -1,21 +1,21 @@
-.backdrop {
+// .backdrop {
 
-    opacity: 0;
+//     opacity: 0;
      
   
-    &.active {
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    overflow-y: scroll;
-  }
-}
+//     &.active {
+//     position: fixed;
+//     z-index: 5;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgba(0, 0, 0, 0.2);
+//     opacity: 1;
+//     visibility: visible;
+//     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     overflow-y: scroll;
+//   }
+// }
 
