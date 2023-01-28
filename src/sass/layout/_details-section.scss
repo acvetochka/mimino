@@ -1,84 +1,132 @@
-.details-rest {
-  position: relative;
-
+// Details-rest
+.container {
   padding: $paddingPhone;
-
-  width: 100vw;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex-grow: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../../images/414/details-fon-restaurant_414.jpg);
-
-  @include retina {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../../images/414/details-fon-restaurant@2_414.jpg);
-  }
+  width: 100%;
+  margin: 0 auto;
 
   @include minW-Tablet {
-    height: 620px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../../images/1024/details-fon-restaurant_1024.jpg);
-
-    @include retina {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../../images/1024/details-fon-restaurant@2_1024.jpg);
-    }
+    padding: $paddingTablet;
   }
 
   @include minW-Dt {
-    background-image: linear-gradient(rgba(60, 0, 0, 0.65), rgba(60, 0, 0, 0.65)),
-      url(../../images/1280/details-fon-restaurant_1280.jpg);
-
-    @include retina {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../../images/1280/details-fon-restaurant@2_1280.jpg);
-    }
+    padding: $paddingDt;
   }
 }
 
-.details-block {
-    @include tablet {
-      margin: 0;
-      margin-left: 278px;
-      max-width: none;
-    }
-  
-    max-width: 243px;
-    margin: 0 auto;
-    padding-top: 24px;
-  }
-  
-  .img-details-rest {
-    @include tablet {
-      // padding-top: 254px;
-      justify-content: end;
-    }
-  
-    position: relative;
-    display: flex;
-    justify-content: center;
-    // padding-top: 233px;
-  }
-  
+// .details-rest {
+//   position: relative;
+//   width: 100vw;
 
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   flex-grow: 1;
+//   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+//     url(./images/414/details-fon-restaurant_414.jpg);
 
-
-
-// .container {
-//   width: 100%;
-//   margin: 0 auto;
-//   padding: 0 15px;
+//   //   @include retina {
+//   //     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+//   //       url(./images/414/details-fon-restaurant@2_414.jpg);
+//   //   }
 
 //   @include minW-Tablet {
-//     padding: 0 47px;
+//     height: 620px;
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+//       url(./images/1024/details-fon-restaurant_1024.jpg);
+
+//     // @include retina {
+//     //   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+//     //     url(./images/1024/details-fon-restaurant@2_1024.jpg);
+//     // }
 //   }
 
 //   @include minW-Dt {
-//     padding: 0 85px;
+//     background-image: linear-gradient(rgba(60, 0, 0, 0.65), rgba(60, 0, 0, 0.65)),
+//       url(./images/1280/details-fon-restaurant_1280.jpg);
+
+//     // @include retina {
+//     //   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+//     //     url(./images/1280/details-fon-restaurant@2_1280.jpg);
+//     // }
 //   }
 // }
+
+.details-block {
+  @include minW-Tablet {
+    margin: 0;
+    margin-left: 278px;
+    max-width: none;
+  }
+
+  max-width: 243px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+.img-details-rest {
+  @include minW-Tablet {
+    // padding-top: 254px;
+    justify-content: end;
+  }
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  // padding-top: 233px;
+}
+
+//   Details-hotel
+.details-block-hotel {
+  @include minW-Tablet {
+    top: 48px;
+    left: 520px;
+  }
+
+  position: absolute;
+  top: 24px;
+  left: 143px;
+  // margin: 0 auto;
+  text-align: end;
+}
+
+.details-title {
+  @include minW-Tablet {
+    font-size: 24px;
+  }
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+  color: $contrast-color;
+  padding-top: 12px;
+}
+
+.details-block--text {
+  @include minW-Tablet {
+    max-width: 549px;
+    top: 156px;
+    left: 198px;
+    // padding: 0;
+  }
+  position: absolute;
+  top: 123px;
+  left: 32px;
+  max-width: 243px;
+  // padding-left: 32px;
+}
+
+.img-details-hotel {
+  @include minW-Tablet {
+    padding-top: 254px;
+    justify-content: start;
+  }
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 233px;
+}
 
 // .details-btn-prev.details-btn-next {
 //   width: 32px;
