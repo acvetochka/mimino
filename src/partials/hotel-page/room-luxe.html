@@ -41,7 +41,30 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img src="/src/images/slide-1.png" alt="firstslide" />
+              <picture class="rooms__img">
+                <source
+                  srcset="
+                    /src/images/hotel-page/slides/slide1-desk.jpg   1x,
+                    /src/images/hotel-page/slides/slide1-desk2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    /src/images/hotel-page/slides/slide1-tab.jpg   1x,
+                    /src/images/hotel-page/slides/slide1-tab2x.jpg 2x
+                  "
+                  media="(min-width: 481px)"
+                />
+                <img
+                  srcset="
+                    /src/images/hotel-page/pic1-mob.jpg   1x,
+                    /src/images/hotel-page/pic1-mob2x.png 2x
+                  "
+                  src="/src/images/hotel-page/pic1-mob.jpg"
+                  alt="Двомісний номер люкс"
+                />
+              </picture>
             </div>
             <div class="swiper-slide"><img src="/src/images/slide-2.png" alt="firstslide" /></div>
             <div class="swiper-slide"><img src="/src/images/slide-3.png" alt="firstslide" /></div>
