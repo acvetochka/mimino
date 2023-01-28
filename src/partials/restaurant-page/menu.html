@@ -2,8 +2,10 @@
     <div class="container">
     <h2 class="restaurant-menu__title">МЕНЮ РЕСТОРАНУ</h2>
 
-        <div class="dishes-set-cover">
-          <table role="presentation">
+  <div class="restaurant-menu__type-dishes">
+    <div class="restaurant-menu__type-dish">
+            <div class="dishes-set-cover">
+          <table class="table-dish" role="presentation">
               <caption class="restaurant-menu__subtitle">Гарячі страви</caption>
                   <tbody class="table-dish">
                                 <include src="./partials/components/dish-template.html">{
@@ -50,9 +52,9 @@
         </div>
 
         <div class="dishes-set-cover">
-          <table role="presentation">
+          <table class="table-dish" role="presentation">
               <caption class="restaurant-menu__subtitle">Гарніри та закуски</caption>
-                  <tbody class="table-dish">
+                  <tbody>
                         <include src="./partials/components/dish-template.html">{
                             "title": "Запечені овочі",
                             "ingredients": "Кабачок, перець, помідор, баклажан",
@@ -95,11 +97,13 @@
                   </tbody>        
           </table>
         </div>
+        </div>
 
-        <div class="dishes-set-cover">
-          <table role="presentation">
+        <div class="restaurant-menu__type-dish">
+            <div class="dishes-set-cover">
+          <table class="table-dish" role="presentation">
               <caption class="restaurant-menu__subtitle">Салати</caption>
-                  <tbody>
+                  <tbody class="table-dish">
                         <include src="./partials/components/dish-template.html">{
                             "title": "Цезар з куркою",
                             "ingredients": "Куряче філе, листя салату, помідори чері, сир пармезан, грінки, соус цезар",
@@ -136,7 +140,7 @@
         </div>
 
         <div class="dishes-set-cover">
-          <table role="presentation">
+          <table class="table-dish" role="presentation">
               <caption class="restaurant-menu__subtitle">Десерти</caption>
                   <tbody>
                         <include src="./partials/components/dish-template--one-row.html">{
@@ -164,47 +168,55 @@
         </div>
 
         <div class="dishes-set-cover">
-          <table role="presentation">
+          <table class="table-dish" role="presentation">
               <caption class="restaurant-menu__subtitle">Напої</caption>
-                  <tbody>
+                  <tbody class="table-dish__body">
                         <include src="./partials/components/dish-template--one-row.html">{
                             "title": "Чай чорний/зелений",                            
                             "weight": "500 г",
                             "price": "100 грн"
                         }
                     </include>
-
-                        <include src="./partials/components/dish-template--one-row.html">{
+                
+                    <include src="./partials/components/dish-template--one-row.html">{
                             "title": "Еспресо",                            
                             "weight": "30 мл",
                             "price": "100 грн"
                         }
                     </include>
+                  
 
-                        <include src="./partials/components/dish-template--one-row.html">{
+                            <include src="./partials/components/dish-template--one-row.html">{
                             "title": "Американо",                            
                             "weight": "150 мл",
                             "price": "100 грн"
                         }
                     </include>
+                       
+                        
 
-                        <include src="./partials/components/dish-template--one-row.html">{
+    <include src="./partials/components/dish-template--one-row.html">{
                             "title": "Капучино",                            
                             "weight": "200 мл",
                             "price": "160 грн"
                         }
                     </include>
 
-                        <include src="./partials/components/dish-template--one-row.html">{
+                        
+
+    <include src="./partials/components/dish-template--one-row.html">{
                             "title": "Лате",                            
                             "weight": "200 мл",
                             "price": "160 грн"
                         }
                     </include>
-                  </tbody>        
+</tbody>     
           </table>
         </div>
 
+        </div>
+  </div>
+        
 
     </div>
 </section>
