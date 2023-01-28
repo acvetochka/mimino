@@ -10,6 +10,32 @@
       </p>
     </div>
     <div><img class="rooms__img" src="/src/images/main-slide-mobile.png" alt="основне-фото" /></div>
+<picture>
+          <source
+            srcset="
+              ./images/room-page/room-slide1-desktop.jpg    1x,
+              ./images/room-page/room-slide1-desktop@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/room-page/room-slide1-tablet.jpg    1x,
+              ./images/room-page/room-slide1-tablet@2x.jpg 2x
+            "
+            media="(min-width: 481px)"
+          />
+          <img
+            class="swiper-slide__img"
+            srcset="
+              ./images/room-page/room-slide1-mobile.jpg    1x,
+              ./images/room-page/room-slide1-mobile@2x.jpg 2x
+            "
+            src="./images/room-page/room-slide1-mobile.jpg"
+            alt="Двомісний номер люкс"
+          />
+        </picture>
+
   </div>
 
   <!-- SWIPER-ДОДАТИ ФОТО -->
