@@ -75,6 +75,41 @@
 }
 
 //   Details-hotel
+// .details-hotel {
+//   position: relative;
+
+//   display: block;
+//   z-index: 1;
+//   //   width: 100vw;
+//   // width: 414px;
+//   height: 735px;
+//   padding-top: 24px;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   flex-grow: 1;
+//   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+//     url(../../images/414/details_fon-hotel_414.jpg);
+
+//   @include retina {
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+//       url(../../images/414/details_fon-hotel@2_414.jpg);
+//   }
+
+//   @include tablet {
+//     height: 620px;
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+//       url(../../images/1024/details_fon-hotel_1024.jpg);
+
+//     @include retina {
+//       background-image: linear-gradient(
+//           rgba(0, 0, 0, 0.65),
+//           rgba(0, 0, 0, 0.65)
+//         ),
+//         url(../../images/1024/details_fon-hotel@2_1024.jpg);
+//     }
+//   }
+// }
+
 .details-block-hotel {
   @include minW-Tablet {
     top: 48px;
