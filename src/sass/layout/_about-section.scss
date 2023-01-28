@@ -1,7 +1,11 @@
 .about {
     background-color: $primary-background;
     padding-top: 16px;
+<<<<<<< Updated upstream
 
+=======
+    
+>>>>>>> Stashed changes
     @include minW-Tablet {
         padding-top: 120px;
     }
@@ -24,10 +28,20 @@
         } 
     }
     &__img--content1 {
+<<<<<<< Updated upstream
         @include minW-Tablet {
         display: flex;
         
         }
+=======
+        display: flex;
+        @include maxW-Tablet {
+            flex-direction: column;
+            gap: 28px;
+        }
+        
+        
+>>>>>>> Stashed changes
     }
     &__content {
         display: flex;
@@ -35,12 +49,18 @@
         gap: 12px;
 
         @include minW-Tablet {
+<<<<<<< Updated upstream
             padding-left: 47px;
+=======
+>>>>>>> Stashed changes
             margin-right: 0;
             max-width: 439px;
         }
         @include minW-Dt {
+<<<<<<< Updated upstream
             padding-left: 85px;
+=======
+>>>>>>> Stashed changes
             max-width: 518px;
         }
     }
@@ -85,9 +105,15 @@
 
     }
     &__img--foto1 {
+<<<<<<< Updated upstream
         display: block;
         margin-left: 155px;
         margin-top: 28px;
+=======
+        display: flex;
+        align-self: flex-end;
+        margin-right: 15px;
+>>>>>>> Stashed changes
         max-width: 244px;
         max-height: 322px;
         width: 100%;
@@ -99,12 +125,21 @@
             max-width: 400px;
             max-height: 524px;
             margin-top: -32px;
+<<<<<<< Updated upstream
+=======
+            margin-left: 26px;
+
+>>>>>>> Stashed changes
            
         }
         @include minW-Dt {
             max-width: 460px;
             max-height: 574px;
+<<<<<<< Updated upstream
             margin-right: 180px;
+=======
+            margin-left: 37px;
+>>>>>>> Stashed changes
         }
     }
     &__img--content2 {
@@ -124,6 +159,7 @@
         @include minW-Tablet {
             max-width: 350px;
             max-height: 500px;
+<<<<<<< Updated upstream
 
         }
         @include minW-Dt {
@@ -155,3 +191,25 @@
 //         }
 //     }
 // }
+=======
+        }
+        @include minW-Dt {
+            max-width: 460px;
+            max-height: 574px;  
+        }
+    }  
+}
+.swiper-about {
+    margin-top: 32px;
+    margin-left: 84px;
+
+    @include minW-Tablet {
+        margin-top: 154px;
+        margin-left: 139px;
+    }
+    @include minW-Dt {
+        margin-top: 119px;
+        margin-left: 102px;  
+    }
+}
+>>>>>>> Stashed changes
