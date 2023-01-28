@@ -1,7 +1,7 @@
 <div class="modal">
     <button type="button" class="close">
           <svg class="close__icon" width="24" height="24">
-            <use href="./icons.svg#icon-close"></use>
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <form class="form">
@@ -11,11 +11,11 @@
             <label for="name" class="form__label">На кого забронювати столик?</label>
           </div>
           <div class="form__field">
-            <input type="tell" name="tell" id="tell" placeholder="+38 (___) ___-__-__" class="form__input" />
+            <input type="tell" name="tell" id="tell" placeholder="+38 (___) ___-__-__" class="form__input js-inputmask" />
             <label for="tell" class="form__label">Номер телефону</label>
           </div>
           <div class="form__field">
-<select id="number" name="number" class="form__select">
+<select id="number" name="number" class="form__select js-select">
   <option value="1" class="form__option">1</option>
   <option value="2" class="form__option" selected>2</option>
   <option value="3" class="form__option">3</option>
@@ -24,11 +24,17 @@
 <label for="number" class="form__label">Столик на яку кількість осіб?</label>
           </div>
           <div class="form__field">
-<select id="date" name="date" class="form__select">
-  <option value="1" class="form__option">1</option>
-  <option value="2" class="form__option" selected>2</option>
-  <option value="3" class="form__option">3</option>
-  <option value="4" class="form__option">4</option>
+    <!-- <input type="date" name="date" id="date" class="input" placeholder="Сьогодні" min="2023-01-01" max="2025-05-01" /> -->
+     <!-- <label for="date" class="form__label">На яку дату бронювати?</label> -->
+<select id="date" name="date" class="form__select js-select">
+  <option value="today" class="form__option" selected>Сьогодні</option>
+  <option value="monday" class="form__option">Понеділок</option>
+  <option value="tuesday" class="form__option">Вівторок</option>
+  <option value="wednesday" class="form__option">Середа</option>
+  <option value="thursday" class="form__option">Четверг</option>
+  <option value="friday" class="form__option">П'ятниця</option>
+  <option value="saturday" class="form__option">Cубота</option>
+  <option value="sunday" class="form__option">Неділя</option>
 </select>
 <label for="date" class="form__label">На яку дату бронювати?</label>
           </div>

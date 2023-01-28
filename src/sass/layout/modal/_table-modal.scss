@@ -3,16 +3,24 @@
     width: 100%;
     border-radius: 2px;
 
-    background: $primary-background;
+    // background: $primary-background;
 
     position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (min-width: $tabletMin) {
+        max-width: 712px;
+    }
+        
 
 }
 
 .close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
 
     &__icon {
 
@@ -21,7 +29,15 @@
 
 .form {
     padding: 60px 15px;
-    background-color: aqua;
+    // background-color: $primary-background;
+    background-color: rgb(140, 230, 152);
+
+    @media screen and (min-width: $tabletMin) {
+        padding: 60px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 
     &__text {
         display: block;
@@ -35,12 +51,19 @@
 
         margin-bottom: 40px;
 
+        @media screen and (min-width: $tabletMin) {
+        font-size: 40px;
+        line-height: 1.15;
+
     }  
+}
 
     &__field {
-        // position: relative;
+    position: relative;
     display: flex;
     flex-direction: column;
+
+    
 
     }
      
@@ -59,6 +82,14 @@
 
         margin-bottom: 8px;
 
+        @media screen and (min-width: $tabletMin) {
+         height: 64px;
+         width: 288px;
+
+         font-size: 24px;
+        line-height: 1.17; 
+    }
+
         &:focus {
             outline: 1px solid $accent-color-second;
         }
@@ -73,7 +104,19 @@
 
         margin-bottom: 20px;
 
+        @media screen and (min-width: $tabletMin) {
+        max-width: 262px;
+        font-size: 16px;
+        line-height: 1.25;
+
+        // &:nth-last-child(-n + 1) {
+        // background-color: orange;
+// }
+
+
+
      }
+    }
      &__select {
         height: 54px;
         padding-left: 12px;
@@ -82,24 +125,39 @@
         border-radius: 2px;
 
 
-        &:focus {
-            outline: 1px solid $accent-color-second;;
-        }
-
-
         font-weight: 700;
         font-size: 20px;
         line-height: 1.15;
         letter-spacing: 0.05em;
         color: $placeholder-color;
 
+        @media screen and (min-width: $tabletMin) {
+         height: 64px;
+         width: 288px;
+         font-size: 24px;
+        line-height: 1.17;
+    }
+
+
+        &:focus {
+            outline: 1px solid $accent-color-second;;
+        }
      }
+
      &__option {
         font-weight: 700;
         font-size: 20px;
         line-height: 1.15;
         letter-spacing: 0.05em;
         color: $placeholder-color;
+
+
+        @media screen and (min-width: $tabletMin) {
+         font-size: 24px;
+         line-height: 1.17;
+    }
+
+        
      }
 
 }
