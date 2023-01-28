@@ -1,11 +1,7 @@
 .about {
     background-color: $primary-background;
     padding-top: 16px;
-<<<<<<< Updated upstream
-
-=======
     
->>>>>>> Stashed changes
     @include minW-Tablet {
         padding-top: 120px;
     }
@@ -28,20 +24,11 @@
         } 
     }
     &__img--content1 {
-<<<<<<< Updated upstream
-        @include minW-Tablet {
-        display: flex;
-        
-        }
-=======
         display: flex;
         @include maxW-Tablet {
             flex-direction: column;
             gap: 28px;
         }
-        
-        
->>>>>>> Stashed changes
     }
     &__content {
         display: flex;
@@ -49,18 +36,10 @@
         gap: 12px;
 
         @include minW-Tablet {
-<<<<<<< Updated upstream
-            padding-left: 47px;
-=======
->>>>>>> Stashed changes
             margin-right: 0;
             max-width: 439px;
         }
         @include minW-Dt {
-<<<<<<< Updated upstream
-            padding-left: 85px;
-=======
->>>>>>> Stashed changes
             max-width: 518px;
         }
     }
@@ -105,15 +84,9 @@
 
     }
     &__img--foto1 {
-<<<<<<< Updated upstream
-        display: block;
-        margin-left: 155px;
-        margin-top: 28px;
-=======
         display: flex;
         align-self: flex-end;
         margin-right: 15px;
->>>>>>> Stashed changes
         max-width: 244px;
         max-height: 322px;
         width: 100%;
@@ -125,21 +98,14 @@
             max-width: 400px;
             max-height: 524px;
             margin-top: -32px;
-<<<<<<< Updated upstream
-=======
             margin-left: 26px;
 
->>>>>>> Stashed changes
            
         }
         @include minW-Dt {
             max-width: 460px;
             max-height: 574px;
-<<<<<<< Updated upstream
-            margin-right: 180px;
-=======
             margin-left: 37px;
->>>>>>> Stashed changes
         }
     }
     &__img--content2 {
@@ -159,39 +125,6 @@
         @include minW-Tablet {
             max-width: 350px;
             max-height: 500px;
-<<<<<<< Updated upstream
-
-        }
-        @include minW-Dt {
-            max-width: 460px;
-            max-height: 574px;
-           
-        }
-    }
-   
-}
-// .logo {
-//     font-family: 'FilmP3', sans-serif;
-//     font-weight: 700;
-//     font-size: 40px;
-//     line-height: 1.075;   
-//     text-transform: uppercase;
-//     letter-spacing: 0.3em;
-//     color: $logo-color;
-
-//     @include minW-Tablet {
-//         font-size: 64px;
-//         line-height: 1.08;
-//     }
-//     &--section {
-
-//         @include minW-Tablet {
-//         padding-top: 4px;
-//         padding-bottom: 24px;
-//         }
-//     }
-// }
-=======
         }
         @include minW-Dt {
             max-width: 460px;
@@ -212,4 +145,3 @@
         margin-left: 102px;  
     }
 }
->>>>>>> Stashed changes
