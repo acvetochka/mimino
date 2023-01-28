@@ -1,33 +1,213 @@
 <section class="container rooms rooms--colorfix">
-  <span class="rooms__phrase">Amet minim mollit non</span>
-  <span class="logo rooms__logo">MIMIHO</span>
-  <h2 class="rooms__title">ТРЬОХМІСНИЙ НОМЕР</h2>
-  <p class="rooms__text">
-    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-    consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-  </p>
-  <img
-    class="rooms__img rooms__img--fix"
-    src="/src/images/main-slide-mobile.png"
-    alt="основне-фото"
-  />
-  <!-- SWIPER-ДОДАТИ ФОТО -->
-  <section class="slider-section" data-slider="details-slider">
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <img src="/src/images/slide-1.png" alt="firstslide" />
-        </div>
-        <div class="swiper-slide"><img src="/src/images/slide-2.png" alt="firstslide" /></div>
-        <div class="swiper-slide"><img src="/src/images/slide-3.png" alt="firstslide" /></div>
+  <div class="position-wrapper position-wrapper--mod">
+    <div class="text-item-wrapper">
+      <div class="rooms__logo-phrase--fix">
+        <span class="rooms__phrase rooms__phrase--fix">Amet minim mollit non</span>
+        <span class="logo rooms__logo rooms__logo--fix">MIMIHO</span>
       </div>
-
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <h2 class="rooms__title">ТРЬОХМІСНИЙ НОМЕР</h2>
+      <p class="rooms__text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+      </p>
     </div>
-  </section>
-  <button class="rooms__button" type="button">Детальніше</button>
-  <button class="rooms__button rooms__button--fix" type="button">Переглянути ціни</button>
+
+    <div>
+      <picture>
+        <source
+          srcset="
+            /src/images/hotel-page/pic1-desk.jpg   1x,
+            /src/images/hotel-page/pic1-desk2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="/src/images/hotel-page/pic1-tab.jpg 1x, /src/images/hotel-page/pic1-tab2x.jpg 2x"
+          media="(min-width: 481px)"
+        />
+        <img
+          class="rooms__img rooms__img--fix rooms__img--fix-second"
+          srcset="/src/images/hotel-page/pic1-mob.jpg 1x, /src/images/hotel-page/pic1-mob2x.png 2x"
+          src="/src/images/hotel-page/pic1-mob.jpg"
+          alt="Трьохмісний номер"
+        />
+      </picture>
+    </div>
+  </div>
+
+  <div class="second-position-wrapper">
+    <div>
+      <section class="slider-section" data-slider="room-slider">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture class="rooms__img">
+                <source
+                  srcset="
+                    /src/images/hotel-page/slides/slide1-desk.jpg   1x,
+                    /src/images/hotel-page/slides/slide1-desk2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    /src/images/hotel-page/slides/slide1-tab.jpg   1x,
+                    /src/images/hotel-page/slides/slide1-tab2x.jpg 2x
+                  "
+                  media="(min-width: 481px)"
+                />
+                <img
+                  srcset="
+                    /src/images/hotel-page/slides/slide1-mob.jpg   1x,
+                    /src/images/hotel-page/slides/slide1-mob2x.jpg 2x
+                  "
+                  src="/src/images/hotel-page/slides/slide1-mob.jpg"
+                  alt="Перший слайд"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="rooms__img">
+                <source
+                  srcset="
+                    /src/images/hotel-page/slides/slide2-desk.jpg   1x,
+                    /src/images/hotel-page/slides/slide2-desk2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    /src/images/hotel-page/slides/slide2-tab.jpg   1x,
+                    /src/images/hotel-page/slides/slide2-tab2x.jpg 2x
+                  "
+                  media="(min-width: 481px)"
+                />
+                <img
+                  srcset="
+                    /src/images/hotel-page/slides/slide2-mob.jpg   1x,
+                    /src/images/hotel-page/slides/slide2-mob2x.jpg 2x
+                  "
+                  src="/src/images/hotel-page/slides/slide2-mob.jpg"
+                  alt="Другий слайд"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="rooms__img">
+                <source
+                  srcset="
+                    /src/images/hotel-page/slides/slide3-desk.jpg   1x,
+                    /src/images/hotel-page/slides/slide3-desk2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    /src/images/hotel-page/slides/slide3-tab.jpg   1x,
+                    /src/images/hotel-page/slides/slide3-tab2x.jpg 2x
+                  "
+                  media="(min-width: 481px)"
+                />
+                <img
+                  srcset="
+                    /src/images/hotel-page/slides/slide3-mob.jpg   1x,
+                    /src/images/hotel-page/slides/slide3-mob2x.jpg 2x
+                  "
+                  src="/src/images/hotel-page/slides/slide3-mob.jpg"
+                  alt="Третій слайд"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="rooms__img">
+                <source
+                  srcset="
+                    /src/images/hotel-page/slides/slide4-desk.jpg   1x,
+                    /src/images/hotel-page/slides/slide4-desk2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    /src/images/hotel-page/slides/slide4-tab.jpg   1x,
+                    /src/images/hotel-page/slides/slide4-tab2x.jpg 2x
+                  "
+                  media="(min-width: 481px)"
+                />
+                <img
+                  srcset="
+                    /src/images/hotel-page/slides/slide4-mob.jpg   1x,
+                    /src/images/hotel-page/slides/slide4-mob2x.jpg 2x
+                  "
+                  src="/src/images/hotel-page/slides/slide4-mob.jpg"
+                  alt="Четвертий слайд"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="rooms__img">
+                <source
+                  srcset="
+                    /src/images/hotel-page/slides/slide5-desk.jpg   1x,
+                    /src/images/hotel-page/slides/slide5-desk2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    /src/images/hotel-page/slides/slide5-tab.jpg   1x,
+                    /src/images/hotel-page/slides/slide5-tab2x.jpg 2x
+                  "
+                  media="(min-width: 481px)"
+                />
+                <img
+                  srcset="
+                    /src/images/hotel-page/slides/slide5-mob.jpg   1x,
+                    /src/images/hotel-page/slides/slide5-mob2x.jpg 2x
+                  "
+                  src="/src/images/hotel-page/slides/slide5-mob.jpg"
+                  alt="П'ятий слайд"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="rooms__img">
+                <source
+                  srcset="
+                    /src/images/hotel-page/slides/slide6-desk.jpg   1x,
+                    /src/images/hotel-page/slides/slide6-desk2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    /src/images/hotel-page/slides/slide6-tab.jpg   1x,
+                    /src/images/hotel-page/slides/slide6-tab2x.jpg 2x
+                  "
+                  media="(min-width: 481px)"
+                />
+                <img
+                  srcset="
+                    /src/images/hotel-page/slides/slide6-mob.jpg   1x,
+                    /src/images/hotel-page/slides/slide6-mob2x.jpg 2x
+                  "
+                  src="/src/images/hotel-page/slides/slide6-mob.jpg"
+                  alt="Шостий слайд"
+                />
+              </picture>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <button class="rooms__button" type="button">Детальніше</button>
+      <button class="rooms__button rooms__button--fix" type="button">Переглянути ціни</button>
+    </div>
+  </div>
 </section>

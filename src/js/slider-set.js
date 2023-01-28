@@ -60,7 +60,7 @@ function swiperSlider() {
         // //   delay: 3000,
         //   disableOnInteraction: false,
         // },
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 20,
         // pagination: {
         //   el: pagination,

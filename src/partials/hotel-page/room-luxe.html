@@ -11,7 +11,7 @@
     </div>
 
     <div>
-      <picture class="rooms__img">
+      <picture>
         <source
           srcset="
             /src/images/hotel-page/pic1-desk.jpg   1x,
@@ -24,6 +24,7 @@
           media="(min-width: 481px)"
         />
         <img
+          class="rooms__img rooms__img--fix-second"
           srcset="/src/images/hotel-page/pic1-mob.jpg 1x, /src/images/hotel-page/pic1-mob2x.png 2x"
           src="/src/images/hotel-page/pic1-mob.jpg"
           alt="Двомісний номер люкс"
@@ -35,7 +36,7 @@
   <!-- SWIPER-ДОДАТИ ФОТО -->
   <div class="second-position-wrapper">
     <div>
-      <section class="slider-section" data-slider="details-slider">
+      <section class="slider-section" data-slider="room-slider">
         <div class="swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
