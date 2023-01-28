@@ -1,0 +1,79 @@
+.about {
+    background-color: $primary-background;
+    padding-top: 16px;
+
+    @include minW-Tablet {
+        padding-top: 120px;
+    }
+    &__container {
+        max-width: $phoneMin;
+        padding-left: $paddingPhone;
+        padding-right: $paddingPhone;
+        margin: 0 auto;
+    
+        @include minW-Tablet {
+            max-width: $tabletMin;
+            padding-left: $paddingTablet;
+            padding-right: $paddingTablet;
+        }
+     
+        @include minW-Dt {
+            max-width: $desktopMin;
+            padding-left: $paddingDt;
+            padding-right: $paddingDt;
+        } 
+    }
+    &__content--rest {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        @include minW-Tablet {
+            padding-left: 47px;
+        }
+        @include minW-Dt {
+            padding-left: 85px;
+        }
+    }
+    &__text {
+        @include font(Montserrat, montserrat600, 600, normal);
+        max-width: 258px;
+        font-size: 12px;
+        line-height: 1.25;
+        color: $primary-color;
+       
+        @include minW-Tablet {
+            max-width: 439px;
+           font-size: 16px; 
+        }
+        @include minW-Dt {
+            min-width: 518px;
+        }
+    }
+    &__img--rest1 {
+        display: block;
+        padding-left: 155px;
+        padding-top: 210px;
+        max-width: 244px;
+        max-height: 322px;
+        width: 100%;
+        height: 100%;
+        box-shadow: $img-shadow;
+
+        @include minW-Tablet {
+            max-width: 400px;
+            max-height: 524px;
+        }
+        @include minW-Dt {
+            max-width: 460px;
+            max-height: 574px;
+        }
+    }
+}
+.logo--section {
+
+    @include minW-Tablet {
+        padding-top: 4px;
+        padding-bottom: 24px;
+    }
+}
