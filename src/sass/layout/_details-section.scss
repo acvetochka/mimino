@@ -1,0 +1,89 @@
+.details-rest {
+  position: relative;
+
+  padding: $paddingPhone;
+
+  width: 100vw;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../../images/414/details-fon-restaurant_414.jpg);
+
+  @include retina {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../../images/414/details-fon-restaurant@2_414.jpg);
+  }
+
+  @include minW-Tablet {
+    height: 620px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../../images/1024/details-fon-restaurant_1024.jpg);
+
+    @include retina {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../../images/1024/details-fon-restaurant@2_1024.jpg);
+    }
+  }
+
+  @include minW-Dt {
+    background-image: linear-gradient(rgba(60, 0, 0, 0.65), rgba(60, 0, 0, 0.65)),
+      url(../../images/1280/details-fon-restaurant_1280.jpg);
+
+    @include retina {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../../images/1280/details-fon-restaurant@2_1280.jpg);
+    }
+  }
+}
+
+.details-block {
+    @include tablet {
+      margin: 0;
+      margin-left: 278px;
+      max-width: none;
+    }
+  
+    max-width: 243px;
+    margin: 0 auto;
+    padding-top: 24px;
+  }
+  
+  .img-details-rest {
+    @include tablet {
+      // padding-top: 254px;
+      justify-content: end;
+    }
+  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    // padding-top: 233px;
+  }
+  
+
+
+
+
+// .container {
+//   width: 100%;
+//   margin: 0 auto;
+//   padding: 0 15px;
+
+//   @include minW-Tablet {
+//     padding: 0 47px;
+//   }
+
+//   @include minW-Dt {
+//     padding: 0 85px;
+//   }
+// }
+
+// .details-btn-prev.details-btn-next {
+//   width: 32px;
+//   height: 32px;
+//   padding: 0;
+//   border: none;
+//   fill: $contrast-color;
+// }
