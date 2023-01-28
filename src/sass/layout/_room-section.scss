@@ -1,0 +1,29 @@
+
+.room-condititons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.room-conditions__title {
+    // @include font('Times New Roman', $file_name, 400, normal);
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.156;
+    color: $secondary-color;
+    text-transform: uppercase;
+}
+
+.room-condititons__description {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $primary-color;
+}
