@@ -1,0 +1,105 @@
+.modal {
+    max-width: 414px;
+    width: 100%;
+    border-radius: 2px;
+
+    background: $primary-background;
+
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.close {
+
+    &__icon {
+
+    }
+}
+
+.form {
+    padding: 60px 15px;
+    background-color: aqua;
+
+    &__text {
+        display: block;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.17;
+        text-align: center;
+
+        letter-spacing: 0.05em;
+        color: $secondary-color;
+
+        margin-bottom: 40px;
+
+    }  
+
+    &__field {
+        // position: relative;
+    display: flex;
+    flex-direction: column;
+
+    }
+     
+     &__input {
+        height: 54px;
+        padding-left: 12px;
+        border: 1px solid $accent-color-second;
+        border-radius: 2px;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        letter-spacing: 0.05em;
+
+        color: $placeholder-color;
+
+        margin-bottom: 8px;
+
+        &:focus {
+            outline: 1px solid $accent-color-second;
+        }
+     }
+
+     &__label {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.02em;
+        color: $accent-color-second;
+
+        margin-bottom: 20px;
+
+     }
+     &__select {
+        height: 54px;
+        padding-left: 12px;
+        margin-bottom: 8px;
+        border: 1px solid $accent-color-second;
+        border-radius: 2px;
+
+
+        &:focus {
+            outline: 1px solid $accent-color-second;;
+        }
+
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        letter-spacing: 0.05em;
+        color: $placeholder-color;
+
+     }
+     &__option {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        letter-spacing: 0.05em;
+        color: $placeholder-color;
+     }
+
+}
