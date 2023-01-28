@@ -1,14 +1,14 @@
-
-.room-condititons {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.room-section {
+    background-color: $primary-background; 
 }
 
-
+.room-conditions {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
 .room-conditions__title {
-    // @include font('Times New Roman', $file_name, 400, normal);
+    margin-bottom: 16px;
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 400;
@@ -16,14 +16,149 @@
     line-height: 1.156;
     color: $secondary-color;
     text-transform: uppercase;
+
+    @include maxW-Phone {
+        font-size: 26px;
+    }
 }
 
-.room-condititons__description {
-    font-family: 'Montserrat';
+.description-section {
+    @include minW-Tablet{
+        display: flex;
+        gap: 80px;
+        }
+
+        @include minW-Dt {
+            gap: 159px;
+        }
+}
+
+.room-conditions__subtitle {
+    &:first-child {
+        margin-top: 32px;
+    }
+
+    font-family: 'Times New Roman';
     font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.166;
+    color: $secondary-color;
+    text-transform: uppercase;
+
+    
+}
+
+.room-conditions__description {
+    margin-top: 16px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $primary-color;
+
+    &--main {
+        @include minW-Tablet {
+            max-width: 757px;
+        } 
+    }
+
+    @include minW-Tablet {
+        flex-basis: calc((100% - 1 * 80px) / 2);
+    }
+
+    @include minW-Dt {
+        flex-basis: calc((100% - 1 * 159px) / 2);
+    }
 }
+
+.room-conditions__item {
+    margin-bottom: 32px;
+}
+
+.room-btnlink {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    @include minW-Tablet {
+        flex-direction: column;
+        align-items: flex-end;  
+    }
+}
+
+
+
+.button {
+    
+    width: 384px;
+    height: 64px;
+    background: $secondary-color;
+    color: $contrast-color;
+    border: 1px solid $accent-color;
+    border-radius: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    @mixin minW-Phone {
+        padding: 20px 43px;
+    }
+
+    @include minW-Tablet {
+        width: 434px;
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        color: $secondary-color;
+        background-color: $accent-color;
+    }
+}
+
+.button-order {
+    margin-bottom: 20px;
+}
+
+
+
+.back-to-rooms {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $accent-color-second;
+
+    @include minW-Tablet {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.icon-right {
+  
+    margin-left: 12px;
+    fill: currentColor;
+    @include minW-Tablet {
+        margin-left: 16px;
+    }
+
+}
+ 
+
+
+
+
