@@ -41,7 +41,7 @@
         
         & > .item{
             font-family: 'Montserrat';
-            font-style: 500;
+            font-weight: 500;
             font-size: 20px;
             line-height: 1.22;
             letter-spacing: 0.02em;
@@ -56,12 +56,13 @@
     }
 }
 
-.social {
+.footer-social {
+    // display: flex;
+    // gap: 20px;
     @include minW-Tablet {
         flex-direction: column-reverse;
         gap: 12px;
     }
-   
 
     &__link {
         display: flex;
@@ -76,7 +77,7 @@
     &__name {
         margin-right: 12px;
         font-family: 'Montserrat';
-        font-style: 400;
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.2;
         letter-spacing: 0.02em;
