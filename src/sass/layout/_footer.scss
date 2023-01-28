@@ -1,0 +1,89 @@
+.footer {
+    background-color: $footer-background;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include minW-Tablet {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        max-height: 304px;
+    }
+ 
+    &__logo {
+        margin-left: 44px;
+        @include minW-Tablet {
+        margin-left: 107px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include minW-Tablet {
+            justify-content: flex-start;
+        }
+    }
+    &__links{
+        margin-bottom: 33px;
+        gap: 16px;
+        display: flex; 
+        flex-direction: column;
+        @include minW-Tablet {
+            margin-bottom: 0;
+            margin-left: 163px;
+            margin-right: 137px;
+        }
+        @include minW-Dt {
+            margin-left: 231px;
+            margin-right: 199px;
+        }
+        
+        & > .item{
+            font-family: 'Montserrat';
+            font-style: 500;
+            font-size: 20px;
+            line-height: 1.22;
+            letter-spacing: 0.02em;
+            color: $accent-color;
+        }
+    }
+    &__nav {
+        margin-right: 18px;
+        @include minW-Tablet {
+            display: flex;
+        }
+    }
+}
+
+.social {
+    @include minW-Tablet {
+        flex-direction: column-reverse;
+        gap: 12px;
+    }
+   
+
+    &__link {
+        display: flex;
+        align-items: center;
+        @include minW-Tablet {
+            padding: 8px 12px;
+            border: 0.5px solid $accent-color;
+            border-radius: 2px;
+            max-height: 40px;
+        }
+    }
+    &__name {
+        margin-right: 12px;
+        font-family: 'Montserrat';
+        font-style: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: $accent-color;
+        @include maxW-Tablet{
+            display: none;
+        }
+
+    }
+}
