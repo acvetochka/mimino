@@ -1,7 +1,7 @@
 <div class="room-price-modal modal" data-modal="3">
     <button type="button" class="modal__close-btn js-modal-close">
       <svg width="24px" height="24px" class="modal__close-icon">
-        <use href="./images/icons.svg#icon-close"></use>
+        <use href="./images/icons.svg#icon-x-1"></use>
       </svg>
     </button>
     <form class="form-price">
@@ -11,32 +11,30 @@
         <p class="form-price__label">Категорія номеру</p>
   
        
-      <label for="js-select">Кількість ночей</label>
-      <select name="nights" class="js-select">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-          <option value="13">13</option>
-          <option value="14">14</option>
-          <option value="15">15</option>
-          <option value="16">16</option>
-          <option value="17">17</option>
+      <label for="nights" class="form-price__label">Кількість ночей</label>
+      <select name="nights" class="form__select list-select" id="nights">
+          <option value="1 000">1</option>
+          <option value="2 000">2</option>
+          <option value="3 000">3</option>
+          <option value="4 000">4</option>
+          <option value="5 000">5</option>
+          <option value="6 000">6</option>
+          <option value="7 000">7</option>
+          <option value="8 000">8</option>
+          <option value="9 000">9</option>
+          <option value="10 000">10</option>
+          <option value="11 000">11</option>
+          <option value="12 000">12</option>
+          <option value="13 000">13</option>
+          <option value="14 000">14</option>
+          <option value="15 000">15</option>
+          <option value="16 000">16</option>
+          <option value="17 000">17</option>
       </select>
-  <label for="price">грн</label>
-  <input type="text" name="" id="">
-  
-  </label>
-  
-  </div>
+    <label for="price" form-price__label>грн</label>
+    <input type="text" name="price" id="form-price" class="list-select-result form-select__input" />
+    <button type="submit" class="price-form__button">забронювати номер</button>
+ 
     </form>
-  </div>
+</div>
   
