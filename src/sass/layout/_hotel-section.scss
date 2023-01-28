@@ -167,10 +167,12 @@
   }
 }
 .second-position-wrapper--fix {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
+  @media screen and (min-width: $tabletMin) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .position-wrapper--mod {
