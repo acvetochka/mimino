@@ -18,38 +18,38 @@
   background-color: rgb(99, 95, 95);
   // width: 100vw;
   height: 735px;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // flex-grow: 1;
-  // background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-  //   url(./images/home-page/details-rest/backgroung-mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/home-page/details-rest/backgroung-mob.jpg);
 
-  //   @include retina {
-  //     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-  //       url(./images/home-page/details-rest/backgroung-mob2x.jpg);
-  //   }
+    @include retina {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/home-page/details-rest/backgroung-mob2x.jpg);
+    }
 
   @include minW-Tablet {
     height: 620px;
-    //   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    //     url(./images/home-page/details-rest/background-tab.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/home-page/details-rest/background-tab.jpg);
 
-    //   @include retina {
-    //     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    //       url(./images/home-page/details-rest/background-tab2x.jpg);
+      @include retina {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+          url(../images/home-page/details-rest/background-tab2x.jpg);
   }
-  // }
+  }
 
   @include minW-Dt {
     height: 620px;
-    //   background-image: linear-gradient(rgba(60, 0, 0, 0.65), rgba(60, 0, 0, 0.65)),
-    //     url(./images/home-page/details-rest/background-desk.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/home-page/details-rest/background-desk.jpg);
 
-    //   @include retina {
-    //     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    //       url(./images/home-page/details-rest/background-desk.jpg);
+      @include retina {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+          url(../images/home-page/details-rest/background-desk2x.jpg);
   }
-  // }
+  }
 }
 
 .details-block {
