@@ -60,8 +60,6 @@ function swiperSlider() {
         // //   delay: 3000,
         //   disableOnInteraction: false,
         // },
-        slidesPerView: 3,
-        spaceBetween: 20,
         // pagination: {
         //   el: pagination,
         //   clickable: true,
@@ -69,6 +67,28 @@ function swiperSlider() {
         //     return '<li class="' + className + '"></li>';
         //   },
         // },
+
+        loop: true,
+
+        slidesPerView: 1.3,
+        spaceBetween: 20,
+        
+        breakpoints: {
+        540: {
+            slidesPerView: 2,
+        },
+
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 34
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 87
+        }
+        },
+
+
         navigation: {
           nextEl: arrowRight,
           prevEl: arrowLeft,
