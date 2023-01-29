@@ -32,7 +32,7 @@
         line-height: 1.075;
     }
 
-    @include maxW-Phone {
+        @mixin minW-Dt {
         font-size: 30px;
     }
 }
