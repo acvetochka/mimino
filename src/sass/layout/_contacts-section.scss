@@ -61,10 +61,10 @@
 }
 
 .contact-box {
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 8px;
+	// gap: 8px;
 	padding: 9px 8px 7px;
 
 	background-color: $contrast-color;
@@ -93,12 +93,22 @@
 	}
 	
 	&--ml {
-		margin-left: 3px;
+		margin-left: 10px;
+
+		@include maxW(413.9px) {
+			// margin-left: 40px;
+		}
 	}
 }
 
 .contact-box__icon {
+	margin-right: 8px;
+
 	fill: $accent-color-second;
+
+	&--address {
+		margin-right: 10px;
+	}
 }
 
 .contact-box__br{
