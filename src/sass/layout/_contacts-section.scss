@@ -97,3 +97,9 @@
 .contact-box__icon {
 	fill: $accent-color-second;
 }
+
+.contact-box__br{
+	@include minW-Tablet {
+		display: none;
+	}
+}
