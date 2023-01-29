@@ -1,0 +1,100 @@
+
+
+// DETAILS-SLIDER
+
+
+
+.swiper-and-buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+
+    @include minW-Tablet{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 29px ;
+    }
+
+    @include minW-Dt{
+        gap: 32px;
+    }
+}
+
+.swiper-details-container{
+    width: 100%;
+
+
+    @include maxW-Phone {
+        max-width: 414px;
+    }
+
+    @include minW-Tablet{
+        max-width: 759px;
+    }
+
+    @include minW-Dt{
+        max-width: 1012px;
+        flex-grow: 1;
+    }
+
+
+}
+.swiper-details__slide{
+    width: 270px;
+}
+.swiper-details__slide img{
+    width: 270px;
+}
+
+.swiper-details__buttons{
+    display: flex;
+    gap: 32px;
+    height: 32px;
+    margin-top: 16px;
+}
+
+.details-btn-prev  {
+    transform: translateY(0);
+    // position: static;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    color: $contrast-color;
+
+    & svg{
+        fill: currentColor;
+    }
+}
+
+.details-btn-prev::after{
+    content: "";
+}
+
+.details-btn-next  {
+    transform: translateY(0);
+    // position: static;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    color: $contrast-color;
+
+    & svg{
+        fill: currentColor;
+    }
+}
+.details-btn-next::after{
+    content: "";
+}
+
+// .swiper-button-prev.details-btn-prev{
+//     position: static;
+//     transform: translateY(0);
+// }
