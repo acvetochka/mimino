@@ -55,24 +55,58 @@
 }
 
 .details-block-hotel {
-  @include minW-Tablet {
-    position: absolute;
-    top: 48px;
-    right: 278px;
-    padding-right: 0;
-  }
-
   @include minW-Dt {
-    top: 24px;
-    right: 338px;
+    padding-top: 48px;
   }
 
-  //   position: absolute;
-  //   top: 24px;
-  //   left: 143px;
+  @include minW-Tablet {
+    // margin: 0;
+    // margin-left: 278px;
+    max-width: 549px;
+  }
+
+  max-width: 243px;
   margin: 0 auto;
-  padding-right: 140px;
-  text-align: end;
+  padding-top: 24px;
+  // margin-right: 139px;
+
+  &--logo {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: end;
+    transform: translateX(0.3em);
+  }
+
+  &__title {
+    @include minW-Tablet {
+      font-size: 24px;
+    }
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    letter-spacing: 0.02em;
+    color: $contrast-color;
+    padding-top: 12px;
+
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__text {
+    @include minW-Tablet {
+      font-size: 16px;
+      padding: 8px 0 40px;
+    }
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $contrast-color-descr;
+    padding: 20px 0 48px;
+  }
 }
 
 .details-title {
@@ -89,54 +123,24 @@
   padding-top: 12px;
 }
 
-.details-block-text {
+.swiper {
+  position: absolute;
+  bottom: 96px;
+  left: 52px;
+}
+
+.swiper-slide-dh {
   @include minW-Tablet {
-    position: absolute;
-    max-width: 549px;
-    top: 156px;
-    left: 198px;
-    padding: 0;
+    margin-left: 439px;
   }
 
   @include minW-Dt {
-    top: 146px;
-    left: 400px;
+    margin-left: 0px;
   }
 
-  //   top: 123px;
-  //   left: 32px;
-  max-width: 243px;
-  padding-left: 32px;
-}
-
-.heading__text {
-  @include minW-Tablet {
-    font-size: 16px;
-    padding: 8px 0 40px;
-  }
-
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: $contrast-color-descr;
-  //   padding: 20px 0 48px;
-}
-
-.swiper-slide-dr {
   display: flex;
+  margin-left: 40px;
   overflow: hidden;
-}
-
-.img-details-hotel {
-  @include minW-Tablet {
-    padding-top: 254px;
-    justify-content: start;
-  }
-
-  display: flex;
-  justify-content: center;
-  padding-top: 233px;
 }
 
 .details-btn-hotel {
