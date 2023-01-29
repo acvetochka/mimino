@@ -1,9 +1,17 @@
 .about {
     background-color: $primary-background;
    
+        &__container {
+            @include maxW-Tablet {
+            max-width: 414px;
+            margin-right: auto;
+            margin-left: auto;
+            }
+        }
         &__img--content1 {
         display: flex;
-        @include maxW-Tablet {
+        gap: 26px;
+        @media screen and (max-width: 768px) {
             flex-direction: column;
             gap: 28px;
         }
@@ -73,11 +81,11 @@
         height: 100%;
         box-shadow: $img-shadow;
 
+       
         @include minW-Tablet {
             display: flex;
             max-width: 400px;
             max-height: 524px;
-            // margin-top: -32px;
             margin-left: 26px;
             transform: translateY(-32px);
         }
@@ -121,7 +129,9 @@
 }
 .swiper-about {
     margin-top: 32px;
-    margin-left: 84px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px;
     max-width: 330px;
 
     @include minW-Tablet {
