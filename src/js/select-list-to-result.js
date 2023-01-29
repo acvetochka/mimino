@@ -1,4 +1,4 @@
-const selectElement = document.querySelector('.list-select');
+const selectElement = document.querySelector('.js-select');
 
 selectElement.addEventListener('change', (event) => {
   const result = document.querySelector('.list-select-result');

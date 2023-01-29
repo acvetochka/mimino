@@ -18,14 +18,20 @@
     .modal__close-btn {
       position: absolute;
       display: flex;
-      padding: 0;
-      
+      padding: 0;      
       top: 16px;
       right: 16px;
       width: 24px;
       height: 24px;
+      border: none;
       background-color: transparent;
+      
       fill: $secondary-color;
+
+      &:hover,
+      &:focus {
+       fill: $accent-color-second;
+      }
     }
     .modal__close-icon {
         margin: auto;
@@ -40,4 +46,51 @@
         max-height: 572px;
         
       height: 100%;
+      }
+
+      .form-price {
+        padding: 60px 15px;
+
+        &__title {
+          display: block;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 1.166;
+          color: $secondary-color;
+          margin-bottom: 40px;
+          letter-spacing: 0.05em;
+
+          @include minW-Tablet {
+            font-size: 32px;
+            line-height: 1.156;
+
+          }
+
+        }
+        &__category {
+          display: block;
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 1.166;
+          letter-spacing: 0.05em;
+          color: $placeholder-color;
+          margin-bottom: 28px;
+          }
+
+        &__label {
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 1.25;
+          letter-spacing: 0.02em;
+          color: $accent-color-second;
+          margin-bottom: 20px;
+        }
+        &__field {
+          display: flex;
+          flex-direction: column;
+        }
       }
