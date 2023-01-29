@@ -91,18 +91,20 @@
 
 
 .button {
+
+    @include btn-order ();
     
-    width: 384px;
-    height: 64px;
-    background: $secondary-color;
-    color: $contrast-color;
-    border: 1px solid $accent-color;
-    border-radius: 25px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    // width: 384px;
+    // height: 64px;
+    // background: $secondary-color;
+    // color: $contrast-color;
+    // border: 1px solid $accent-color;
+    // border-radius: 25px;
+    // font-family: 'Montserrat';
+    // font-style: normal;
+    // font-weight: 500;
+    // font-size: 20px;
+    // line-height: 1.2;
 
     @mixin minW-Phone {
         padding: 20px auto;
@@ -113,12 +115,12 @@
         font-size: 24px;
     }
 
-    &:hover,
-    &:focus {
-        cursor: pointer;
-        color: $secondary-color;
-        background-color: $accent-color;
-    }
+    // &:hover,
+    // &:focus {
+    //     cursor: pointer;
+    //     color: $secondary-color;
+    //     background-color: $accent-color;
+    // }
 }
 
 .button-order {
@@ -165,6 +167,10 @@
         margin-left: 16px;
     }
 
+}
+
+.button-service {
+    @include btn-service ();
 }
  
 
