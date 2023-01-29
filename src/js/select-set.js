@@ -1,3 +1,5 @@
+// import NiceSelect from "nice-select2";
+
 function customSelect() {
   const customSelects = document.querySelectorAll('.js-select');
 
