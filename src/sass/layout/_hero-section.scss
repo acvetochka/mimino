@@ -16,6 +16,16 @@
             url(../images/hotel-page/hero/background-desk2x.jpg);
     }
 }
+.hero-background__rest {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/rest-page/hero/backgroung-desk.jpg);
+
+    @include retina {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/rest-page/hero/backgroung-desk2x.jpg);
+    }
+}
+
 .hero-background {
     position: relative;
     height: 740px;
