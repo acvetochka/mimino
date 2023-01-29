@@ -1,7 +1,8 @@
-<div class="modal-table" data-modal="1">
+
+<div class="modal" data-modal="1">
     <button type="button" class="close js-modal-close" data-modal="1">
           <svg class="close__icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-close"></use>
+            <use href="./images/icons.svg#icon-x-1"></use>
           </svg>
         </button>
         
@@ -16,7 +17,7 @@
             <label for="tell" class="form-table__label">Номер телефону</label>
           </div>
           <div class="form-table__field">
-<select id="number" name="number" class="form-table__select js-select">
+<select id="number" name="number" class="form-table__select">
   <option value="1" class="form-table__option">1</option>
   <option value="2" class="form-table__option" selected>2</option>
   <option value="3" class="form-table__option">3</option>
@@ -24,9 +25,13 @@
   <option value="5+" class="form-table__option">5+</option>
 </select>
 <label for="number" class="form-table__label">Столик на яку кількість осіб?</label>
+<button type="button" class="button-select"><svg class="button-select__icon" width="24" height="24">
+  <use href="./images/icons.svg#icon-select"></use>
+</svg>
+</button>
           </div>
           <div class="form-table__field">
-<select id="date" name="date" class="form-table__select js-select">
+<select id="date" name="date" class="form-table__select">
   <option value="today" class="form-table__option" selected>Сьогодні</option>
   <option value="31.01.2023" class="form-table__option">31.01.2023</option>
   <option value="01.02.2023" class="form-table__option">01.02.2023</option>
@@ -34,5 +39,9 @@
   <option value="03.02.2023" class="form-table__option">03.02.2023</option>
 </select>
 <label for="date" class="form-table__label">На яку дату бронювати?</label>
+<button type="button" class="button-select"><svg class="button-select__icon" width="24" height="24">
+  <use href="./images/icons.svg#icon-select"></use>
+</svg>
+</button>
           </div>
 </div>

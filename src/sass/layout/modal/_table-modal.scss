@@ -1,4 +1,4 @@
-.modal-table {
+.modal {
     max-width: 414px;
     width: 100%;
     border-radius: 2px;
@@ -22,17 +22,27 @@
 }
 
 .close {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-
-    &__icon {
+    background-color: $primary-background;
     cursor: pointer;
     border: none;
     outline: none;
     margin-left: auto;
     padding: 0;
     display: block;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    &__icon {
+    margin: auto;
+    align-items: center;
+
+    .close:hover &,
+    .close:focus & {
+      color: $accent-color-second;
+    }
+
+
     }
 }
 
@@ -47,6 +57,7 @@
 
     &__title {
         display: block;
+        font-family: Times New Roman,serif;
         font-weight: 700;
         font-size: 24px;
         line-height: 1.17;
@@ -121,7 +132,7 @@
         line-height: 1.21;
         letter-spacing: 0.02em;
         color: $accent-color-second;
-
+        margin-left: 12px;
         margin-bottom: 20px;
 
         @media screen and (min-width: $tabletMin) {
@@ -132,6 +143,7 @@
      }
     }
      &__select {
+        position: relative;
         height: 54px;
         padding-left: 12px;
         margin-bottom: 8px;
@@ -159,4 +171,25 @@
      }
 
 
+}
+.button-select {
+    background-color: $primary-background;
+    fill: $accent-color-second;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-left: auto;
+    padding: 0;
+    display: block;
+    pointer-events: none;
+
+    top: 15%;
+    right: 5px;
+
+
+
+    &__icon {
+
+    }
 }
