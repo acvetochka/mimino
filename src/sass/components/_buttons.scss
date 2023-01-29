@@ -1,0 +1,61 @@
+
+// кнопка бронювання номеру
+.button {
+    @include btn-order ();
+
+    @include minW-Phone {
+        padding: 20px auto;
+    }
+
+    @include minW-Tablet {
+        width: 434px;
+        font-size: 24px;
+    }
+}
+
+
+// кнопка бронювання номеру (модалка)
+.button-modal {
+    border-radius: 0px;
+}
+
+
+// кнопка сервісних служб (переглянути ціни, детальніше, забронювати столик)
+.button-service {
+    @include btn-service ();
+
+    @include minW-Phone {
+        padding: 14px auto;
+    }
+}
+// кнопка сервісних слуб для HERO
+.btn-hero {
+    width: 232px;
+    background-color: $button-opacity-bg;
+}
+
+// стрілки для слайдера
+.arrows {
+    display: flex;
+    gap: 32px;
+
+    &__button {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    
+        &:hover,
+        &:focus {
+            .icon-arrow {
+                fill: $accent-color;
+            }
+        }
+    }
+}
+
+// стрілки для сладера (білі) для HERO
+.arrow-home {
+    fill: $contrast-color;
+}
