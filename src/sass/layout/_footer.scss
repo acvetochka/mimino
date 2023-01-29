@@ -21,8 +21,14 @@
         align-items: center;
         justify-content: space-between;
         @include minW-Tablet {
+            max-width: 1024px;
             justify-content: flex-start;
         }
+
+        @include minW-Dt {
+            max-width: 1280px;
+        }
+
     }
     &__links{
         margin-bottom: 33px;
