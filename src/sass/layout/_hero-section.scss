@@ -2,4 +2,33 @@
     height: 740px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),
     url(../images/home-page/hero/background-desk.jpg);
+    padding-top: 181px;
+}
+.hero-text {
+    color: $contrast-color;
+    text-align: center;
+    font-style: normal;
+&__name {
+    font-family: 'Film P3', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+}
+&__location {
+    margin: 24px 0 40px 0;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+}
+&__moto {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+}
 }
