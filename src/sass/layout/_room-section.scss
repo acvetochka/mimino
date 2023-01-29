@@ -121,19 +121,6 @@
     }
 }
 
-.button {
-    @include btn-order ();
-
-    @mixin minW-Phone {
-        padding: 20px auto;
-    }
-
-    @include minW-Tablet {
-        width: 434px;
-        font-size: 24px;
-    }
-}
-
 .button-order {
     margin-bottom: 20px;
 
@@ -141,59 +128,4 @@
         margin-bottom: 32px;
     }
 }
-
-
-
-
-
-
-.button-service {
-    @include btn-service ();
-
-    @mixin minW-Phone {
-        padding: 14px auto;
-    }
-}
-
-.btn-hero {
-    width: 232px;
-    background-color: $button-opacity-bg;
-}
-
-
-.arrows {
-    display: flex;
-    gap: 32px;
-}
-.btn-arrows {
-    width: 32px;
-    height: 32px;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-
-    &:hover,
-    &:focus {
-        .icon-arrow {
-            fill: $accent-color;
-        }
-    }
-}
-
-.arrows-home {
-    display: flex;
-    gap: 32px;
-    background-color: $secondary-background;
-}
-.icon-arrow-home {
-    fill: $contrast-color;
-
-    &:hover,
-    &:focus {
-        fill: $accent-color;
-        }
-}
-
-
-
 
