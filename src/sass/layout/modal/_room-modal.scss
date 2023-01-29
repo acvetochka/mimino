@@ -1,0 +1,12 @@
+.room-modal{
+    position:absolute;
+   
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+    overflow-y: auto;
+    width: 100%;
+    max-width: 414px;
+    height: 100%;
+    max-height: 609px;}

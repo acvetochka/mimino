@@ -1,17 +1,17 @@
 .container {
-    max-width: $phoneMin;
+    // max-width: $phoneMin;
     padding-left: $paddingPhone;
     padding-right: $paddingPhone;
     margin: 0 auto;
 
     @include minW-Tablet {
-        max-width: $tabletMin;
+        // max-width: $tabletMin;
         padding-left: $paddingTablet;
         padding-right: $paddingTablet;
     }
  
     @include minW-Dt {
-        max-width: $desktopMin;
+        // max-width: $desktopMin;
         padding-left: $paddingDt;
         padding-right: $paddingDt;
     } 
