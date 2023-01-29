@@ -13,8 +13,9 @@
 }
 
 
-// кнопка бронювання номеру (модалка)
+// кнопка бронювання номеру, столика (модалка)
 .button-modal {
+    @extend %btn-order;
     border-radius: 0px;
 
     @include minW-Tablet {
@@ -73,7 +74,7 @@
     }
 }
 
-// стрілки для сладера (білі) для HERO
-// .arrow-home {
-//     fill: $contrast-color;
-// }
+// стрілки для слайдера (білі) для HERO
+.arrow-home {
+    fill: $contrast-color;
+}
