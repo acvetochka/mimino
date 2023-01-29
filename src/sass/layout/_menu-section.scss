@@ -14,6 +14,15 @@ th {
 
 .restaurant-menu {
   padding: 32px 0;
+  background: $secondary-background;
+
+  @include minW-Dt {
+      padding: 60px 0;
+    }
+    @include minW-Tablet {
+      padding-bottom: 40px;
+      }
+
   &__title {
     margin-bottom: 32px;
     font-family: 'Times New Roman';
@@ -21,7 +30,9 @@ th {
     font-size: 32px;
     line-height: calc(37 / 32);
     color: #000000;
-    
+    @include minW-Tablet {
+       margin-bottom: 40px;
+      }
   }
 
   &__type-dishes {
@@ -34,11 +45,12 @@ th {
   }
 
   &__type-dish {
-    
+    margin-bottom: 32px;
       @include minW-Tablet {
 display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 40px;
         flex-basis: calc((100% - ((2 - 1) * 140px)) / 2);
       }
   }
@@ -52,13 +64,18 @@ display: flex;
     line-height: 23px;
     color: #000000;
     text-align: start;
+
+     @include minW-Dt {
+      margin-bottom: 20px;
+      font-size: 24px;
+line-height: calc(28 /24);
+    }
   }
 }
-// можно обойтись без цього дива?
+
 .dishes-set-cover {
-  margin-bottom: 16px;
-  @include maxW-Phone {
-    margin-bottom: 0;
+  @include maxW-Tablet {
+    margin-bottom: 16px;
   }
 }
 
@@ -71,13 +88,17 @@ display: flex;
 
     &:last-child {
   margin-bottom: 0;
-    }  
+    } 
+    @include minW-Dt{
+margin-bottom: 12px;
+    }
+
   }
 
   &__title {
   display: block;
   margin-bottom: 4px;
-  max-width: 225px;
+  max-width: 226px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(17 / 14);
@@ -85,11 +106,17 @@ display: flex;
   text-align: start;
   color: #000000;
 
+  @include minW-Dt {
+    min-width: 291px;
+      font-size: 16px;
+line-height: calc(20 / 16);
+    }
+
 }
 &__ingredients {
 
   display: block;
-  max-width: 225px;
+  max-width: 226px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -97,6 +124,9 @@ display: flex;
   line-height: calc(12 / 10);
   letter-spacing: 0.02em;
   color: #000000;
+  @include minW-Dt {
+    min-width: 291px;
+    }
 }
 
 &__weight {
@@ -109,6 +139,13 @@ width: 80px;
   text-align: end;
   letter-spacing: 0.02em;
   color: #000000;
+
+@include minW-Tablet {
+text-align: center;
+}
+  @include minW-Dt {
+    width: 97px;
+    }
 }
 &__price {
   width: 80px; 
@@ -120,14 +157,14 @@ width: 80px;
   text-align: end;
   letter-spacing: 0.02em;
   color: #000000;
+
+  @include minW-Dt {
+    width: 97px;
+      font-size: 16px;
+line-height: calc(20 / 16);
+    }
 }
-// &__body{
-//   background-color: aqua;
-//   margin-bottom: 8px;
-//   &:last-child {
-//   margin-bottom: 0;
-// }
-// }
+
 &__title--one-row {
   display: block;
   max-width: 225px;
@@ -136,5 +173,21 @@ margin-bottom: 8px;
   margin-bottom: 0;
 }
 }
+}
+
+.btn-reserve-table {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 200px;
+    padding: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include minW-Tablet {
+  margin-right: 0;
+    }
 }
 
