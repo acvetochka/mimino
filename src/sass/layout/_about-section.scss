@@ -1,10 +1,6 @@
 .about {
     background-color: $primary-background;
-    padding-top: 16px;
-    
-    @include minW-Tablet {
-        padding-top: 120px;
-    }
+   
         &__img--content1 {
         display: flex;
         @include maxW-Tablet {
@@ -21,6 +17,7 @@
         @include minW-Tablet {
             margin-right: 0;
             max-width: 439px;
+            padding-top: 120px;
         }
         @include minW-Dt {
             max-width: 518px;
