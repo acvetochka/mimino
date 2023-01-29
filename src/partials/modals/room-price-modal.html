@@ -7,33 +7,39 @@
     <form class="form-price">
       <h2 class="form-price__title">ціни на номер</h2>
       <span class="form-price__category">Двомісний люкс</span>
-      <div class="form-price__field">
-        <p class="form-price__label">Категорія номеру</p>
-  
-       
-      <label for="nights" class="form-price__label">Кількість ночей</label>
-      <select name="nights" class="form__select list-select js-select" id="nights">
-          <option value="1 000">1</option>
-          <option value="2 000">2</option>
-          <option value="3 000">3</option>
-          <option value="4 000">4</option>
-          <option value="5 000">5</option>
-          <option value="6 000">6</option>
-          <option value="7 000">7</option>
-          <option value="8 000">8</option>
-          <option value="9 000">9</option>
-          <option value="10 000">10</option>
-          <option value="11 000">11</option>
-          <option value="12 000">12</option>
-          <option value="13 000">13</option>
-          <option value="14 000">14</option>
-          <option value="15 000">15</option>
-          <option value="16 000">16</option>
-          <option value="17 000">17</option>
-      </select>
-    <label for="price" form-price__label>грн</label>
-    <input type="text" name="price" id="form-price" class="list-select-result form-select__input" />
-    <button type="submit" class="price-form__button">забронювати номер</button>
+      <p class="form-price__label">Категорія номеру</p>
+      <div class="form-price__block">
+        <div class="form-price__field">
+ 
+          <select name="nights" class="form__select list-select js-select" id="nights">
+         <option value="1 000">1</option>
+         <option value="2 000">2</option>
+         <option value="3 000">3</option>
+         <option value="4 000">4</option>
+         <option value="5 000">5</option>
+         <option value="6 000">6</option>
+         <option value="7 000">7</option>
+         <option value="8 000">8</option>
+         <option value="9 000">9</option>
+         <option value="10 000">10</option>
+         <option value="11 000">11</option>
+         <option value="12 000">12</option>
+         <option value="13 000">13</option>
+         <option value="14 000">14</option>
+         <option value="15 000">15</option>
+         <option value="16 000">16</option>
+         <option value="17 000">17</option>
+     </select>
+     <label for="nights" class="form-price__label">Кількість ночей</label>
+   </div>
+   <div class="form-price__field">
+   <input type="text" name="price" id="form-price" class="list-select-result form-select__input" disabled />
+   <label for="price" class="form-price__label">грн</label>
+   </div>
+      </div>
+     
+    
+    <button type="submit" class="form-price__button">забронювати номер</button>
  
     </form>
 </div>
