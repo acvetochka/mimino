@@ -5,6 +5,7 @@
 
   @media screen and (max-width: $tabletMax) {
     overflow: hidden;
+    max-width: 414px;
   }
 }
 .rooms--colorfix {
@@ -181,7 +182,7 @@
 }
 .slider-section--fix-position {
   @media screen and (max-width: $tabletMax) {
-    transform: translateX(50vw);
+    transform: translateX(12em);
   }
 }
 .slider-section--fix {
