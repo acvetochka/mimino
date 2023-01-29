@@ -1,13 +1,12 @@
-.modal {
+.modal-table {
     max-width: 414px;
     width: 100%;
     border-radius: 2px;
 
     padding: 60px 15px;
 
-     background-color: rgb(140, 230, 152);
 
-    // background: $primary-background;
+    background: $primary-background;
 
     position: absolute;
     top: 50%;
@@ -16,6 +15,7 @@
 
     @media screen and (min-width: $tabletMin) {
         max-width: 712px;
+        padding: 60px;
     }
         
 
@@ -38,15 +38,11 @@
 
 .form-table {
     
-    // background-color: $primary-background;
-    // background-color: rgb(140, 230, 152);
 
     @media screen and (min-width: $tabletMin) {
-        // // padding: 60px;
-        // display: flex;
-        // justify-content: space-around;
-        // flex-wrap: wrap;
-        gap: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     &__title {
@@ -59,7 +55,7 @@
 
         letter-spacing: 0.05em;
         color: $secondary-color;
-
+        margin-top: 20px;
         margin-bottom: 40px;
 
         @media screen and (min-width: $tabletMin) {
@@ -73,13 +69,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    //  gap: 20px;
 
     @media screen and (min-width: $tabletMin) {
-        // padding: 60px;
-        // display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        &:nth-child(2n+1) {
+            margin-left: 16px;
+        }
     }
 
     
@@ -109,9 +103,11 @@
         @media screen and (min-width: $tabletMin) {
          height: 64px;
          width: 288px;
+        //  margin-right: 16px;
 
          font-size: 24px;
         line-height: 1.17; 
+
     }
 
         &:focus {
@@ -132,12 +128,6 @@
         max-width: 262px;
         font-size: 16px;
         line-height: 1.25;
-
-        // &:nth-last-child(-n + 1) {
-        // background-color: orange;
-// }
-
-
 
      }
     }
@@ -168,20 +158,5 @@
         }
      }
 
-    //  &__option {
-    //     font-weight: 700;
-    //     font-size: 20px;
-    //     line-height: 1.15;
-    //     letter-spacing: 0.05em;
-    //     color: $placeholder-color;
-
-
-    //     @media screen and (min-width: $tabletMin) {
-    //      font-size: 24px;
-    //      line-height: 1.17;
-    // }
-
-        
-    //  }
 
 }
