@@ -2,6 +2,7 @@
   background-color: $primary-background;
   padding-top: 32px;
   padding-bottom: 32px;
+  overflow: hidden;
 }
 .rooms--colorfix {
   background-color: $secondary-background;
@@ -128,6 +129,11 @@
   max-width: 245px;
   overflow: hidden;
   box-shadow: $img-shadow;
+  background-color: rgba(0, 0, 0, 0.13);
+
+  @media screen and (max-width: $tabletMax) {
+    transform: translateX(-5em);
+  }
 
   @media screen and (min-width: $tabletMin) {
     max-width: 428px;
@@ -136,6 +142,17 @@
     max-width: 548px;
   }
 }
+.slider-section--fix-position {
+  @media screen and (max-width: $tabletMax) {
+    transform: translateX(50vw);
+  }
+}
+.slider-section--fix {
+  @media screen and (min-width: $tabletMin) {
+    margin-bottom: 0;
+  }
+}
+
 // ??///////////
 .rooms__button {
   display: block;
