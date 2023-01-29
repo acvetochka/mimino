@@ -110,7 +110,7 @@
   overflow: hidden;
 }
 
-.details-btn-rest {
+.details-btn-container {
   @include minW-Dt {
     bottom: 94px;
     left: 85px;
@@ -127,6 +127,10 @@
   margin: 0 auto;
   max-width: 236px;
   padding: 80px 0 40px;
+}
+
+.button-service__details {
+  margin-bottom: 16px;
 }
 
 .swiper-button {
