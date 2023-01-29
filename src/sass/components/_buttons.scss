@@ -3,7 +3,7 @@
 .button {
     @include btn-order ();
 
-    @mixin minW-Phone {
+    @include minW-Phone {
         padding: 20px auto;
     }
 
@@ -24,7 +24,7 @@
 .button-service {
     @include btn-service ();
 
-    @mixin minW-Phone {
+    @include minW-Phone {
         padding: 14px auto;
     }
 }
