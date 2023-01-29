@@ -5,25 +5,7 @@
     @include minW-Tablet {
         padding-top: 120px;
     }
-    &__container {
-        max-width: $phoneMin;
-        padding-left: $paddingPhone;
-        padding-right: $paddingPhone;
-        margin: 0 auto;
-    
-        @include minW-Tablet {
-            max-width: $tabletMin;
-            padding-left: $paddingTablet;
-            padding-right: $paddingTablet;
-        }
-     
-        @include minW-Dt {
-            max-width: $desktopMin;
-            padding-left: $paddingDt;
-            padding-right: $paddingDt;
-        } 
-    }
-    &__img--content1 {
+        &__img--content1 {
         display: flex;
         @include maxW-Tablet {
             flex-direction: column;
@@ -143,18 +125,18 @@
 .swiper-about {
     margin-top: 32px;
     margin-left: 84px;
-    min-width: 330px;
+    max-width: 330px;
 
     @include minW-Tablet {
         margin-top: 154px;
         margin-left: 139px;
-        min-width: 428px;
+        max-width: 428px;
        
     }
     @include minW-Dt {
         margin-top: 119px;
         margin-left: 102px;
-        min-width: 654px;
+        max-width: 654px;
         
     }
 }
