@@ -180,11 +180,6 @@ address {
     line-height: 1.075;
   }
 }
-@media screen and (max-width: 413px) {
-  .header__logo {
-    font-size: 30px;
-  }
-}
 
 .address {
   width: 210px;
@@ -346,6 +341,105 @@ address {
 }
 @media screen and (min-width: 1024px) {
   .header .address {
+    display: none;
+  }
+}
+
+.footer {
+  background-color: #0E0C07;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-height: 304px;
+  }
+}
+.footer__logo {
+  margin-left: 44px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__logo {
+    margin-left: 107px;
+  }
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1024px) {
+  .footer__container {
+    justify-content: flex-start;
+  }
+}
+.footer__links {
+  margin-bottom: 33px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .footer__links {
+    margin-bottom: 0;
+    margin-left: 163px;
+    margin-right: 137px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__links {
+    margin-left: 231px;
+    margin-right: 199px;
+  }
+}
+.footer__links > .item {
+  font-family: "Montserrat";
+  font-style: 500;
+  font-size: 20px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #F3C653;
+}
+.footer__nav {
+  margin-right: 18px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__nav {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .social {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+}
+.social__link {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .social__link {
+    padding: 8px 12px;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    max-height: 40px;
+  }
+}
+.social__name {
+  margin-right: 12px;
+  font-family: "Montserrat";
+  font-style: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #F3C653;
+}
+@media screen and (max-width: 1023px) {
+  .social__name {
     display: none;
   }
 }

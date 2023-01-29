@@ -1,0 +1,15 @@
+.js-backdrop-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    pointer-events: none;
+    &.active{
+        opacity: 1;
+        background-color:rgba(0, 0, 0, 0.65);
+        pointer-events: auto;}
+}

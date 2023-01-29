@@ -2,6 +2,10 @@ body {
     font-family: Montserrat, sans-serif;
     margin: 0;
     padding: 0;
+
+    &.modal-open {
+        overflow: hidden;
+      }
 }
 
 /* Скидання базових властивостей для посилань (a або клас .link */

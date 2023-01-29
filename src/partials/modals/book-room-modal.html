@@ -1,0 +1,28 @@
+<div class="modal room-modal" data-modal="2">
+    <button type="button" class="js-modal-close" data-modal="2">
+      <svg class="icon-close" width="24" height="24">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="room-modal-form">
+      <input type="text" id="user_name" name="name" placeholder="Ваше імʼя" />
+      <label for="user_name">На кого забронювати номер?</label>
+      <input type="number" id="user_telephone" name="user_telephone" placeholder="+38" />
+      <label for="user_telephone">Номер телефону</label>
+    </form>
+    <select id="room" name="room">
+      <option value="2xlux" selected>Двомісний люкс</option>
+      <option value="3x">Трьохмісний номер</option>
+      <option value="2x">Двохмісний номер</option>
+    </select>
+    <label for="room">Категорія номеру</label>
+    <select id="first-date" name="first-date">
+      <option value="first-date" selected>Сьогодні</option>
+    </select>
+    <label for="first-date">Дата заїзду</label>
+    <select id="last-date" name="last-date">
+      <option value="last-date" selected>Сьогодні</option>
+    </select>
+    <label for="last-date">Дата виїзду</label>
+    <button type="submit">оформити бронювання</button>
+  </div>
