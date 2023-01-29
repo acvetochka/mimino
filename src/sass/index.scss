@@ -2,6 +2,7 @@
 @import './vendors/common';
 @import './utils/variables';
 @import './utils/mixins';
+@import './utils/placeholders';
 
 // Base styles
 @import './base/fonts';
@@ -13,6 +14,7 @@
 @import './components/address';
 @import './components/icons';
 @import './components/buttons';
+@import './components/sliders';
 
 // Multipage styles
 @import './layout/header';

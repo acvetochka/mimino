@@ -1,3 +1,6 @@
+
+// Details-rest
+
 .container {
   padding: 0 $paddingPhone;
   width: 100%;
@@ -12,6 +15,7 @@
   }
 }
 
+
 .details-hotel {
   position: relative;
 
@@ -21,53 +25,104 @@
   height: 735px;
   padding-top: 24px;
   //   padding-bottom: 40px;
+
+.details-container{
+  padding-right: 0;
+  @include minW-Tablet{
+    padding-right: $paddingTablet;
+  }
+}
+
+.details-rest {
+  position: relative;
+  background-color: rgb(99, 95, 95);
+  // width: 100vw;
+  height: 735px;
+
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+
     url(../images/home-page/details-hotel/backgroung-mob.jpg);
 
   @include retina {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/home-page/details-hotel/backgroung-mob2x.jpg);
+
+    url(../images/home-page/details-rest/backgroung-mob.jpg);
+
+  @include retina {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/home-page/details-rest/backgroung-mob2x.jpg);
+
   }
 
   @include minW-Tablet {
     height: 620px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+
       url(../images/home-page/details-hotel/backgroung-tab.jpg);
 
     @include retina {
       background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
         url(../images/home-page/details-hotel/backgroung-tab2x.jpg);
+
+      url(../images/home-page/details-rest/background-tab.jpg);
+
+    @include retina {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/home-page/details-rest/background-tab2x.jpg);
+
     }
   }
 
   @include minW-Dt {
+
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/home-page/details-hotel/background-desk.jpg);
 
     @include retina {
       background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
         url(../images/home-page/details-hotel/background-desk.jpg);
+
+    height: 620px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/home-page/details-rest/background-desk.jpg);
+
+    @include retina {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/home-page/details-rest/background-desk2x.jpg);
+
     }
   }
 }
 
+
 .details-block-hotel {
+
+.details-block {
+
   @include minW-Dt {
     padding-top: 48px;
   }
 
   @include minW-Tablet {
+
     // margin: 0;
     // margin-left: 278px;
     max-width: 549px;
+
+    margin: 0;
+    margin-left: 278px;
+    max-width: none;
+
   }
 
   max-width: 243px;
   margin: 0 auto;
   padding-top: 24px;
+
   // margin-right: 139px;
 
   &--logo {
@@ -76,6 +131,8 @@
     text-align: end;
     transform: translateX(0.3em);
   }
+
+
 
   &__title {
     @include minW-Tablet {
@@ -90,8 +147,11 @@
     color: $contrast-color;
     padding-top: 12px;
 
+
     display: flex;
     flex-direction: row-reverse;
+
+
   }
 
   &__text {
@@ -108,6 +168,7 @@
     padding: 20px 0 48px;
   }
 }
+
 
 .details-title {
   @include minW-Tablet {
@@ -161,3 +222,20 @@
   max-width: 236px;
   padding-top: 80px;
 }
+
+.details-btn-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @include minW-Tablet{
+    margin: auto 0 0 0;
+  }
+}
+
+.details-btn-container__button{
+  max-width: 236px;
+  cursor: pointer;
+}
+
+
