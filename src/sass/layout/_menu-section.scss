@@ -155,15 +155,14 @@ text-align: center;
 
 // кнопка замовити столик, відкривае модальне вікно
 .btn-reserve-table {
+  // @extend .button-service;
     display: flex;
     align-items: center;
     justify-content: center;
  margin-top: 32px;
       @include minW-Tablet {
-    margin-bottom: 40px;
+    margin-top: 40px;
       }
-    min-width: 200px;
-    padding: 10px 0;
     margin-left: auto;
     margin-right: auto;
 
