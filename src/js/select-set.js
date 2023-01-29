@@ -8,7 +8,7 @@ function customSelect() {
       NiceSelect.bind(select, {
         searchable: true, // false
         placeholder: 'select',
-        searchtext: 'zoek',
+        searchtext: 'Введіть значення',
         selectedtext: 'geselecteerd',
       });
     });
