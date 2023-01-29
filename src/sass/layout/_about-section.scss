@@ -34,6 +34,7 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
+        padding-top: 16px;
 
         @include minW-Tablet {
             margin-right: 0;
@@ -97,10 +98,9 @@
             display: flex;
             max-width: 400px;
             max-height: 524px;
-            margin-top: -32px;
+            // margin-top: -32px;
             margin-left: 26px;
-
-           
+            transform: translateY(-32px);
         }
         @include minW-Dt {
             max-width: 460px;
@@ -110,10 +110,18 @@
     }
     &__img--content2 {
         display: flex;
-        padding-top: 32px;
         flex-wrap: wrap;
+        padding-top: 32px;
         gap: 20px;
         align-items: center;
+
+        @include minW-Tablet {
+            padding-top: 0;
+            transform: translateY(-50px);
+        }
+        @include minW-Dt {
+            transform: translateY(-100px);
+        }
     }
     &__img--foto2 {
         max-width: 200px;
@@ -135,13 +143,16 @@
 .swiper-about {
     margin-top: 32px;
     margin-left: 84px;
+    
 
     @include minW-Tablet {
         margin-top: 154px;
         margin-left: 139px;
+       
     }
     @include minW-Dt {
         margin-top: 119px;
-        margin-left: 102px;  
+        margin-left: 102px;
+        
     }
 }
