@@ -2,7 +2,7 @@
 .button {
     @extend %btn-order;
 
-    @mixin minW-Phone {
+    @include minW-Phone {
         padding: 20px auto;
     }
 
@@ -40,8 +40,8 @@
         padding: 14px 24px;
     }
 
-    @include minW-Tablet {
-        padding: 14px 35px;
+    @include minW-Phone {
+        padding: 14px auto;
     }
 }
 
