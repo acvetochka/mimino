@@ -24,31 +24,31 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../images/home-page/details-rest/backgroung-mob.jpg);
 
-    @include retina {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../images/home-page/details-rest/backgroung-mob2x.jpg);
-    }
+  @include retina {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/home-page/details-rest/backgroung-mob2x.jpg);
+  }
 
   @include minW-Tablet {
     height: 620px;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../images/home-page/details-rest/background-tab.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/home-page/details-rest/background-tab.jpg);
 
-      @include retina {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-          url(../images/home-page/details-rest/background-tab2x.jpg);
-  }
+    @include retina {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/home-page/details-rest/background-tab2x.jpg);
+    }
   }
 
   @include minW-Dt {
     height: 620px;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../images/home-page/details-rest/background-desk.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/home-page/details-rest/background-desk.jpg);
 
-      @include retina {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-          url(../images/home-page/details-rest/background-desk2x.jpg);
-  }
+    @include retina {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/home-page/details-rest/background-desk2x.jpg);
+    }
   }
 }
 
@@ -66,38 +66,47 @@
   max-width: 243px;
   margin: 0 auto;
   padding-top: 24px;
+
+  &__title {
+    @include minW-Tablet {
+      font-size: 24px;
+    }
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    letter-spacing: 0.02em;
+    color: $contrast-color;
+    padding-top: 12px;
+  }
+
+  &__text {
+    @include minW-Tablet {
+      font-size: 16px;
+      padding: 8px 0 40px;
+    }
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $contrast-color-descr;
+    padding: 20px 0 48px;
+  }
 }
 
-.heading__text {
+.swiper-slide__dr {
+  @include minW-Tablet {
+    margin-left: 312px;
+  }
+
   @include minW-Dt {
-  }
-
-  @include minW-Tablet {
-    font-size: 16px;
-    padding: 8px 0 40px;
-  }
-
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: $contrast-color-descr;
-  padding: 20px 0 48px;
-}
-
-.img-details-rest {
-  @include minW-Tablet {
-    // padding-top: 254px;
-    justify-content: end;
+    margin-left: 353px;
   }
 
   display: flex;
-  justify-content: center;
-  // padding-top: 233px;
-}
-
-.swiper-slide-dr {
-  display: flex;
+  margin-left: 40px;
   overflow: hidden;
 }
 
@@ -115,102 +124,67 @@
     left: 47px;
   }
 
+  margin: 0 auto;
+  max-width: 236px;
   padding: 80px 0 40px;
 }
 
-//   Details-hotel
-// .details-hotel {
-//   position: relative;
-
-//   display: block;
-//   z-index: 1;
-//   //   width: 100vw;
-//   // width: 414px;
-//   height: 735px;
-//   padding-top: 24px;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   flex-grow: 1;
-//   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-//     url(../../images/414/details_fon-hotel_414.jpg);
-
-//   @include retina {
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-//       url(../../images/414/details_fon-hotel@2_414.jpg);
-//   }
-
-//   @include tablet {
-//     height: 620px;
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-//       url(../../images/1024/details_fon-hotel_1024.jpg);
-
-//     @include retina {
-//       background-image: linear-gradient(
-//           rgba(0, 0, 0, 0.65),
-//           rgba(0, 0, 0, 0.65)
-//         ),
-//         url(../../images/1024/details_fon-hotel@2_1024.jpg);
-//     }
-//   }
-// }
-
-.details-block-hotel {
+.swiper-button {
   @include minW-Tablet {
-    top: 48px;
-    left: 520px;
+    margin-left: 312px;
+    padding-top: 24px;
   }
 
-  position: absolute;
-  top: 24px;
-  left: 143px;
-  // margin: 0 auto;
-  text-align: end;
-}
-
-.details-title {
-  @include minW-Tablet {
-    font-size: 24px;
+  @include minW-Dt {
+    margin-left: 354px;
+    padding-top: 24px;
   }
 
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.2;
-
-  letter-spacing: 0.02em;
-  color: $contrast-color;
-  padding-top: 12px;
-}
-
-.details-block--text {
-  @include minW-Tablet {
-    max-width: 549px;
-    top: 156px;
-    left: 198px;
-    // padding: 0;
-  }
-  position: absolute;
-  top: 123px;
-  left: 32px;
-  max-width: 243px;
-  // padding-left: 32px;
-}
-
-.img-details-hotel {
-  @include minW-Tablet {
-    padding-top: 254px;
-    justify-content: start;
-  }
-
-  position: relative;
   display: flex;
-  justify-content: center;
-  padding-top: 233px;
+  align-items: center;
+  margin-left: 40px;
+  padding-top: 16px;
 }
 
-// .details-btn-prev.details-btn-next {
-//   width: 32px;
-//   height: 32px;
-//   padding: 0;
-//   border: none;
-//   fill: $contrast-color;
-// }
+.swiper-button__prev {
+  width: 32px;
+  height: 32px;
+  fill: $contrast-color;
+
+  padding: 0;
+}
+
+.details-btn-prev {
+  @include minW-Dt {
+    cursor: pointer;
+  }
+
+  background-color: transparent;
+  outline: none;
+  cursor: none;
+  border: none;
+}
+
+.swiper-button__next {
+  width: 32px;
+  height: 32px;
+  fill: $contrast-color;
+
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-left: 32px;
+}
+
+.details-btn-next {
+  @include minW-Dt {
+    cursor: pointer;
+  }
+
+  transform: rotate(180deg);
+
+  background-color: transparent;
+  outline: none;
+  cursor: none;
+  border: none;
+}
