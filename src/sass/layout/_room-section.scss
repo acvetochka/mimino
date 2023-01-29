@@ -105,11 +105,12 @@
     line-height: 1.2;
 
     @mixin minW-Phone {
-        padding: 20px 43px;
+        padding: 20px auto;
     }
 
     @include minW-Tablet {
         width: 434px;
+        font-size: 24px;
     }
 
     &:hover,
@@ -122,6 +123,10 @@
 
 .button-order {
     margin-bottom: 20px;
+
+    @include minW-Tablet {
+        margin-bottom: 32px;
+    }
 }
 
 
@@ -145,6 +150,10 @@
     &:hover,
     &:focus {
         color: $accent-color;
+        .icon-right {
+            // display: none;
+            fill: transparent;
+        }
     }
 }
 
