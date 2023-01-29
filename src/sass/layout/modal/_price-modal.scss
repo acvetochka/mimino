@@ -1,159 +1,154 @@
 .modal {
-  // visibility: hidden;
+  visibility: hidden;
 
-  // &.active {
-  visibility: visible;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-width: 414px;
-  width: 100%;
-  transform: translate(-50%, -50%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 2px;
-  background-color: $primary-background;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-  @include minW-Tablet {
-    max-width: 712px;
-  }
-}
-
-.modal__close-btn {
-  position: absolute;
-  display: flex;
-  padding: 0;
-  top: 16px;
-  right: 16px;
-  width: 24px;
-  height: 24px;
-  border: none;
-  background-color: transparent;
-
-  fill: $secondary-color;
-
-  &:hover,
-  &:focus {
-    fill: $accent-color-second;
-  }
-}
-.modal__close-icon {
-  margin: auto;
-  width: 18px;
-  height: 18px;
-  align-items: center;
-  cursor: pointer;
-}
-.room-price-modal {
-  max-height: 572px;
-  height: 100%;
-}
-
-.form-price {
-  padding: 60px 15px;
-
-  @include minW-Tablet {
-    padding: 60px;
-    max-height: 489px;
-  }
-
-  &__title {
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.166;
-    color: $secondary-color;
-    margin-bottom: 40px;
-    letter-spacing: 0.05em;
+  &.active {
+    visibility: visible;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 150;
+    max-width: 414px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 2px;
+    background-color: $primary-background;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     @include minW-Tablet {
-      font-size: 32px;
-      line-height: 1.156;
+      max-width: 712px;
     }
   }
-  &__category {
-    display: block;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.166;
-    letter-spacing: 0.05em;
-    color: $placeholder-color;
-    margin-bottom: 28px;
-  }
-  
- &__block {
 
-  @include minW-Tablet {
-   display: flex;
-   margin: 0 auto;
-  }
- }
-  &__field {
+  .modal__close-btn {
+    position: absolute;
     display: flex;
-    position: relative;
-    flex-direction: column;
-    margin-bottom: 20px;
- 
-    @include minW-Tablet {
-      display: flex;
-      &:first-child {
-        margin-right: 16px;
-      }
-     }
-   
+    padding: 0;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
 
-   
+    fill: $secondary-color;
 
+    &:hover,
+    &:focus {
+      fill: $accent-color-second;
+    }
   }
-
-  &__label {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: $accent-color-second;
-    margin-bottom: 20px;
-  }
-  .nice-select,
-  .form-select__input {
-    display: flex;
-    background: transparent;
-    height: 64px;
-    border: solid 1px $accent-color-second;
-    padding: 13px 15px;
-    margin-bottom: 8px;
-    border-radius: 0;
-    // width: 100%;
-
+  .modal__close-icon {
+    margin: auto;
+    width: 18px;
+    height: 18px;
     align-items: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.166;
-    letter-spacing: 0.05em;
-    color: $placeholder-color;
-    @include minW-Tablet {
-     width: 288px;
-     }
-    
+    cursor: pointer;
   }
-}
-.list-select {
-  border: none;
-}
-.nice-select.open .nice-select-dropdown{
-  background-color:  $primary-background;
-  margin-left: -2px;
-}
-.nice-select:after {
-  border-color: $accent-color-second;
-  width: 16px;
-  height: 16px;
-right: 20px;
-margin-top: -12px;
+  .room-price-modal {
+    max-height: 572px;
+    height: 100%;
+  }
 
+  .form-price {
+    padding: 60px 15px;
+
+    @include minW-Tablet {
+      padding: 60px;
+      max-height: 489px;
+    }
+
+    &__title {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.166;
+      color: $secondary-color;
+      margin-bottom: 40px;
+      letter-spacing: 0.05em;
+
+      @include minW-Tablet {
+        font-size: 32px;
+        line-height: 1.156;
+      }
+    }
+    &__category {
+      display: block;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.166;
+      letter-spacing: 0.05em;
+      color: $placeholder-color;
+      margin-bottom: 28px;
+    }
+
+    &__block {
+      @include minW-Tablet {
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+    &__field {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      @include minW-Tablet {
+        display: flex;
+        &:first-child {
+          margin-right: 16px;
+        }
+      }
+    }
+
+    &__label {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      color: $accent-color-second;
+      margin-bottom: 20px;
+    }
+    .nice-select,
+    .form-select__input {
+      display: flex;
+      background: transparent;
+      height: 64px;
+      border: solid 1px $accent-color-second;
+      padding: 13px 15px;
+      margin-bottom: 8px;
+      border-radius: 0;
+      // width: 100%;
+
+      align-items: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.166;
+      letter-spacing: 0.05em;
+      color: $placeholder-color;
+      @include minW-Tablet {
+        width: 288px;
+      }
+    }
+  }
+  .list-select {
+    border: none;
+  }
+  .nice-select.open .nice-select-dropdown {
+    background-color: $primary-background;
+    margin-left: -2px;
+  }
+  .nice-select:after {
+    border-color: $accent-color-second;
+    width: 16px;
+    height: 16px;
+    right: 20px;
+    margin-top: -12px;
+  }
 }
