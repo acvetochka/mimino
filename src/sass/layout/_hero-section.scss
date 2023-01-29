@@ -1,8 +1,20 @@
 .hero-background {
+    position: relative;
     height: 740px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),
     url(../images/home-page/hero/background-desk.jpg);
     padding-top: 181px;
+@include retina {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/home-page/hero/background-desk2x.jpg);
+    }
+@include minW-Tablet {
+    height: 720px;
+    padding-top: 188px;
+}
+@include minW-Dt {
+    padding-top: 164px;
+}
 }
 .hero-text {
     color: $contrast-color;
@@ -15,6 +27,9 @@
     font-size: 96px;
     line-height: 1.07;
     letter-spacing: 0.3em;
+@include minW-Tablet {
+    font-size: 128px;
+    }
 }
 &__location {
     margin: 24px 0 40px 0;
@@ -23,6 +38,14 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
+@include minW-Tablet{
+    margin: 16px 0 56px 0;
+    font-size: 20px;
+    line-height: 1.2;
+    }
+@include minW-Dt {
+    margin: 32px 0 64px 0;
+    }
 }
 &__moto {
     font-family: 'Times New Roman';
@@ -30,5 +53,83 @@
     font-size: 32px;
     line-height: 1.15;
     letter-spacing: 0.05em;
+}
+}
+.address-frame {
+    position: absolute;
+    top: 64px;
+    right: 15px;
+    display: flex;
+    align-items:center;
+    width: 210px;
+    height: 47px;
+    border: 1px solid $accent-color;
+    border-radius: 2px;
+@include minW-Tablet {
+    width: 285px;
+    height: 56px;
+    left: 47px;
+    top: 600px;
+}
+@include minW-Dt {
+    left: 85px;
+}
+&__icon {
+    fill: $accent-color;
+    margin: auto 4px auto 1px;
+    width: 20px;
+    height: 32px;
+    
+@include minW-Tablet {
+    width: 24px;
+    height: 40px;
+    margin: auto 6px auto 6px;
+}
+}
+&__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: $address-color;
+@include minW-Tablet {
+    font-size: 16px;
+    }
+}
+}
+.hero-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-direction: column;
+    margin-top: 113px;
+@include minW-Tablet {
+    position: absolute;
+    right: 47px;
+    bottom: 64px;
+    flex-direction: row;
+    gap: 40px;
+}
+@include minW-Dt {
+    right: 85px;
+    gap: 60px;
+}   
+}
+.hero-socils {
+    position: absolute;
+    left: 16px;
+    bottom: 21px;
+@include minW-Tablet {
+    left: 48px;
+    bottom: 16px;
+}
+@include minW-Dt {
+    top: 41px;
+    right: 88px;
+    left: auto;
+
 }
 }
