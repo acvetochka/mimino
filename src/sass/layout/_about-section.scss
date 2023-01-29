@@ -29,10 +29,10 @@
         line-height: 1.15;
         color: $span-color;
 
-    @include minW-Tablet {
+        @include minW-Tablet {
         font-size: 32px;
         line-height: 1.16;
-    }
+        }
 
     }
     &__text {
