@@ -80,9 +80,13 @@
     align-items: center;
     justify-content: center;
 
+    @include minW-Phone {
+        flex-direction: column;
+
     @include minW-Tablet {
         align-items: flex-end;  
     }
+}
 }
 
 .rooms-select {
