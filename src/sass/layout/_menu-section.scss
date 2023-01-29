@@ -2,8 +2,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  font-family: 'Montserrat';
-  font-style: normal;
+  color: $secondary-color;
 }
 
 td,
@@ -29,46 +28,41 @@ th {
     font-weight: 700;
     font-size: 32px;
     line-height: calc(37 / 32);
-    color: #000000;
+
     @include minW-Tablet {
-       margin-bottom: 40px;
+      margin-bottom: 40px;
       }
   }
 
   &__type-dishes {
       @include minW-Tablet {
         display: flex;
-        
         flex-wrap: wrap;
         gap:  0 140px;
       }
   }
 
   &__type-dish {
-    margin-bottom: 32px;
       @include minW-Tablet {
-display: flex;
+    display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-bottom: 40px;
         flex-basis: calc((100% - ((2 - 1) * 140px)) / 2);
       }
   }
 
   &__subtitle {
-    margin-bottom: 16px;
+    padding-bottom: 16px;
     font-family: 'Times New Roman';
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
-    color: #000000;
     text-align: start;
 
      @include minW-Dt {
-      margin-bottom: 20px;
+      padding-bottom: 20px;
       font-size: 24px;
-line-height: calc(28 /24);
+      line-height: calc(28 / 24);
     }
   }
 }
@@ -79,32 +73,28 @@ line-height: calc(28 /24);
   }
 }
 
-
 .table-dish {
-
   &__item {
-    display: block;
-    margin-bottom: 8px;
+    display: flex;
+    padding-bottom: 8px;
 
     &:last-child {
-  margin-bottom: 0;
+  padding-bottom: 0;
     } 
     @include minW-Dt{
-margin-bottom: 12px;
-    }
 
+padding-bottom: 12px;
+    }
   }
 
   &__title {
-  display: block;
-  margin-bottom: 4px;
+  padding-bottom: 4px;
   max-width: 226px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(17 / 14);
   letter-spacing: 0.02em;
   text-align: start;
-  color: #000000;
 
   @include minW-Dt {
     min-width: 291px;
@@ -113,17 +103,13 @@ line-height: calc(20 / 16);
     }
 
 }
-&__ingredients {
 
-  display: block;
+&__ingredients {
   max-width: 226px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
   letter-spacing: 0.02em;
-  color: #000000;
   @include minW-Dt {
     min-width: 291px;
     }
@@ -131,14 +117,11 @@ line-height: calc(20 / 16);
 
 &__weight {
 width: 80px; 
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: calc(17 / 14);
   text-align: end;
   letter-spacing: 0.02em;
-  color: #000000;
 
 @include minW-Tablet {
 text-align: center;
@@ -147,40 +130,38 @@ text-align: center;
     width: 97px;
     }
 }
+
 &__price {
   width: 80px; 
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(17 / 14);
   text-align: end;
   letter-spacing: 0.02em;
-  color: #000000;
 
   @include minW-Dt {
     width: 97px;
-      font-size: 16px;
-line-height: calc(20 / 16);
+    font-size: 16px;
+    line-height: calc(20 / 16);
     }
 }
 
 &__title--one-row {
-  display: block;
   max-width: 225px;
-margin-bottom: 8px;
-&:last-child {
-  margin-bottom: 0;
-}
+  margin-right: auto;
+  padding-bottom: 0;
 }
 }
 
+// кнопка замовити столик, відкривае модальне вікно
 .btn-reserve-table {
-
     display: flex;
     align-items: center;
     justify-content: center;
-
+ margin-top: 32px;
+      @include minW-Tablet {
+    margin-bottom: 40px;
+      }
     min-width: 200px;
     padding: 10px 0;
     margin-left: auto;
