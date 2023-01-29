@@ -2,10 +2,7 @@
   background-color: $primary-background;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  @media screen and (max-width: $tabletMax) {
-    overflow: hidden;
-  }
+  overflow: hidden;
 }
 .rooms--colorfix {
   background-color: $secondary-background;
@@ -27,20 +24,11 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 37px;
-
-    padding-bottom: 4px;
   }
 }
 .rooms__logo {
   display: block;
   padding-bottom: 32px;
-
-  @media screen and (min-width: $tabletMin) {
-    padding-bottom: 62px;
-  }
-  @media screen and (min-width: $desktopMin) {
-    padding-bottom: 72px;
-  }
 }
 .rooms__title {
   font-family: 'Times New Roman';
@@ -61,7 +49,6 @@
     font-size: 30px;
     line-height: 34px;
     letter-spacing: 0.05em;
-    padding-bottom: 16px;
   }
 
   @media screen and (min-width: $desktopMin) {
@@ -71,7 +58,6 @@
     font-size: 36px;
     line-height: 41px;
     letter-spacing: 0.05em;
-    padding-bottom: 24px;
   }
 }
 
@@ -86,16 +72,6 @@
   @media screen and (min-width: $tabletMin) {
     text-align: end;
     transform: translateX(0.3em);
-  }
-}
-
-.rooms__title--fix {
-  text-align: right;
-  text-align: end;
-
-  @media screen and (min-width: $tabletMin) {
-    // padding-left: 45px;
-    text-align: left;
   }
 }
 
@@ -119,7 +95,6 @@
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.02em;
-    max-width: 439px;
   }
 
   @media screen and (min-width: $desktopMin) {
@@ -129,19 +104,8 @@
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.02em;
-    max-width: 400px;
   }
 }
-
-.rooms__text--fix {
-  padding-left: 83px;
-  padding-right: 0;
-
-  @media screen and (min-width: $tabletMin) {
-    padding-left: 0;
-  }
-}
-
 .rooms__img {
   margin-left: auto;
   margin-right: 0;
@@ -149,7 +113,6 @@
 
   @media screen and (min-width: $tabletMin) {
     margin-top: -48px;
-    margin-bottom: 48px;
   }
 }
 .rooms__img--fix {
@@ -169,7 +132,7 @@
   background-color: rgba(0, 0, 0, 0.13);
 
   @media screen and (max-width: $tabletMax) {
-    transform: translateX(-4em);
+    transform: translateX(-5em);
   }
 
   @media screen and (min-width: $tabletMin) {
@@ -201,21 +164,16 @@
   margin-bottom: 0;
 }
 
-
 // TABLET-MOD !!!!!???/////
 .position-wrapper {
   @media screen and (min-width: $tabletMin) {
     display: flex;
     gap: 26px;
   }
-  @media screen and (min-width: $desktopMin) {
-    display: flex;
-    gap: 48px;
-  }
 }
 .text-item-wrapper {
   @media screen and (min-width: $tabletMin) {
-    max-width: 509px;
+    max-width: 439px;
   }
 }
 .second-position-wrapper {
@@ -238,6 +196,6 @@
   @media screen and (min-width: $tabletMin) {
     display: flex;
     flex-direction: row-reverse;
-    gap: 45px;
+    gap: 26px;
   }
 }
