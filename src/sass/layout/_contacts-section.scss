@@ -1,0 +1,99 @@
+.contacts {
+	padding-top: 36px;
+	padding-bottom: 32px;
+
+	background-color: $primary-background;
+}
+
+.contacts__logo {
+	display: block;
+	padding-bottom: 12px;
+}
+
+.contacts__subtitle {
+	padding-bottom: 16px;
+
+	color: $primary-color;
+
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: 0.02em;
+}
+
+.contacts__list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding-bottom: 32px;
+}
+
+.contact-info {
+	display: flex;
+	align-items: center;
+
+	&--address {
+		// flex-direction: row-reverse;
+		justify-content: end;
+
+		// justify-content:flex-end;
+		// flex-basis: 67.7%;
+	}
+
+	// &--rest {
+	// 	gap: 30px;
+	// }
+
+	// &--hotel {
+	// 	gap: 54px;
+	// }
+}
+
+.contact-info__title {
+	flex-basis: 32.3%;
+
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+
+	color: $accent-color-second;
+}
+
+.contact-box {
+	display: inline-flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+	padding: 9px 8px 7px;
+
+	background-color: $contrast-color;
+	border: 0.5px solid $accent-color;
+	border-radius: 2px;
+
+	&--address, &--hotel {
+		max-width: 260px;
+		width: 100%;
+	}
+}
+
+.contact-box__text {
+	display: block;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.21;
+	letter-spacing: 0.02em;
+
+	&--address {
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: 0.01em;
+	}
+	
+}
+
+.contact-box__icon {
+	fill: $accent-color-second;
+}
