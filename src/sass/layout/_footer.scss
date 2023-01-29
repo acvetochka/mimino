@@ -20,14 +20,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        @include minW(480px) {
-            justify-content: space-around;
-        }
         @include minW-Tablet {
             justify-content: flex-start;
         }
-
     }
     &__links{
         margin-bottom: 33px;

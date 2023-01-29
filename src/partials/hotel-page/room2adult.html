@@ -5,8 +5,8 @@
         <span class="rooms__phrase rooms__phrase--fix">Amet minim mollit non</span>
         <span class="logo rooms__logo rooms__logo--fix">MIMIHO</span>
       </div>
-      <h2 class="rooms__title">ТРЬОХМІСНИЙ НОМЕР</h2>
-      <p class="rooms__text">
+      <h2 class="rooms__title rooms__title--fix">ТРЬОХМІСНИЙ НОМЕР</h2>
+      <p class="rooms__text rooms__text--fix">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
         consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
       </p>
@@ -206,8 +206,12 @@
       </section>
     </div>
     <div>
-      <button class="rooms__button" type="button">Детальніше</button>
-      <button class="rooms__button rooms__button--fix" type="button">Переглянути ціни</button>
+      <button class="rooms__button" type="button">
+        <a class="rooms__link" href="/src/room.html">Детальніше</a>
+      </button>
+      <button class="rooms__button rooms__button--fix js-open-modal" type="button" data-modal="3">
+        Переглянути ціни
+      </button>
     </div>
   </div>
 </section>
