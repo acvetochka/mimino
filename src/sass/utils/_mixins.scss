@@ -92,6 +92,7 @@
 //         color: #000;
 //     }
 // }
+
 @mixin btn-order () {
   width: 384px;
   height: 64px;
@@ -134,4 +135,13 @@
       background-color: $contrast-color;
       border: 2px solid $accent-color;
     }
+}
+
+// міксин для фону (ретина)
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
 }
