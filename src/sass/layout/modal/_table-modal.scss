@@ -3,6 +3,10 @@
     width: 100%;
     border-radius: 2px;
 
+    padding: 60px 15px;
+
+     background-color: rgb(140, 230, 152);
+
     // background: $primary-background;
 
     position: absolute;
@@ -23,28 +27,35 @@
     right: 16px;
 
     &__icon {
-
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-left: auto;
+    padding: 0;
+    display: block;
     }
 }
 
-.form {
-    padding: 60px 15px;
+.form-table {
+    
     // background-color: $primary-background;
-    background-color: rgb(140, 230, 152);
+    // background-color: rgb(140, 230, 152);
 
     @media screen and (min-width: $tabletMin) {
-        padding: 60px;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        // // padding: 60px;
+        // display: flex;
+        // justify-content: space-around;
+        // flex-wrap: wrap;
+        gap: 20px;
     }
 
-    &__text {
+    &__title {
         display: block;
         font-weight: 700;
         font-size: 24px;
         line-height: 1.17;
         text-align: center;
+        text-transform: uppercase;
 
         letter-spacing: 0.05em;
         color: $secondary-color;
@@ -62,14 +73,25 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    //  gap: 20px;
+
+    @media screen and (min-width: $tabletMin) {
+        // padding: 60px;
+        // display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 
     
 
     }
      
-     &__input {
+     &__input { 
+        max-width: 384px;
+        width: 100%;
         height: 54px;
-        padding-left: 12px;
+        padding: 16px 12px;
+        outline: none;
         border: 1px solid $accent-color-second;
         border-radius: 2px;
 
@@ -77,6 +99,8 @@
         font-size: 20px;
         line-height: 1.15;
         letter-spacing: 0.05em;
+        cursor: pointer;
+
 
         color: $placeholder-color;
 
@@ -144,20 +168,20 @@
         }
      }
 
-     &__option {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
-        letter-spacing: 0.05em;
-        color: $placeholder-color;
+    //  &__option {
+    //     font-weight: 700;
+    //     font-size: 20px;
+    //     line-height: 1.15;
+    //     letter-spacing: 0.05em;
+    //     color: $placeholder-color;
 
 
-        @media screen and (min-width: $tabletMin) {
-         font-size: 24px;
-         line-height: 1.17;
-    }
+    //     @media screen and (min-width: $tabletMin) {
+    //      font-size: 24px;
+    //      line-height: 1.17;
+    // }
 
         
-     }
+    //  }
 
 }
