@@ -1,16 +1,29 @@
+.hero-background__home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/home-page/hero/background-desk.jpg);
+
+    @include retina {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/home-page/hero/background-desk2x.jpg);
+    }
+}
+.hero-background__hotel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/hotel-page/hero/background-desk.jpg);
+
+    @include retina {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/hotel-page/hero/background-desk2x.jpg);
+    }
+}
 .hero-background {
     position: relative;
     height: 740px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),
-    url(../images/home-page/hero/background-desk.jpg);
     padding-top: 181px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-@include retina {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-            url(../images/home-page/hero/background-desk2x.jpg);
-    }
+
 @include minW-Tablet {
     height: 720px;
     padding-top: 188px;
@@ -18,18 +31,21 @@
 @include minW-Dt {
     padding-top: 164px;
 }
+
+
 }
 .hero-text {
     color: $contrast-color;
     text-align: center;
     font-style: normal;
 &__name {
-    font-family: 'Film P3', sans-serif;
+    font-family: FilmP3;
     font-style: normal;
     font-weight: 700;
     font-size: 96px;
     line-height: 1.07;
     letter-spacing: 0.3em;
+    transform: translateX(0.15em);
 @include minW-Tablet {
     font-size: 128px;
     }
@@ -121,7 +137,7 @@
     gap: 60px;
 }   
 }
-.hero-socils {
+.hero-socials{
     position: absolute;
     left: 16px;
     bottom: 21px;
