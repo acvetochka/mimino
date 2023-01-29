@@ -76,12 +76,11 @@
 
 .room-btnlink {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
     @include minW-Tablet {
-        flex-direction: column;
         align-items: flex-end;  
     }
 }
