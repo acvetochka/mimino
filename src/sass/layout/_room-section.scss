@@ -5,20 +5,61 @@
 .room-conditions {
     padding-top: 32px;
     padding-bottom: 32px;
-}
 
-.room-conditions__title {
-    margin-bottom: 16px;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 1.156;
-    color: $secondary-color;
-    text-transform: uppercase;
+    &__item {
+        margin-bottom: 32px;
+    }
 
-    @include maxW-Phone {
-        font-size: 26px;
+    &__title {
+        margin-bottom: 16px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.156;
+        color: $secondary-color;
+        text-transform: uppercase;
+    
+        @include maxW-Phone {
+            font-size: 26px;
+        }
+    }
+
+    &__subtitle {
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.166;
+        color: $secondary-color;
+        text-transform: uppercase;
+    
+        &:first-child {
+            margin-top: 32px;
+        }    
+    }
+
+    &__description {
+        margin-top: 16px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $primary-color;
+    
+        &--main {
+            @include minW-Tablet {
+                max-width: 757px;
+            } 
+        }
+    
+        @include minW-Tablet {
+            flex-basis: calc((100% - 1 * 80px) / 2);
+        }
+    
+        @include minW-Dt {
+            flex-basis: calc((100% - 1 * 159px) / 2);
+        }
     }
 }
 
@@ -33,49 +74,6 @@
         }
 }
 
-.room-conditions__subtitle {
-    &:first-child {
-        margin-top: 32px;
-    }
-
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.166;
-    color: $secondary-color;
-    text-transform: uppercase;
-
-    
-}
-
-.room-conditions__description {
-    margin-top: 16px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: $primary-color;
-
-    &--main {
-        @include minW-Tablet {
-            max-width: 757px;
-        } 
-    }
-
-    @include minW-Tablet {
-        flex-basis: calc((100% - 1 * 80px) / 2);
-    }
-
-    @include minW-Dt {
-        flex-basis: calc((100% - 1 * 159px) / 2);
-    }
-}
-
-.room-conditions__item {
-    margin-bottom: 32px;
-}
-
 .room-btnlink {
     display: flex;
     flex-wrap: wrap;
@@ -88,52 +86,7 @@
     }
 }
 
-
-
-.button {
-
-    @include btn-order ();
-    
-    // width: 384px;
-    // height: 64px;
-    // background: $secondary-color;
-    // color: $contrast-color;
-    // border: 1px solid $accent-color;
-    // border-radius: 25px;
-    // font-family: 'Montserrat';
-    // font-style: normal;
-    // font-weight: 500;
-    // font-size: 20px;
-    // line-height: 1.2;
-
-    @mixin minW-Phone {
-        padding: 20px auto;
-    }
-
-    @include minW-Tablet {
-        width: 434px;
-        font-size: 24px;
-    }
-
-    // &:hover,
-    // &:focus {
-    //     cursor: pointer;
-    //     color: $secondary-color;
-    //     background-color: $accent-color;
-    // }
-}
-
-.button-order {
-    margin-bottom: 20px;
-
-    @include minW-Tablet {
-        margin-bottom: 32px;
-    }
-}
-
-
-
-.back-to-rooms {
+.rooms-select {
     display: flex;
     align-items: center;
     font-family: 'Montserrat';
@@ -166,13 +119,80 @@
     @include minW-Tablet {
         margin-left: 16px;
     }
-
 }
+
+.button {
+    @include btn-order ();
+
+    @mixin minW-Phone {
+        padding: 20px auto;
+    }
+
+    @include minW-Tablet {
+        width: 434px;
+        font-size: 24px;
+    }
+}
+
+.button-order {
+    margin-bottom: 20px;
+
+    @include minW-Tablet {
+        margin-bottom: 32px;
+    }
+}
+
+
+
+
+
 
 .button-service {
     @include btn-service ();
+
+    @mixin minW-Phone {
+        padding: 14px auto;
+    }
 }
- 
+
+.btn-hero {
+    width: 232px;
+    background-color: $button-opacity-bg;
+}
+
+
+.arrows {
+    display: flex;
+    gap: 32px;
+}
+.btn-arrows {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+        .icon-arrow {
+            fill: $accent-color;
+        }
+    }
+}
+
+.arrows-home {
+    display: flex;
+    gap: 32px;
+    background-color: $secondary-background;
+}
+.icon-arrow-home {
+    fill: $contrast-color;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+        }
+}
 
 
 
