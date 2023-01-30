@@ -3,12 +3,15 @@
 
   &.active {
     visibility: visible;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     z-index: 150;
     max-width: 414px;
     width: 100%;
+    max-height: 572px;
+    height: 100%;
+    overflow: hidden;
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 2px;
@@ -17,27 +20,29 @@
 
     @include minW-Tablet {
       max-width: 712px;
+      max-height: 489px;
+    }
+    .modal__close-btn {
+      position: absolute;
+      display: flex;
+      padding: 0;
+      top: 16px;
+      right: 16px;
+      width: 24px;
+      height: 24px;
+      border: none;
+      background-color: transparent;
+  
+      fill: $secondary-color;
+  
+      &:hover,
+      &:focus {
+        fill: $accent-color-second;
+      }
     }
   }
 
-  .modal__close-btn {
-    position: absolute;
-    display: flex;
-    padding: 0;
-    top: 16px;
-    right: 16px;
-    width: 24px;
-    height: 24px;
-    border: none;
-    background-color: transparent;
-
-    fill: $secondary-color;
-
-    &:hover,
-    &:focus {
-      fill: $accent-color-second;
-    }
-  }
+  
   .modal__close-icon {
     margin: auto;
     width: 18px;
@@ -45,17 +50,17 @@
     align-items: center;
     cursor: pointer;
   }
-  .room-price-modal {
-    max-height: 572px;
-    height: 100%;
-  }
+  // .room-price-modal {
+  //   max-height: 572px;
+  //   height: 100%;
+  // }
 
   .form-price {
     padding: 60px 15px;
 
     @include minW-Tablet {
       padding: 60px;
-      max-height: 489px;
+      
     }
 
     &__title {
@@ -84,6 +89,10 @@
       letter-spacing: 0.05em;
       color: $placeholder-color;
       margin-bottom: 28px;
+      @include minW-Tablet {
+        display: flex;
+        margin-bottom: 24px;
+        }
     }
 
     &__block {
@@ -96,50 +105,76 @@
       display: flex;
       position: relative;
       flex-direction: column;
-      margin-bottom: 20px;
+     
 
       @include minW-Tablet {
         display: flex;
         &:first-child {
           margin-right: 16px;
+          margin-bottom: 20px;
         }
       }
     }
 
     &__label {
+      margin-left: 0px;
       font-weight: 500;
       font-size: 16px;
       line-height: 1.25;
       letter-spacing: 0.02em;
       color: $accent-color-second;
-      margin-bottom: 20px;
-    }
-    .nice-select,
-    .form-select__input {
-      display: flex;
-      background: transparent;
-      height: 64px;
-      border: solid 1px $accent-color-second;
-      padding: 13px 15px;
-      margin-bottom: 8px;
-      border-radius: 0;
-      // width: 100%;
+      margin-bottom: 14px;
 
-      align-items: center;
-      font-family: 'Times New Roman', Times, serif;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 1.166;
-      letter-spacing: 0.05em;
-      color: $placeholder-color;
+      &:last-child {
+        margin-left: 15px;
+        
+       }
       @include minW-Tablet {
-        width: 288px;
+       margin-bottom: 24px;
       }
+    }
+
+    .form-price__button {
+      display: block;
+      margin-top: 26px;
+      width: 100%;
+      border-radius: 2px;
+      text-transform: uppercase;
+      @include minW-Tablet {
+        margin-bottom: 0;
+        margin-top: 0;
+       }
+
     }
   }
   .list-select {
     border: none;
   }
+  .nice-select,
+  .form-select__input {
+    display: flex;
+    background: transparent;
+    height: 54px;
+    border: solid 1px $accent-color-second;
+    padding: 13px 15px;
+    margin-bottom: 14px;
+    border-radius: 0;
+    // width: 100%;
+
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.166;
+    letter-spacing: 0.05em;
+    color: $placeholder-color;
+    @include minW-Tablet {
+      width: 288px;
+      height: 64px;
+      margin-bottom: 8px;
+    }
+  }
+
   .nice-select.open .nice-select-dropdown {
     background-color: $primary-background;
     margin-left: -2px;
@@ -150,5 +185,6 @@
     height: 16px;
     right: 20px;
     margin-top: -12px;
-  }
+ 
+}
 }
