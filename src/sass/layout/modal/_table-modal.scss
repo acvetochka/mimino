@@ -1,11 +1,11 @@
-.modal {
+.book-table-modal {
     max-width: 414px;
     width: 100%;
     border-radius: 2px;
 
     padding: 60px 15px;
 
-
+    visibility: hidden;
     background: $primary-background;
 
     position: absolute;
@@ -17,7 +17,7 @@
         max-width: 712px;
         padding: 60px;
     }
-        
+      &.active{visibility: visible;}  
 
 }
 
@@ -186,10 +186,4 @@
 
     top: 15%;
     right: 5px;
-
-
-
-    &__icon {
-
-    }
 }
