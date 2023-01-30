@@ -43,6 +43,10 @@
     @include minW-Phone {
         padding: 14px auto;
     }
+
+    @include minW-Dt {
+        padding: 14px 35px;
+    }
 }
 
 
