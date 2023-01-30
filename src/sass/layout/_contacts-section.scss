@@ -66,6 +66,9 @@
 
 .contacts__map {
 	display: block;
+	width: 100%;
+	height: 220px;
+
 	border: 1px solid #bababa;
 
 	box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -73,14 +76,11 @@
 
 	@include minW-Tablet {
 		max-width: 535px;
-		width: 100%;
 		height: 412px;
 	}
 
 	@include minW-Dt {
 		max-width: 634px;
-		width: 100%;
-		height: 412px;
 	}
 }
 
