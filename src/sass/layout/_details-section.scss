@@ -1,8 +1,20 @@
 // Details-rest
 .details-container {
+  overflow: hidden;
+}
+
+
+.details-rest.details-container {
   padding-right: 0;
   @include minW-Tablet {
     padding-right: $paddingTablet;
+  }
+}
+
+.details-hotel .details-container {
+  padding-left: 0;
+  @include minW-Tablet {
+    padding-left: $paddingTablet;
   }
 }
 
@@ -214,4 +226,19 @@
 
 .button-service__details {
   margin-bottom: 16px;
+}
+
+//sliders
+.details-hotel .swiper-and-buttons-container {
+  padding-right: 40px;
+  padding-left: 0;
+  @include minW-Tablet{
+      flex-direction: row;
+      padding-left: 0;
+      padding-right: $paddingTablet;
+}
+}
+
+.details-hotel .swiper {
+  flex-direction: row-reverse;
 }
