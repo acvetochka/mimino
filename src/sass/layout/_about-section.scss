@@ -13,7 +13,7 @@
         gap: 26px;
         justify-content: center;
 
-        @include minW(700px)  {
+        @include maxW-Tablet {
             flex-direction: column;
             gap: 28px;
             justify-content: center;
