@@ -18,6 +18,9 @@
             gap: 28px;
             justify-content: center;
         }
+        &--rev {
+            flex-direction: row-reverse;
+        }
     }
     &__content {
         display: flex;
@@ -86,8 +89,8 @@
        
         @include minW(700px) {
             transform: translateY(-20px);
-           }
-
+        }
+      
         @include minW-Tablet {
             display: flex;
             max-width: 400px;
@@ -101,6 +104,7 @@
             margin-left: 37px;
         }
     }
+       
     &__img-content2 {
         display: flex;
         flex-wrap: wrap;
@@ -137,6 +141,12 @@
             max-height: 574px;  
         }
     }  
+}
+
+.revers.about__img-foto1 {
+    @include maxW-Tablet {
+        margin-top: 210px;
+    }
 }
 .swiper-about {
     margin-top: 32px;
