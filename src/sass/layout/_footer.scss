@@ -21,7 +21,7 @@
         align-items: center;
         justify-content: space-between;
 
-        @include minW(480px) {
+        @include minW(600px) {
             justify-content: space-around;
         }
         @include minW-Tablet {
