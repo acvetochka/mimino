@@ -1,3 +1,12 @@
+.about-main-container{
+    padding-right: 0;
+
+    @include minW(540px) {
+        padding-right: $paddingPhone;
+
+    }
+
+}
 .about {
     background-color: $primary-background;
    
@@ -89,8 +98,8 @@
        
         @include minW(700px) {
             transform: translateY(-20px);
-        }
-      
+           }
+
         @include minW-Tablet {
             display: flex;
             max-width: 400px;
@@ -120,9 +129,11 @@
 
         @include minW-Tablet {
             padding-top: 0;
+            gap: 48px;
             transform: translateY(-50px);
         }
         @include minW-Dt {
+            gap: 32px;
             transform: translateY(-100px);
         }
         &--rev {
