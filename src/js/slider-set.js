@@ -24,7 +24,7 @@ function swiperSlider() {
         // },
 
         loop: true,
-
+        reverseDirection: false,
         
         slidesPerView: 1.3,
         spaceBetween: 25,

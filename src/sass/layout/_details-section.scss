@@ -1,19 +1,6 @@
-// Details-rest
-// .container {
-//   padding: 0 $paddingPhone;
-//   width: 100%;
-//   margin: 0 auto;
+// DETAILS-RESTAURANT
 
-//   @include minW-Tablet {
-//     padding: 0 $paddingTablet;
-//   }
-
-//   @include minW-Dt {
-//     padding: 0 $paddingDt;
-//   }
-// }
-
-.details-container{
+.details-restaurant-container{
   padding-right: 0;
 
   @media screen and (min-width:540px) {
@@ -24,26 +11,12 @@
     padding-right: $paddingTablet;
 
   }
+
 }
 
-.details-container {
+.details-restaurant-container {
   overflow: hidden;
 }
-
-
-// .details-rest.details-container {
-//   padding-right: 0;
-//   @include minW-Tablet {
-//     padding-right: $paddingTablet;
-//   }
-// }
-
-// .details-hotel .details-container {
-//   padding-left: 0;
-//   @include minW-Tablet {
-//     padding-left: $paddingTablet;
-//   }
-// }
 
 .details-rest {
   position: relative;
@@ -139,7 +112,24 @@
   border: none;
 }
 
-// Details hotel
+
+
+// DETAILS-HOTEL
+
+.details-hotel-container{
+  padding-left: 0;
+  
+    @media screen and (min-width:540px) {
+      padding-left: $paddingPhone ;
+    }
+  
+    @include minW-Tablet {
+      padding-left: $paddingTablet;
+  
+    }
+}
+
+
 .details-hotel {
   position: relative;
   // width: 100vw;
