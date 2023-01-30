@@ -103,6 +103,7 @@
             max-height: 574px;
             margin-left: 37px;
         }
+        
     }
        
     &__img-content2 {
@@ -123,6 +124,9 @@
         }
         @include minW-Dt {
             transform: translateY(-100px);
+        }
+        &--rev {
+            flex-direction: row-reverse;
         }
     }
     &__img-foto2 {
