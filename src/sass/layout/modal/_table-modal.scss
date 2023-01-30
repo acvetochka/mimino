@@ -5,7 +5,7 @@
   }
 }
 .form-table {
-  @media screen and (min-width: $tabletMin) {
+  @media screen and (min-width: 712px) {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -15,18 +15,17 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: $tabletMin) {
+    @media screen and (min-width: 712px) {
       &:nth-child(2n + 1) {
         margin-left: 16px;
       }
     }
   }
   &__label {
-    @media screen and (min-width: $tabletMin) {
+    @media screen and (min-width: 712px) {
       max-width: 262px;
       font-size: 16px;
       line-height: 1.25;
     }
   }
 }
-

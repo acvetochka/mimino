@@ -14,13 +14,13 @@
     letter-spacing: 0.05em;
     color: $placeholder-color;
     margin-bottom: 28px;
-    @include minW-Tablet {
+    @media screen and (min-width: 712px){
       display: flex;
       margin-bottom: 24px;
     }
   }
   &__block {
-    @include minW-Tablet {
+    @media screen and (min-width: 712px) {
       display: flex;
       margin: 0 auto;
     }
@@ -29,7 +29,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    @include minW-Tablet {
+    @media screen and (min-width: 712px) {
       display: flex;
       &:first-child {
         margin-right: 16px;
@@ -44,7 +44,7 @@
       &:last-child {
         margin-left: 15px;
       }
-      @include minW-Tablet {
+      @media screen and (min-width: 712px) {
         margin-bottom: 24px;
       }
     }
