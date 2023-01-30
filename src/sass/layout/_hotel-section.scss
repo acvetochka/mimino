@@ -1,11 +1,9 @@
 .rooms {
   background-color: $primary-background;
-  padding-top: 32px;
   padding-bottom: 32px;
 
   @media screen and (max-width: $tabletMax) {
     overflow: hidden;
-    max-width: 414px;
   }
 }
 .rooms--colorfix {
@@ -149,7 +147,8 @@
   margin-bottom: 32px;
 
   @media screen and (min-width: $tabletMin) {
-    margin-top: -48px;
+    transform: translateY(-32px);
+    // margin-top: -48px;
     margin-bottom: 48px;
   }
 }
@@ -214,6 +213,7 @@
   }
 }
 .text-item-wrapper {
+  padding-top: 32px;
   @media screen and (min-width: $tabletMin) {
     max-width: 509px;
   }
