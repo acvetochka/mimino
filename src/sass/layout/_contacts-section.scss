@@ -32,19 +32,19 @@
 
 .contacts__logo {
 	display: block;
-	padding-bottom: 12px;
+	margin-bottom: 12px;
 
 	@include minW-Tablet {
-		padding-bottom: 8px;
+		margin-bottom: 8px;
 	}
 
 	@include minW-Dt {
-		padding-bottom: 16px;
+		margin-bottom: 16px;
 	}
 }
 
 .contacts__subtitle {
-	padding-bottom: 16px;
+	margin-bottom: 16px;
 
 	color: $primary-color;
 
@@ -54,11 +54,11 @@
 	letter-spacing: 0.02em;
 
 	@include minW-Tablet {
-		padding-bottom: 52px;
+		margin-bottom: 52px;
 	}
 
 	@include minW-Dt {
-		padding-bottom: 40px;
+		margin-bottom: 40px;
 	}
 }
 
@@ -83,6 +83,7 @@
 	@include minW-Tablet {
 		max-width: 634px;
 		width: 100%;
+		height: 412px;
 	}
 }
 
