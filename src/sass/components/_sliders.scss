@@ -1,4 +1,93 @@
 
+//ABOUT-REASTAURANT-SLIDER 
+
+.swiper-about-container {
+    margin-top: 32px;
+    margin-left: auto;
+    min-height: 245px;
+    max-width: 305px;
+    
+    @include maxW-Phone {
+        min-height: 245px;
+        max-width: 305px;
+    }
+
+    @include minW-Tablet {
+        margin-top: -80px;
+        min-height: 194px;
+        max-width: 428px;
+    }
+
+    @include minW-Dt {
+        margin-top: -140px;
+        min-height: 254px;
+        max-width: 548px;
+    }
+
+    // .swiper{
+    //     overflow: visible;
+
+    //     @include maxW-Phone{
+    //         overflow: hidden;
+    //     }
+    // }
+
+
+    .swiper-about__buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 32px;
+        height: 32px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about-btn-prev {
+        transform: translateY(0);
+            // position: static;
+            position: relative;
+            width: 32px;
+            height: 32px;
+            border: none;
+            padding: 0;
+            background-color: transparent;
+            color: $secondary-color;
+        
+            & svg {
+                fill: currentColor;
+            }
+    }
+
+    .about-btn-prev::after {
+        content: "";
+    }
+
+    .about-btn-next {
+        transform: translateY(0);
+        // position: static;
+        position: relative;
+        width: 32px;
+        height: 32px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: $secondary-color;
+
+        & svg {
+            fill: currentColor;
+        }
+    }
+
+    .about-btn-next::after {
+        content: "";
+    }
+}
+
+
+
+
+
+
 
 // DETAILS-SLIDER
 .swiper {
@@ -27,18 +116,18 @@
 .swiper-details-container{
     width: 100%;
 
-
     @include maxW-Phone {
+        width: auto;
         max-width: 414px;
     }
 
     @include minW-Tablet{
+        min-width: 608px;
         max-width: 759px;
     }
 
     @include minW-Dt{
         max-width: 1012px;
-        flex-grow: 1;
     }
 
 
@@ -95,8 +184,3 @@
 .details-btn-next::after{
     content: "";
 }
-
-// .swiper-button-prev.details-btn-prev{
-//     position: static;
-//     transform: translateY(0);
-// }

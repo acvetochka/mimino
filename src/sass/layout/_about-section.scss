@@ -1,3 +1,12 @@
+.about-main-container{
+    padding-right: 0;
+
+    @include minW(540px) {
+        padding-right: $paddingPhone;
+
+    }
+
+}
 .about {
     background-color: $primary-background;
    
@@ -84,9 +93,10 @@
         height: 100%;
         box-shadow: $img-shadow;
        
-        @include minW(700px) {
-            transform: translateY(-20px);
-           }
+        // @include minW(700px) {
+        //     // transform: translateY(-20px);
+        //     // transform: translateY(-242px);
+        //    }
 
         @include minW-Tablet {
             display: flex;
@@ -115,9 +125,11 @@
 
         @include minW-Tablet {
             padding-top: 0;
+            gap: 48px;
             transform: translateY(-50px);
         }
         @include minW-Dt {
+            gap: 32px;
             transform: translateY(-100px);
         }
     }
@@ -138,23 +150,4 @@
         }
     }  
 }
-.swiper-about {
-    margin-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 25px;
-    max-width: 330px;
 
-    @include minW-Tablet {
-        margin-top: 154px;
-        margin-left: 139px;
-        max-width: 428px;
-       
-    }
-    @include minW-Dt {
-        margin-top: 119px;
-        margin-left: 102px;
-        max-width: 654px;
-        
-    }
-}

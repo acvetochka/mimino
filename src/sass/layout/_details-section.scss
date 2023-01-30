@@ -1,20 +1,25 @@
 // Details-rest
-.container {
-  padding: 0 $paddingPhone;
-  width: 100%;
-  margin: 0 auto;
+// .container {
+//   padding: 0 $paddingPhone;
+//   width: 100%;
+//   margin: 0 auto;
 
-  @include minW-Tablet {
-    padding: 0 $paddingTablet;
-  }
+//   @include minW-Tablet {
+//     padding: 0 $paddingTablet;
+//   }
 
-  @include minW-Dt {
-    padding: 0 $paddingDt;
-  }
-}
+//   @include minW-Dt {
+//     padding: 0 $paddingDt;
+//   }
+// }
 
 .details-container{
   padding-right: 0;
+
+  @media screen and (min-width:540px) {
+    padding-right: $paddingPhone ;
+  }
+
   @include minW-Tablet{
     padding-right: $paddingTablet;
   }
