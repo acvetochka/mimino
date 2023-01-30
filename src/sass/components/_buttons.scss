@@ -79,3 +79,10 @@
     fill: $contrast-color;
 }
 
+
+// для посилань у вигляді кнопки
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
