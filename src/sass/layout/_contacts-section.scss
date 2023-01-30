@@ -3,6 +3,11 @@
 	padding-bottom: 32px;
 
 	background-color: $primary-background;
+
+	@include minW-Tablet {
+		padding-top: 69px;
+		padding-bottom: 40px;
+	}
 }
 
 .contacts__container {
@@ -47,17 +52,23 @@
 .contacts__list {
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
+}
+
+.contacts-item {
+	&:not(:last-child) {
+	}
 }
 
 .contacts__map {
+	display: block;
 	border: 1px solid #bababa;
-	
+
 	box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 	border-radius: 2px;
 
 	@include minW-Tablet {
 		max-width: 535px;
+		width: 100%;
 		height: 412px;
 	}
 }
@@ -94,13 +105,13 @@
 		// flex-basis: 67.7%;
 	}
 
-	// &--rest {
-	// 	gap: 30px;
-	// }
+	&--rest {
+		margin-bottom: 24px;
+	}
 
-	// &--hotel {
-	// 	gap: 54px;
-	// }
+	&--hotel {
+		margin-bottom: 48px;
+	}
 }
 
 .contact-info__title {
@@ -185,5 +196,9 @@
 
 	@include maxW-Phone {
 		display: block;
+	}
+
+	@include minW-Tablet {
+		gap: 16px;
 	}
 }
