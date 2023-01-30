@@ -1,114 +1,70 @@
-
 // Details-rest
 
-.container {
-  padding: 0 $paddingPhone;
-  width: 100%;
-  margin: 0 auto;
+// .container {
+//   padding: 0 $paddingPhone;
+//   width: 100%;
+//   margin: 0 auto;
 
-  @include minW-Tablet {
-    padding: 0 $paddingTablet;
-  }
+//   @include minW-Tablet {
+//     padding: 0 $paddingTablet;
+//   }
 
-  @include minW-Dt {
-    padding: 0 $paddingDt;
-  }
-}
-
+//   @include minW-Dt {
+//     padding: 0 $paddingDt;
+//   }
+// }
 
 .details-hotel {
   position: relative;
-
-  display: block;
-  z-index: 1;
-  //   width: 100vw;
-  height: 735px;
-  padding-top: 24px;
-  //   padding-bottom: 40px;
-
-.details-container{
-  padding-right: 0;
-  @include minW-Tablet{
-    padding-right: $paddingTablet;
-  }
-}
-
-.details-rest {
-  position: relative;
-  background-color: rgb(99, 95, 95);
   // width: 100vw;
   height: 735px;
-
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-
     url(../images/home-page/details-hotel/backgroung-mob.jpg);
 
   @include retina {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/home-page/details-hotel/backgroung-mob2x.jpg);
-
-    url(../images/home-page/details-rest/backgroung-mob.jpg);
-
-  @include retina {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/home-page/details-rest/backgroung-mob2x.jpg);
-
   }
 
   @include minW-Tablet {
     height: 620px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-
       url(../images/home-page/details-hotel/backgroung-tab.jpg);
 
     @include retina {
       background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
         url(../images/home-page/details-hotel/backgroung-tab2x.jpg);
-
-      url(../images/home-page/details-rest/background-tab.jpg);
-
-    @include retina {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../images/home-page/details-rest/background-tab2x.jpg);
-
     }
   }
 
   @include minW-Dt {
-
+    height: 620px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/home-page/details-hotel/background-desk.jpg);
 
     @include retina {
       background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../images/home-page/details-hotel/background-desk.jpg);
-
-    height: 620px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../images/home-page/details-rest/background-desk.jpg);
-
-    @include retina {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../images/home-page/details-rest/background-desk2x.jpg);
-
+        url(../images/home-page/details-hotel/background-desk2x.jpg);
     }
   }
 }
 
+.details-container {
+  padding-right: 0;
+  @include minW-Tablet {
+    padding-right: $paddingTablet;
+  }
+}
 
 .details-block-hotel {
-
-.details-block {
-
   @include minW-Dt {
     padding-top: 48px;
   }
 
   @include minW-Tablet {
-
     // margin: 0;
     // margin-left: 278px;
     max-width: 549px;
@@ -116,7 +72,6 @@
     margin: 0;
     margin-left: 278px;
     max-width: none;
-
   }
 
   max-width: 243px;
@@ -132,8 +87,6 @@
     transform: translateX(0.3em);
   }
 
-
-
   &__title {
     @include minW-Tablet {
       font-size: 24px;
@@ -147,11 +100,8 @@
     color: $contrast-color;
     padding-top: 12px;
 
-
     display: flex;
     flex-direction: row-reverse;
-
-
   }
 
   &__text {
@@ -169,7 +119,6 @@
   }
 }
 
-
 .details-title {
   @include minW-Tablet {
     font-size: 24px;
@@ -184,58 +133,55 @@
   padding-top: 12px;
 }
 
-.swiper {
-  position: absolute;
-  bottom: 96px;
-  left: 52px;
-}
+// .swiper {
+//   position: absolute;
+//   bottom: 96px;
+//   left: 52px;
+// }
 
-.swiper-slide-dh {
-  @include minW-Tablet {
-    margin-left: 439px;
-  }
+// .swiper-slide-dh {
+//   @include minW-Tablet {
+//     margin-left: 439px;
+//   }
 
-  @include minW-Dt {
-    margin-left: 0px;
-  }
+//   @include minW-Dt {
+//     margin-left: 0px;
+//   }
 
-  display: flex;
-  margin-left: 40px;
-  overflow: hidden;
-}
+//   display: flex;
+//   margin-left: 40px;
+//   overflow: hidden;
+// }
 
-.details-btn-hotel {
-  @include minW-Dt {
-    bottom: 414px;
-    right: 85px;
-  }
+// .details-btn-hotel {
+//   @include minW-Dt {
+//     bottom: 414px;
+//     right: 85px;
+//   }
 
-  @include minW-Tablet {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 96px;
-    right: 47px;
-  }
+//   @include minW-Tablet {
+//     display: flex;
+//     flex-direction: column;
+//     position: absolute;
+//     bottom: 96px;
+//     right: 47px;
+//   }
 
-  margin: 0 auto;
-  max-width: 236px;
-  padding-top: 80px;
-}
+//   margin: 0 auto;
+//   max-width: 236px;
+//   padding-top: 80px;
+// }
 
-.details-btn-container{
+.details-btn-container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 
-  @include minW-Tablet{
+  @include minW-Tablet {
     margin: auto 0 0 0;
   }
 }
 
-.details-btn-container__button{
-  max-width: 236px;
-  cursor: pointer;
+.button-service__details {
+  margin-bottom: 16px;
 }
-
-
