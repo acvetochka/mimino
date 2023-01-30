@@ -8,7 +8,7 @@ function swiperSlider() {
       let arrowLeft = slider.querySelector('.swiper-button-prev');
       let arrowRight = slider.querySelector('.swiper-button-next');
       //   let pagination = slider.querySelector('.swiper-pagination');
-      swiper = new Swiper(slider.querySelector('.swiper'), {
+      const swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
         // centeredSlides: true,
         // autoplay: {
@@ -53,7 +53,7 @@ function swiperSlider() {
       let arrowLeft = slider.querySelector('.swiper-button-prev');
       let arrowRight = slider.querySelector('.swiper-button-next');
       //   let pagination = slider.querySelector('.swiper-pagination');
-      swiper = new Swiper(slider.querySelector('.swiper'), {
+      const swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
         // centeredSlides: true,
         // autoplay: {
