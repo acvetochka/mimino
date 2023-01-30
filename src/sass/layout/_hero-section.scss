@@ -85,16 +85,17 @@
 }
 }
 .address-frame {
+    display: none;
+@include minW-Tablet {
     position: absolute;
     top: 64px;
     right: 15px;
     display: flex;
-    align-items:center;
+    align-items: center;
     width: 210px;
     height: 47px;
     border: 1px solid $accent-color;
     border-radius: 2px;
-@include minW-Tablet {
     width: 285px;
     height: 56px;
     left: 47px;
@@ -156,9 +157,15 @@
     bottom: 16px;
 }
 @include minW-Dt {
+    display: none;
     top: 41px;
     right: 88px;
     left: auto;
 
 }
+}
+.button-service--hero {
+    @include minW-Dt {
+        width: 258px;
+    }
 }
