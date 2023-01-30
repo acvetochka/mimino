@@ -62,23 +62,23 @@
 .details-block-hotel {
   @include minW-Dt {
     padding-top: 48px;
+    // margin-right: 253px;
+    max-width: 595px;
+    margin: 0 auto;
   }
 
   @include minW-Tablet {
-    // margin: 0;
-    // margin-left: 278px;
-    max-width: 549px;
-
     margin: 0;
-    margin-left: 278px;
-    max-width: none;
+    transform: translateX(231px);
+    // margin-right: 231px;
+    min-width: 549px;
   }
 
   max-width: 243px;
   margin: 0 auto;
   padding-top: 24px;
 
-  // margin-right: 139px;
+  
 
   &--logo {
     display: flex;
@@ -105,6 +105,10 @@
   }
 
   &__text {
+    // @include minW-Dt {
+    //   margin-left: 237px;
+    // }
+
     @include minW-Tablet {
       font-size: 16px;
       padding: 8px 0 40px;
@@ -116,21 +120,8 @@
     letter-spacing: 0.02em;
     color: $contrast-color-descr;
     padding: 20px 0 48px;
+    // margin-left: 20px;
   }
-}
-
-.details-title {
-  @include minW-Tablet {
-    font-size: 24px;
-  }
-
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.2;
-
-  letter-spacing: 0.02em;
-  color: $contrast-color;
-  padding-top: 12px;
 }
 
 // .swiper {
@@ -153,24 +144,23 @@
 //   overflow: hidden;
 // }
 
-// .details-btn-hotel {
-//   @include minW-Dt {
-//     bottom: 414px;
-//     right: 85px;
-//   }
+.details-btn-hotel {
+  @include minW-Dt {
+    bottom: 414px;
+    right: 85px;
+  }
 
-//   @include minW-Tablet {
-//     display: flex;
-//     flex-direction: column;
-//     position: absolute;
-//     bottom: 96px;
-//     right: 47px;
-//   }
+  @include minW-Tablet {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 96px;
+    right: 47px;
+  }
 
-//   margin: 0 auto;
-//   max-width: 236px;
-//   padding-top: 80px;
-// }
+  margin: 0 auto;
+  max-width: 236px;
+}
 
 .details-btn-container {
   display: flex;
