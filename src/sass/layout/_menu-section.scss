@@ -1,0 +1,173 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: $secondary-color;
+}
+
+td,
+th {
+  padding: 0;
+  background-color: transparent;
+}
+
+.restaurant-menu {
+  padding: 32px 0;
+  background: $secondary-background;
+
+  @include minW-Dt {
+      padding: 60px 0;
+    }
+    @include minW-Tablet {
+      padding-bottom: 40px;
+      }
+
+  &__title {
+    margin-bottom: 32px;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(37 / 32);
+
+    @include minW-Tablet {
+      margin-bottom: 40px;
+      }
+  }
+
+  &__type-dishes {
+      @include minW-Tablet {
+        display: flex;
+        flex-wrap: wrap;
+        gap:  0 140px;
+      }
+  }
+
+  &__type-dish {
+      @include minW-Tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+        flex-basis: calc((100% - ((2 - 1) * 140px)) / 2);
+      }
+  }
+
+  &__subtitle {
+    padding-bottom: 16px;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: start;
+
+     @include minW-Dt {
+      padding-bottom: 20px;
+      font-size: 24px;
+      line-height: calc(28 / 24);
+    }
+  }
+}
+
+.dishes-set-cover {
+  @include maxW-Tablet {
+    margin-bottom: 16px;
+  }
+}
+
+.table-dish {
+  &__item {
+    display: flex;
+    padding-bottom: 8px;
+
+    &:last-child {
+  padding-bottom: 0;
+    } 
+    @include minW-Dt{
+
+padding-bottom: 12px;
+    }
+  }
+
+  &__title {
+  padding-bottom: 4px;
+  max-width: 226px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: 0.02em;
+  text-align: start;
+
+  @include minW-Dt {
+    min-width: 291px;
+      font-size: 16px;
+line-height: calc(20 / 16);
+    }
+
+}
+
+&__ingredients {
+  max-width: 226px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  letter-spacing: 0.02em;
+  @include minW-Dt {
+    min-width: 291px;
+    }
+}
+
+&__weight {
+width: 80px; 
+  font-weight: 300;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  text-align: end;
+  letter-spacing: 0.02em;
+
+@include minW-Tablet {
+text-align: center;
+}
+  @include minW-Dt {
+    width: 97px;
+    }
+}
+
+&__price {
+  width: 80px; 
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  text-align: end;
+  letter-spacing: 0.02em;
+
+  @include minW-Dt {
+    width: 97px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    }
+}
+
+&__title--one-row {
+  max-width: 225px;
+  margin-right: auto;
+  padding-bottom: 0;
+}
+}
+
+// кнопка замовити столик, відкривае модальне вікно
+.btn-reserve-table {
+  // @extend .button-service;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ margin-top: 32px;
+      @include minW-Tablet {
+    margin-top: 40px;
+      }
+    margin-left: auto;
+    margin-right: auto;
+
+    @include minW-Tablet {
+  margin-right: 0;
+    }
+}
+
