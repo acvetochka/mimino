@@ -104,16 +104,6 @@
 		@include minW-Tablet {
 			flex-direction: row;
 		}
-
-		// justify-content: end;
-		// margin-left: auto;
-
-		// @include minW-Tablet {
-		// 	justify-content: start;
-		// }
-
-		// justify-content:flex-end;
-		// flex-basis: 67.7%;
 	}
 
 	&--rest {
@@ -143,7 +133,6 @@
 .contact-box {
 	display: flex;
 	align-items: center;
-	// flex-wrap: wrap;
 	gap: 8px;
 	padding: 9px 8px 7px;
 
@@ -175,19 +164,9 @@
 		line-height: 1.25;
 		letter-spacing: 0.01em;
 	}
-
-	// &--ml {
-	// 	margin-left: 10px;
-
-	// 	@include maxW(413.9px) {
-	// 		// margin-left: 40px;
-	// 	}
-	// }
 }
 
 .contact-box__icon {
-	// margin-right: 8px;
-
 	fill: $accent-color-second;
 
 	&--address {
