@@ -99,12 +99,10 @@
 	}
 
 	&--address {
-		// flex-direction: row-reverse;
 		margin-left: 32.15%;
 		
 
 		@include minW-Tablet {
-			flex-direction: row;
 			margin-left: 0;
 		}
 	}
