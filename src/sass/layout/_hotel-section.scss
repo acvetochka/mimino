@@ -180,12 +180,11 @@
 
 // TABLET-MOD DESK-MOD !!!!!???/////
 .position-wrapper {
-  @media screen and (min-width: $tabletMin) {
+  @include minW-Tablet {
     display: flex;
     gap: 26px;
   }
-  @media screen and (min-width: $desktopMin) {
-    display: flex;
+  @include minW-Dt {
     gap: 48px;
   }
 }

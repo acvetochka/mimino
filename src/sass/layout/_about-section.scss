@@ -1,26 +1,26 @@
 // Для Свайпера
 .about-restaurant-container{
-    padding-right: 0;
+    // padding-right: 0;
 
-    @include minW(540px) {
-        padding-right: $paddingPhone;
+    @include maxW(540px) {
+        padding-right: 0;
     }
+
+    // @include minW(540px) {
+    //     padding-right: $paddingPhone;
+    // }
 
 }
 .about-hotel-container{
-    padding-left: 0;
-
-    @include minW(540px) {
-        padding-left: $paddingPhone;
+    @include maxW(540px) {
+        padding-left: 0;
     }
 }
 
 .about-kitchen-container{
-    padding-right: 0;
-    
-        @include minW(540px) {
-            padding-right: $paddingPhone;
-        }
+    @include maxW(540px) {
+        padding-right: 0;
+    }
 }
 // 
 
@@ -34,6 +34,7 @@
         text-align: end;
     }
 }
+
 .about {
     background-color: $primary-background;
    
@@ -47,17 +48,23 @@
         &__img-content1 {
         display: flex;
         gap: 26px;
-        justify-content: center;
+        // justify-content: center;
 
         @include maxW-Tablet {
             flex-direction: column;
             gap: 28px;
-            justify-content: center;
+            // justify-content: center;
         }
         &--rev {
             flex-direction: row-reverse;
         }
     }
+
+    
+    &__img {
+        width:100%;
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -185,6 +192,10 @@
             max-height: 574px;  
         }
     }  
+}
+
+.about__hotel .logo {
+    text-align: end;
 }
 
 .revers.about__img-foto1 {
