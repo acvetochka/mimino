@@ -4,8 +4,13 @@
     max-height: 489px;
   }
 }
-.form-price {
-  &__category {
+.form-price__title {
+  font-size: 24px;
+  @media screen and (min-width: 712px){
+  font-size: 32px;
+  }
+}
+  .form-price__category {
     display: block;
     font-family: ‘Times New Roman’, Times, serif;
     font-weight: 700;
@@ -19,24 +24,34 @@
       margin-bottom: 24px;
     }
   }
-  &__block {
+    // .form-price__label {
+    //   margin-bottom: 24px;
+    // }
+  // &__block {
+  //   @media screen and (min-width: 712px) {
+  //     display: flex;
+  //     margin: 0 auto;
+  //   }
+  // }
+  .form-price__field {
     @media screen and (min-width: 712px) {
-      display: flex;
-      margin: 0 auto;
-    }
-  }
-  &__field {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    @media screen and (min-width: 712px) {
-      display: flex;
-      &:first-child {
-        margin-right: 16px;
-        margin-bottom: 20px;
+      display: inline-block;
+      &--left {
+        margin-left: 11px;
       }
     }
-    &__label {
+  }
+    // display: flex;
+    // position: relative;
+    // flex-direction: column;
+    // @media screen and (min-width: 712px) {
+    //   display: flex;
+    //   &:first-child {
+    //     margin-right: 16px;
+    //     margin-bottom: 20px;
+    //   }
+    // }
+    .form-price__label {
       margin-left:0;
       font-size: 16px;
       line-height: 1.25;
@@ -48,6 +63,13 @@
         margin-bottom: 24px;
       }
     }
+  .list-select {
+    height: 54px;
+    margin-bottom: 14px;
+    @media screen and (min-width: 712px) {
+     height: 64px;
+     margin-bottom: 8;
+    }
   }
   .form-select__input {
     background: transparent;
@@ -56,7 +78,7 @@
     padding: 13px 15px;
     margin-bottom: 14px;
     border-radius: 0;
-    
+    width: 100%;
     align-items: center;
     font-family: ‘Times New Roman’, Times, serif;
     font-weight: 700;
@@ -69,7 +91,12 @@
       margin-bottom: 8px;
     }
   }
-}
 .nice-select-dropdown .list{
     max-height: 90px;
+}
+.form-price__btn {
+  margin-top: 40px;
+  @media screen and (min-width: 712px) {
+    margin-top: 15px;
+  }
 }
