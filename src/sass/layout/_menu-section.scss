@@ -35,9 +35,17 @@ th {
   }
 
   &__type-dishes {
+
+    @include minW(820px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+  }
+
+
       @include minW-Tablet {
-        display: flex;
-        flex-wrap: wrap;
+
         gap:  0 140px;
       }
   }
