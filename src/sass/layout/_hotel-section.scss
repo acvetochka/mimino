@@ -1,57 +1,57 @@
 // Для Свайпера
 .luxe-container{
-  padding-left: 0;
-  
-    @include minW(540px) {
-      padding-left: $paddingPhone;
+    @include maxW(540px) {
+      padding-left: 0;
     }
-    
+}
+
+.flex-container {
+  @include minW-Tablet {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .two-bed-container{
-  padding-right: 0;
-
-  @include minW(540px) {
-      padding-right: $paddingPhone;
-    }
+  @include maxW(540px) {
+    padding-right: 0;
+  }
 }
 
 .three-bed-container{
-  padding-left: 0;
-  
-    @include minW(540px) {
-      padding-left: $paddingPhone;
-    }
+  @include maxW(540px) {
+    padding-left: 0;
+  }
 }
 // 
 .rooms {
   background-color: $primary-background;
   padding-bottom: 32px;
 
-  @media screen and (max-width: $tabletMax) {
+  @include maxW-Tablet {
     overflow: hidden;
   }
 }
+
 .rooms--colorfix {
   background-color: $secondary-background;
 }
+
 .rooms__phrase {
   display: block;
 
   font-family: 'Times New Roman';
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
   padding-bottom: 8px;
   color: $span-color;
 
-  @media screen and (min-width: $tabletMin) {
+  @include minW-Tablet {
     font-family: 'Times New Roman';
-    font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    line-height: 37px;
+    line-height: 1.16;
 
     padding-bottom: 4px;
   }
@@ -60,16 +60,15 @@
   display: block;
   padding-bottom: 32px;
 
-  @media screen and (min-width: $tabletMin) {
+  @include minW-Tablet {
     padding-bottom: 62px;
   }
-  @media screen and (min-width: $desktopMin) {
+  @include minW-Dt {
     padding-bottom: 72px;
   }
 }
 .rooms__title {
   font-family: 'Times New Roman';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
@@ -79,9 +78,8 @@
   padding-bottom: 12px;
   color: $secondary-color;
 
-  @media screen and (min-width: $tabletMin) {
+  @include minW-Tablet {
     font-family: 'Times New Roman';
-    font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 34px;
@@ -89,9 +87,8 @@
     padding-bottom: 16px;
   }
 
-  @media screen and (min-width: $desktopMin) {
+  @include minW-Dt {
     font-family: 'Times New Roman';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 41px;
@@ -108,7 +105,7 @@
   text-align: end;
   transform: translateX(0.3em);
 
-  @media screen and (min-width: $tabletMin) {
+  @include minW-Tablet {
     text-align: end;
     transform: translateX(0.3em);
   }
@@ -118,15 +115,13 @@
   text-align: right;
   text-align: end;
 
-  @media screen and (min-width: $tabletMin) {
+  @include minW-Tablet {
     // padding-left: 45px;
     text-align: left;
   }
 }
 
 .rooms__text {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -136,10 +131,8 @@
   padding-bottom: 32px;
   padding-right: 141px;
 
-  @media screen and (min-width: $tabletMin) {
+  @include minW-Tablet {
     padding-right: 0;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -147,9 +140,7 @@
     max-width: 439px;
   }
 
-  @media screen and (min-width: $desktopMin) {
-    font-family: 'Montserrat';
-    font-style: normal;
+  @include minW-Dt {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -162,7 +153,7 @@
   padding-left: 83px;
   padding-right: 0;
 
-  @media screen and (min-width: $tabletMin) {
+  @include minW-Tablet {
     padding-left: 0;
   }
 }
@@ -172,7 +163,7 @@
   margin-right: 0;
   margin-bottom: 32px;
 
-  @media screen and (min-width: $tabletMin) {
+  @include minW-Tablet {
     transform: translateY(-32px);
     // margin-top: -48px;
     margin-bottom: 48px;
@@ -188,31 +179,44 @@
 
 
 // TABLET-MOD DESK-MOD !!!!!???/////
-// .position-wrapper {
-//   @media screen and (min-width: $tabletMin) {
-//     display: flex;
-//     gap: 26px;
-//   }
-//   @media screen and (min-width: $desktopMin) {
-//     display: flex;
-//     gap: 48px;
-//   }
-// }
-.text-item-wrapper {
-  padding-top: 32px;
+.position-wrapper {
   @media screen and (min-width: $tabletMin) {
-    max-width: 509px;
+    display: flex;
+    gap: 26px;
+  }
+  @media screen and (min-width: $desktopMin) {
+    display: flex;
+    gap: 48px;
   }
 }
+.text-item-wrapper {
+  
+  padding-top: 32px;
+  @include minW-Tablet {
+    padding-left: 0;
+    max-width: 509px;
+  }
+
+  @include maxW(540px) {
+    padding-left: $paddingPhone;
+  }
+}
+
+.two-bed-container .text-item-wrapper {
+  @include maxW(540px) {
+    padding-right: $paddingPhone;
+  }
+}
+
 .second-position-wrapper {
-  @media screen and (min-width: $tabletMin) {
+  @include minW-Tablet {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
 .second-position-wrapper--fix {
-  @media screen and (min-width: $tabletMin) {
+  @include minW-Tablet {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -221,7 +225,7 @@
 }
 
 .position-wrapper--mod {
-  @media screen and (min-width: $tabletMin) {
+  @include minW-Tablet {
     display: flex;
     flex-direction: row-reverse;
     gap: 45px;
