@@ -1,3 +1,29 @@
+// Для Свайпера
+.luxe-container{
+  padding-left: 0;
+  
+    @include minW(540px) {
+      padding-left: $paddingPhone;
+    }
+    
+}
+
+.two-bed-container{
+  padding-right: 0;
+
+  @include minW(540px) {
+      padding-right: $paddingPhone;
+    }
+}
+
+.three-bed-container{
+  padding-left: 0;
+  
+    @include minW(540px) {
+      padding-left: $paddingPhone;
+    }
+}
+// 
 .rooms {
   background-color: $primary-background;
   padding-bottom: 32px;
@@ -160,58 +186,18 @@
   box-shadow: $img-shadow;
 }
 
-// SLIDER ??///
-.slider-section {
-  margin-bottom: 20px;
-  max-width: 245px;
-  overflow: hidden;
-  box-shadow: $img-shadow;
-  background-color: rgba(0, 0, 0, 0.13);
-
-  @media screen and (max-width: $tabletMax) {
-    transform: translateX(-4em);
-  }
-
-  @media screen and (min-width: $tabletMin) {
-    max-width: 428px;
-  }
-  @media screen and (min-width: $desktopMin) {
-    max-width: 548px;
-  }
-}
-.slider-section--fix-position {
-  @media screen and (max-width: $tabletMax) {
-    transform: translateX(12em);
-  }
-}
-.slider-section--fix {
-  @media screen and (min-width: $tabletMin) {
-    margin-bottom: 0;
-  }
-}
-
-// BUTTONS///////////
-.rooms__button {
-  // display: block;
-  // margin-left: auto;
-  // margin-right: auto;
-  margin-bottom: 16px;
-}
-.rooms__button--fix {
-  margin-bottom: 0;
-}
 
 // TABLET-MOD DESK-MOD !!!!!???/////
-.position-wrapper {
-  @media screen and (min-width: $tabletMin) {
-    display: flex;
-    gap: 26px;
-  }
-  @media screen and (min-width: $desktopMin) {
-    display: flex;
-    gap: 48px;
-  }
-}
+// .position-wrapper {
+//   @media screen and (min-width: $tabletMin) {
+//     display: flex;
+//     gap: 26px;
+//   }
+//   @media screen and (min-width: $desktopMin) {
+//     display: flex;
+//     gap: 48px;
+//   }
+// }
 .text-item-wrapper {
   padding-top: 32px;
   @media screen and (min-width: $tabletMin) {
@@ -240,4 +226,13 @@
     flex-direction: row-reverse;
     gap: 45px;
   }
+}
+
+.last-buttons-luxe,
+.last-two-bed-buttons,
+.last-three-bed-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,3 +1,8 @@
+.swiper {
+    z-index: 0;
+}
+
+
 // ABOUT-HOTEL-SLIDER
 .swiper-hotel-container {
     transform: scale(-1, 1);
@@ -31,7 +36,7 @@
 
     .hotel-btn-prev {
         transform: translateY(0);
-        // position: static;
+
         position: relative;
         width: 32px;
         height: 32px;
@@ -51,7 +56,7 @@
 
     .hotel-btn-next {
         transform: translateY(0);
-        // position: static;
+
         position: relative;
         width: 32px;
         height: 32px;
@@ -107,7 +112,7 @@
 
     .restaurant-btn-prev {
         transform: translateY(0);
-            // position: static;
+    
             position: relative;
             width: 32px;
             height: 32px;
@@ -127,7 +132,7 @@
 
     .restaurant-btn-next {
         transform: translateY(0);
-        // position: static;
+
         position: relative;
         width: 32px;
         height: 32px;
@@ -149,12 +154,8 @@
 
 
 // DETAILS-RESTAURANT-SLIDER
-.swiper {
-    z-index: 0;
-}
 
-
-.swiper-and-buttons-container {
+.swiper-and-buttons-restaurant-container{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -191,23 +192,20 @@
 
 
 }
-.swiper-details__slide{
-    width: 270px;
-}
-.swiper-details__slide img{
-    width: 270px;
-}
 
-.swiper-details__buttons{
+// .swiper-details__slide img{
+//     width: 270px;
+// }
+
+.swiper-details-restaurant__buttons{
     display: flex;
     gap: 32px;
     height: 32px;
     margin-top: 16px;
 }
 
-.details-btn-prev  {
+.details-restaurant-btn-prev  {
     transform: translateY(0);
-    // position: static;
     position: relative;
     width: 32px;
     height: 32px;
@@ -221,13 +219,12 @@
     }
 }
 
-.details-btn-prev::after{
+.details-restaurant-btn-prev::after{
     content: "";
 }
 
-.details-btn-next  {
+.details-restaurant-btn-next  {
     transform: translateY(0);
-    // position: static;
     position: relative;
     width: 32px;
     height: 32px;
@@ -240,18 +237,405 @@
         fill: currentColor;
     }
 }
-.details-btn-next::after{
+.details-restaurant-btn-next::after{
     content: "";
 }
 
 
 // DETAILS-HOTEL-SLIDER
 
-.swiper-hotel-details-container{
-    transform: scale(-1,1);
+
+.swiper-and-buttons-hotel-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+
+    @include minW-Tablet {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 29px;
+    }
+
+    @include minW-Dt {
+        gap: 32px;
+    }
+}
+
+.swiper-hotel-details-container {
+    width: 100%;
+    transform: scale(-1, 1);
 
     @include maxW-Phone {
-            transform: scale();
-        }
+        transform: scale();
+        width: auto;
+        max-width: 414px;
+    }
 
+    @include minW-Tablet {
+        min-width: 608px;
+        max-width: 759px;
+    }
+
+    @include minW-Dt {
+        max-width: 1012px;
+    }
+
+
+}
+
+.swiper-details-hotel__buttons {
+    display: flex;
+    gap: 32px;
+    height: 32px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.details-hotel-btn-prev {
+    transform: translateY(0);
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    color: $contrast-color;
+
+    & svg {
+        fill: currentColor;
+    }
+}
+
+.details-hotel-btn-prev::after {
+    content: "";
+}
+
+.details-hotel-btn-next {
+    transform: translateY(0);
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    color: $contrast-color;
+
+    & svg {
+        fill: currentColor;
+    }
+}
+
+.details-hotel-btn-next::after {
+    content: "";
+}
+
+
+// KITCHEN-SLIDER
+
+.swiper-kitchen-container {
+    margin-top: 32px;
+    margin-left: auto;
+    min-height: 245px;
+    max-width: 305px;
+
+    @include maxW-Phone {
+        min-height: 245px;
+        max-width: 305px;
+    }
+
+    @include minW-Tablet {
+        margin-top: -80px;
+        min-height: 194px;
+        max-width: 428px;
+    }
+
+    @include minW-Dt {
+        margin-top: -140px;
+        min-height: 254px;
+        max-width: 548px;
+    }
+
+    .swiper-kitchen__buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 32px;
+        height: 32px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .kitchen-btn-prev {
+        transform: translateY(0);
+        position: relative;
+        width: 32px;
+        height: 32px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: $secondary-color;
+
+        & svg {
+            fill: currentColor;
+        }
+    }
+
+    .kitchen-btn-prev::after {
+        content: "";
+    }
+
+    .kitchen-btn-next {
+        transform: translateY(0);
+
+        position: relative;
+        width: 32px;
+        height: 32px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: $secondary-color;
+
+        & svg {
+            fill: currentColor;
+        }
+    }
+
+    .kitchen-btn-next::after {
+        content: "";
+    }
+}
+
+
+// LUXURY-HOTEL-SLIDER
+
+.swiper-and-buttons-luxe{
+    @include minW-Tablet{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+.swiper-luxe-container {
+    transform: scale(-1, 1);
+    margin-top: 32px;
+    margin-right: auto;
+    max-width: 305px;
+
+    @include maxW-Phone {
+        transform: scale();
+    }
+
+    @include minW-Tablet {
+        max-width: 428px;
+    }
+
+    @include minW-Dt {
+        margin-right: 0;
+        max-width: 548px;
+    }
+
+    .swiper-luxe__buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 32px;
+        height: 32px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .luxe-btn-prev {
+        transform: translateY(0);
+        position: relative;
+        width: 32px;
+        height: 32px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: $secondary-color;
+
+        & svg {
+            fill: currentColor;
+        }
+    }
+
+    .luxe-btn-prev::after {
+        content: "";
+    }
+
+    .luxe-btn-next {
+        transform: translateY(0);
+        position: relative;
+        width: 32px;
+        height: 32px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: $secondary-color;
+
+        & svg {
+            fill: currentColor;
+        }
+    }
+
+    .luxe-btn-next::after {
+        content: "";
+    }
+}
+
+// TWO-BED-SLIDER
+.swiper-and-buttons-two-bed{
+    display: flex;
+    flex-direction: column;
+    @include minW-Tablet{
+        flex-direction: row-reverse;
+    }
+
+
+}
+
+.swiper-two-bed-container {
+    margin-top: 32px;
+    margin-left: auto;
+    max-width: 305px;
+
+    @include maxW-Phone {
+    }
+
+    @include minW-Tablet {
+        max-width: 428px;
+    }
+
+    @include minW-Dt {
+        margin-right: 0;
+        max-width: 548px;
+    }
+
+    .swiper-two-bed__buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 32px;
+        height: 32px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .two-bed-btn-prev {
+        transform: translateY(0);
+        position: relative;
+        width: 32px;
+        height: 32px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: $secondary-color;
+
+        & svg {
+            fill: currentColor;
+        }
+    }
+
+    .two-bed-btn-prev::after {
+        content: "";
+    }
+
+    .two-bed-btn-next {
+        transform: translateY(0);
+        position: relative;
+        margin-right: 15px;
+        width: 32px;
+        height: 32px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: $secondary-color;
+
+        & svg {
+            fill: currentColor;
+        }
+    }
+
+    .two-bed-btn-next::after {
+        content: "";
+    }
+}
+
+
+
+// THREE-BED-SLIDER
+
+.swiper-and-buttons-three-bed {
+    @include minW-Tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+.swiper-three-bed-container {
+    transform: scale(-1, 1);
+    margin-top: 32px;
+    margin-right: auto;
+    max-width: 305px;
+
+    @include maxW-Phone {
+        transform: scale();
+    }
+
+    @include minW-Tablet {
+        max-width: 428px;
+    }
+
+    @include minW-Dt {
+        margin-right: 0;
+        max-width: 548px;
+    }
+
+    .swiper-three-bed__buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 32px;
+        height: 32px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .three-bed-btn-prev {
+        transform: translateY(0);
+        position: relative;
+        width: 32px;
+        height: 32px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: $secondary-color;
+
+        & svg {
+            fill: currentColor;
+        }
+    }
+
+    .three-bed-btn-prev::after {
+        content: "";
+    }
+
+    .three-bed-btn-next {
+        transform: translateY(0);
+        position: relative;
+        width: 32px;
+        height: 32px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: $secondary-color;
+
+        & svg {
+            fill: currentColor;
+        }
+    }
+
+    .three-bed-btn-next::after {
+        content: "";
+    }
 }

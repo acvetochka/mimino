@@ -1,47 +1,52 @@
-<section class="container rooms rooms--colorfix">
-  <div class="position-wrapper position-wrapper--mod">
-    <div class="text-item-wrapper">
-      <div class="rooms__logo-phrase--fix">
-        <span class="rooms__phrase rooms__phrase--fix">Amet minim mollit non</span>
-        <span class="logo rooms__logo rooms__logo--fix">MIMIHO</span>
+<section class="rooms rooms--colorfix" data-slider="home-slider">
+  <div class="container two-bed-container">
+    <div class="position-wrapper position-wrapper--mod">
+      <div class="text-item-wrapper">
+        <div class="rooms__logo-phrase--fix">
+          <span class="rooms__phrase rooms__phrase--fix">Amet minim mollit non</span>
+          <span class="logo rooms__logo rooms__logo--fix">MIMIHO</span>
+        </div>
+        <h2 class="rooms__title rooms__title--fix">ТРЬОХМІСНИЙ НОМЕР</h2>
+        <p class="rooms__text rooms__text--fix">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </p>
       </div>
-      <h2 class="rooms__title rooms__title--fix">ТРЬОХМІСНИЙ НОМЕР</h2>
-      <p class="rooms__text rooms__text--fix">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-      </p>
+
+      <div>
+        <picture>
+          <source
+            srcset="
+              /src/images/hotel-page/pic1-desk.jpg   1x,
+              /src/images/hotel-page/pic1-desk2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              /src/images/hotel-page/pic1-tab.jpg   1x,
+              /src/images/hotel-page/pic1-tab2x.jpg 2x
+            "
+            media="(min-width: 481px)"
+          />
+          <img
+            class="rooms__img rooms__img--fix rooms__img--fix-second"
+            srcset="
+              /src/images/hotel-page/pic1-mob.jpg   1x,
+              /src/images/hotel-page/pic1-mob2x.png 2x
+            "
+            src="/src/images/hotel-page/pic1-mob.jpg"
+            alt="Трьохмісний номер"
+          />
+        </picture>
+      </div>
     </div>
 
-    <div>
-      <picture>
-        <source
-          srcset="
-            /src/images/hotel-page/pic1-desk.jpg   1x,
-            /src/images/hotel-page/pic1-desk2x.jpg 2x
-          "
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="/src/images/hotel-page/pic1-tab.jpg 1x, /src/images/hotel-page/pic1-tab2x.jpg 2x"
-          media="(min-width: 481px)"
-        />
-        <img
-          class="rooms__img rooms__img--fix rooms__img--fix-second"
-          srcset="/src/images/hotel-page/pic1-mob.jpg 1x, /src/images/hotel-page/pic1-mob2x.png 2x"
-          src="/src/images/hotel-page/pic1-mob.jpg"
-          alt="Трьохмісний номер"
-        />
-      </picture>
-    </div>
-  </div>
-<!-- SWIPER- -->
-  <div class="second-position-wrapper second-position-wrapper--fix">
-    <div>
-      <section class="slider-section slider-section--fix-position" data-slider="home-slider">
+    <!-- SLIDER- -->
+    <div class="swiper-and-buttons-two-bed">
+      <div class="swiper-two-bed-container">
         <div class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
               <picture class="rooms__img">
                 <source
@@ -200,20 +205,33 @@
             </div>
           </div>
 
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-two-bed__buttons">
+            <button type="button" class="swiper-button-prev two-bed-btn-prev">
+              <svg width="32" height="32">
+                <use href="./images/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <button type="button" class="swiper-button-prev two-bed-btn-next">
+              <svg width="32" height="32">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
         </div>
-      </section>
-    </div>
-    <div>
-      <a class="rooms__button button-service rooms__link link-button" href="/src/room.html">Детальніше</a>
-      <button
-        class="rooms__button rooms__button--fix button-service js-open-modal"
-        type="button"
-        data-modal="3"
-      >
-        Переглянути ціни
-      </button>
+      </div>
+
+      <div class="last-two-bed-buttons">
+        <button class="rooms__button button-service" type="button">
+          <a class="rooms__link" href="/src/room.html">Детальніше</a>
+        </button>
+        <button
+          class="rooms__button rooms__button--fix button-service js-open-modal"
+          type="button"
+          data-modal="3"
+        >
+          Переглянути ціни
+        </button>
+      </div>
     </div>
   </div>
 </section>
