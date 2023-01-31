@@ -1,0 +1,165 @@
+<section class="about" data-slider="home-slider">
+  <div class="container about-restaurant-container">
+    <div class="about__container">
+      <div class="about__img-content1">
+        <div class="about__content">
+          <h2 hidden>Про наш ресторан</h2>
+          <span class="about__subtitle">Amet minim mollit non</span>
+          <span class="logo logo--section">mimiho</span>
+          <p class="about__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <picture class="about__img-foto1">
+          <source
+            srcset="
+              ./images/home-page/about-rest/rest1-desktop.jpg    1x,
+              ./images/home-page/about-rest/rest1-desktop@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/home-page/about-rest/rest1-tablet.jpg    1x,
+              ./images/home-page/about-rest/rest1-tablet@2x.jpg 2x
+            "
+            media="(min-width: 1024px)"
+          />
+          <img class="about__img"
+            srcset="
+              ./images/home-page/about-rest/rest1-mobile.jpg    1x,
+              ./images/home-page/about-rest/rest1-mobile@2x.jpg 2x
+            "
+            alt="фото ресторану1"
+          />
+        </picture>
+      </div>
+      <div class="about__img-content2">
+        <picture class="about__img-foto2">
+          <source
+            srcset="
+              ./images/home-page/about-rest/rest2-desktop.jpg    1x,
+              ./images/home-page/about-rest/rest2-desktop@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/home-page/about-rest/rest2-tablet.jpg    1x,
+              ./images/home-page/about-rest/rest2-tablet@2x.jpg 2x
+            "
+            media="(min-width: 1024px)"
+          />
+          <img class="about__img"
+            srcset="
+              ./images/home-page/about-rest/rest2-mobile.jpg    1x,
+              ./images/home-page/about-rest/rest2-mobile@2x.jpg 2x
+            "
+            alt="фото ресторану2"
+          />
+        </picture>
+        <p class="about__text--modif">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+          consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="swiper-restaurant-container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture
+              ><source
+                srcset="
+                  ./images/home-page/about-rest/slide1-desk.jpg   1x,
+                  ./images/home-page/about-rest/slide1-desk2x.jpg 2x
+                "
+                media="(min-width: 1280px)" />
+              <source
+                srcset="
+                  ./images/home-page/about-rest/slide1-tab.jpg   1x,
+                  ./images/home-page/about-rest/slide1-tab2x.jpg 2x
+                "
+                media="(min-width: 481px)" />
+              <img
+                class="swiper-slide__img"
+                srcset="
+                  ./images/home-page/about-rest/slide1-mob.jpg   1x,
+                  ./images/home-page/about-rest/slide1-mob2x.jpg 2x
+                "
+                src="./images/home-page/about-rest/slide1-mob.jpg"
+                alt="Стіл та бокал вина"
+            /></picture>
+          </div>
+          <div class="swiper-slide">
+            <picture
+              ><source
+                srcset="
+                  ./images/home-page/about-rest/slide2-desk.jpg   1x,
+                  ./images/home-page/about-rest/slide2-desk2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/home-page/about-rest/slide2-tab.jpg   1x,
+                  ./images/home-page/about-rest/slide2-tab2x.jpg 2x
+                "
+                media="(min-width: 481px)"
+              />
+              <img
+                class="swiper-slide__img"
+                srcset="
+                  ./images/home-page/about-rest/slide2-mob.jpg   1x,
+                  ./images/home-page/about-rest/slide2-mob2x.jpg 2x
+                "
+                src="./images/home-page/about-rest/slide2-mob.jpg"
+                alt="Стіл та столові прибори"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture
+              ><source
+                srcset="
+                  ./images/home-page/about-rest/slide3-desk.jpg   1x,
+                  ./images/home-page/about-rest/slide3-desk2x.jpg 2x
+                "
+                media="(min-width: 1280px)" />
+              <source
+                srcset="
+                  ./images/home-page/about-rest/slide3-tab.jpg   1x,
+                  ./images/home-page/about-rest/slide3-tab2x.jpg 2x
+                "
+                media="(min-width: 481px)" />
+              <img
+                class="swiper-slide__img"
+                srcset="
+                  ./images/home-page/about-rest/slide3-mob.jpg   1x,
+                  ./images/home-page/about-rest/slide3-mob2x.jpg 2x
+                "
+                src="./images/home-page/about-rest/slide3-mob.jpg"
+                alt="Чашка  чаю"
+            /></picture>
+          </div>
+        </div>
+
+        <div class="swiper-restaurant__buttons">
+          <button type="button" class="swiper-button-prev restaurant-btn-prev">
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <button type="button" class="swiper-button-next restaurant-btn-next">
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

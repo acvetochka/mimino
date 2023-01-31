@@ -1,24 +1,24 @@
-<div class="modal room-modal" data-modal="2">
-  <button type="button" class="js-modal-close icon-close" data-modal="2">
+<div class="modal book-room-modal" data-modal="2">
+  <button type="button" class="js-modal-close modal__close-btn" data-modal="2">
     <svg width="24" height="24">
       <use href="./images/icons.svg#icon-close"></use>
     </svg>
   </button>
-  <h2 class="room-modal-form__header">забронювати номер</h2>
+  <h2 class="modal__title">забронювати номер</h2>
   <form class="room-modal-form">
     <div class="room-modal-form__item">
       <input
-        class="room-modal-form__input"
+        class="room-modal-form__input modal__input"
         type="text"
         id="user_name"
         name="name"
         placeholder="Ваше імʼя"
       />
-      <label class="room-modal__label" for="user_name">На кого забронювати номер?</label>
+      <label class="room-modal__label modal__label" for="user_name">На кого забронювати номер?</label>
     </div>
     <div class="room-modal-form__item room-modal-form__item--left">
-      <input class="js-inputmask" id="user_telephone" name="user_telephone" />
-      <label class="room-modal__label" for="user_telephone">Номер телефону</label>
+      <input class="js-inputmask modal__input" id="user_telephone" name="user_telephone" />
+      <label class="room-modal__label modal__label" for="user_telephone">Номер телефону</label>
     </div>
     <div class="room-modal-form__select-one">
       <select class="js-select" id="room" name="room">
@@ -26,7 +26,7 @@
         <option value="3x">Трьохмісний номер</option>
         <option value="2x">Двохмісний номер</option>
       </select>
-      <label class="room-modal__label" for="room">Категорія номеру</label>
+      <label class="room-modal__label modal__label" for="room">Категорія номеру</label>
     </div>
     <div class="room-modal-form__item">
       <select class="js-select" id="first-date" name="first-date">
@@ -34,7 +34,7 @@
         <option value="date">01.02.2023</option>
         <option value="date">02.02.2023</option>
       </select>
-      <label class="room-modal__label" for="first-date">Дата заїзду</label>
+      <label class="room-modal__label modal__label" for="first-date">Дата заїзду</label>
     </div>
     <div class="room-modal-form__item room-modal-form__item--left">
       <select class="js-select" id="last-date" name="last-date">
@@ -42,8 +42,8 @@
         <option value="date">03.02.2023</option>
         <option value="date">04.02.2023</option>
       </select>
-      <label class="room-modal__label" for="last-date">Дата виїзду</label>
+      <label class="room-modal__label modal__label" for="last-date">Дата виїзду</label>
     </div>
-    <button class="room-modal-form__btn button button-modal" type="submit">оформити бронювання</button>
+    <button class="modal-form__btn button button-modal" type="submit">оформити бронювання</button>
   </form>
 </div>

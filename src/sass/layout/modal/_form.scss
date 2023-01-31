@@ -1,15 +1,187 @@
-.js-backdrop-modal{
-    position: fixed;
-    top: 0;
-    left: 0;
+.js-backdrop-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
+  z-index: 101;
+
+  background-color: rgba(0, 0, 0, 0.65);
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  overflow: scroll;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+.modal {
+  position: absolute;
+  visibility: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  overflow-y: auto;
+  width: 100%;
+  max-width: 414px;
+  height: 100%;
+
+  border-radius: 2px;
+  padding: 60px 15px;
+  background-color: $primary-background;
+  @media screen and (min-width: 712px) {
     width: 100%;
+    max-width: 712px;
     height: 100%;
 
-    opacity: 0;
-    pointer-events: none;
-    &.active{
-        opacity: 1;
-        background-color:rgba(0, 0, 0, 0.65);
-        pointer-events: auto;}
+    padding: 60px;
+  }
+  &.active {
+    visibility: visible;
+  }
+}
+.modal__close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    fill: $accent-color-second;
+  }
+}
+.modal__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman';
+  line-height: 1.17;
+
+  letter-spacing: 0.05em;
+
+  color: $secondary-color;
+  @media screen and (min-width: 712px) {
+    font-size: 40px;
+    line-height: 1.15;
+  }
+}
+.modal__label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.21;
+
+  letter-spacing: 0.02em;
+
+  color: $accent-color-second;
+
+  margin-bottom: 20px;
+  margin-left: 12px;
+}
+.js-select {
+  border: none;
+}
+.nice-select {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  padding-left: 12px;
+  margin-bottom: 8px;
+
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+
+  letter-spacing: 0.05em;
+
+  color: $placeholder-color;
+  background-color: $primary-background;
+  border: 1px solid $accent-color-second;
+  border-radius: 0;
+  &:hover {
+    border-color: $placeholder-color;
+  }
+  & .nice-select-search {
+    background-color: $primary-background;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+
+    letter-spacing: 0.05em;
+    border: none;
+  }
+  &.open .nice-select-dropdown {
+    width: 100%;
+    background-color: $primary-background;
+    border-radius: 0;
+  }
+  @media screen and (min-width: 712px) {
+    width: 288px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+.nice-select::after {
+  content: '';
+  height: 15px;
+  width: 15px;
+  right: 20px;
+  top: 40%;
+  border-bottom: 3px solid $accent-color-second;
+  border-right: 3px solid $accent-color-second;
+}
+.modal__input {
+  width: 100%;
+  height: 54px;
+  display: block;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+
+  padding: 16px 12px;
+  cursor: pointer;
+  outline: none;
+
+  color: $placeholder-color;
+  border: 1px solid $accent-color-second;
+  margin-bottom: 8px;
+  background-color: $primary-background;
+  &:hover,
+  &:focus {
+    border-color: $placeholder-color;
+  }
+  @media screen and (min-width: 712px) {
+    width: 288px;
+    font-size: 24px;
+    line-height: 1.17;
+    height: 64px;
+  }
+}
+.nice-select-dropdown .list {
+  max-height: 90px;
+}
+.modal-form__btn {
+  width: 100%;
+  display: block;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  @media screen and (min-width: 712px){
+    font-size: 24px;
+  }
 }

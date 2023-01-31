@@ -1,38 +1,46 @@
 .logo {
-    font-family: 'FilmP3', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.075;   
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    color: $logo-color;
+  font-family: 'FilmP3', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: $logo-color;
+//   text-align: end;
+//   transform: translateX(0.3em);
 
-    @include minW-Tablet {
-        font-size: 64px;
-        line-height: 1.08;
-    }
+  @include minW-Tablet {
+    font-size: 64px;
+    line-height: 1.08;
+  }
 
-    &--white {
-        color: $contrast-color;
-    }
+  &--white {
+    // text-align: end;
+    // transform: translateX(0.3em);
+    color: $contrast-color;
+  }
 
-    &--footer {
-        color: $accent-color;
+  &--footer {
+    color: $accent-color;
+
+    @include maxW-Phone {
+      font-size: 32px;
     }
+  }
 }
 
 .header__logo {
-    margin-right: auto;
-    font-size: 36px;
-    line-height: 1.08;
-    color: $contrast-color;
+  margin-right: auto;
+  font-size: 36px;
+  line-height: 1.08;
+  color: $contrast-color;
 
-    @include minW-Tablet {
-        font-size: 40px;
-        line-height: 1.075;
-    }
+  @include minW-Tablet {
+    font-size: 40px;
+    line-height: 1.075;
+  }
 
-        @mixin minW-Dt {
-        font-size: 30px;
-    }
+  @include maxW-Phone {
+    font-size: 30px;
+  }
 }
