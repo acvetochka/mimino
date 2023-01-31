@@ -14,12 +14,21 @@
         @include minW-Tablet {
         margin-left: 107px;
         }
+
+        @include maxW-Phone {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
     }
 
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include minW(600px) {
+            justify-content: space-around;
+        }
         @include minW-Tablet {
             max-width: 1024px;
             justify-content: flex-start;

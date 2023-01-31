@@ -1,0 +1,225 @@
+// Для Свайпера
+.about-restaurant-container{
+    // padding-right: 0;
+
+    @include maxW(540px) {
+        padding-right: 0;
+    }
+
+    // @include minW(540px) {
+    //     padding-right: $paddingPhone;
+    // }
+
+}
+.about-hotel-container{
+    @include maxW(540px) {
+        padding-left: 0;
+    }
+}
+
+.about-kitchen-container{
+    @include maxW(540px) {
+        padding-right: 0;
+    }
+}
+// 
+
+
+.logo--hotel{
+    text-align: end;
+    @include minW-Tablet{
+        text-align: left;
+    }
+    @include minW-Dt{
+        text-align: end;
+    }
+}
+
+.about {
+    background-color: $primary-background;
+   
+        // &__container {
+        //     @include maxW-Tablet {
+        //     max-width: 600px;
+        //     margin-right: auto;
+        //     margin-left: auto;
+        //     }
+        // }
+        &__img-content1 {
+        display: flex;
+        gap: 26px;
+        // justify-content: center;
+
+        @include maxW-Tablet {
+            flex-direction: column;
+            gap: 28px;
+            // justify-content: center;
+        }
+        &--rev {
+            flex-direction: row-reverse;
+        }
+    }
+
+    
+    &__img {
+        width:100%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-top: 16px;
+
+        @include minW-Tablet {
+            margin-right: 0;
+            max-width: 439px;
+            padding-top: 120px;
+        }
+        @include minW-Dt {
+            max-width: 518px;
+        }
+    }
+
+    &__subtitle {
+        font-family: 'Times New Roman';
+        font-size: 20px;
+        line-height: 1.15;
+        color: $span-color;
+
+        @include minW-Tablet {
+        text-align: end;
+        font-size: 32px;
+        line-height: 1.16;
+        }
+
+    }
+    &__text {
+        font-weight: 600;
+        max-width: 258px;
+        font-size: 12px;
+        line-height: 1.25;
+        color: $primary-color;
+       
+        @include minW-Tablet {
+            max-width: 439px;
+           font-size: 16px; 
+        }
+        @include minW-Dt {
+            max-width: 518px;
+        }
+    }
+    &__text--modif {
+        max-width: 163px;
+       font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        color: $accent-color-second;
+
+        @include minW-Tablet {
+            max-width: 312px;
+           font-size: 16px; 
+        }
+
+    }
+    &__img-foto1 {
+        display: flex;
+        align-self: flex-end;
+        margin-right: 15px;
+        max-width: 244px;
+        max-height: 322px;
+        width: 100%;
+        height: 100%;
+        box-shadow: $img-shadow;
+       
+        @include minW(700px) {
+            transform: translateY(-20px);
+           }
+
+        @include minW-Tablet {
+            display: flex;
+            max-width: 400px;
+            max-height: 524px;
+            margin-left: 26px;
+            transform: translateY(-32px);
+        }
+        @include minW-Dt {
+            max-width: 460px;
+            max-height: 574px;
+            margin-left: 37px;
+        }
+        
+    }
+       
+    &__img-content2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 32px;
+        gap: 20px;
+        align-items: center;
+
+        @include minW(700px) {
+            padding-top: 0;
+            transform: translateY(-30px);
+        }
+
+        @include minW-Tablet {
+            padding-top: 0;
+            gap: 48px;
+            transform: translateY(-50px);
+        }
+        @include minW-Dt {
+            gap: 32px;
+            transform: translateY(-100px);
+        }
+        &--rev {
+            flex-direction: row-reverse;
+        }
+    }
+    &__img-foto2 {
+        max-width: 200px;
+        max-height: 278px;
+        width: 100%;
+        height: 100%;
+        box-shadow: $img-shadow;
+        
+        @include minW-Tablet {
+            max-width: 350px;
+            max-height: 500px;
+        }
+        @include minW-Dt {
+            max-width: 460px;
+            max-height: 574px;  
+        }
+    }  
+}
+
+.about__hotel .logo {
+    text-align: end;
+}
+
+.revers.about__img-foto1 {
+    @include maxW-Tablet {
+        margin-top: 210px;
+    }
+}
+.swiper-about {
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px;
+    max-width: 330px;
+
+    @include minW-Tablet {
+        margin-top: 154px;
+        margin-left: 139px;
+        max-width: 428px;
+       
+    }
+    @include minW-Dt {
+        margin-top: 119px;
+        margin-left: 102px;
+        max-width: 654px;
+        
+    }
+}

@@ -1,183 +1,33 @@
-.room-modal{
-    position:absolute;
-   
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    
-    overflow-y: auto;
-    width: 100%;
-    max-width: 414px;
-    height: 100%;
-    max-height: 780px;
-
-    padding: 60px 15px;
-    background-color: $primary-background;
-    @media screen and (min-width:712px){
-    width: 100%;
-    max-width: 712px;
-    height: 100%;
+.book-room-modal {
+  max-height: 780px;
+  @media screen and (min-width: 712px) {
     max-height: 638px;
-
-    padding: 60px;
-    }
+  }
 }
-.icon-close{
-    position: absolute;
-    top: 16px;
-    right: 15px;
-    padding: 0;
-    
-    border:none;
-    background-color: transparent;
-    &:hover{fill: $accent-color-second;}
-}
-.room-modal-form__header{
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    font-family: 'Times New Roman';
-   
-    line-height: 1.17;
-  
-    letter-spacing: 0.05em;
-    
-    color:$secondary-color;
-    @media screen and (min-width:712px) {
-       font-size: 40px;
-       line-height:1.15;
-       margin-bottom: 36px;
-      }
+.room-modal-form__item {
+  @media screen and (min-width: 712px) {
+    display: inline-block;
+    &--left {
+      margin-left: 11px;
     }
-.room-modal-form__item{ 
-    @media screen and (min-width:712px){display: inline-block;
-  &--left{margin-left: 11px;}}}
-.room-modal-form__input{ 
-    width: 100%;
-    display: block; 
-    font-family: 'Times New Roman';
-    font-weight: 700;
-    font-size: 20px;
-    line-height:1.15;
-    letter-spacing: 0.05em;
-
-    padding: 16px 12px;
-    cursor: pointer;
-    outline: none;
-
-    color:$placeholder-color;
-    border: 1px solid $accent-color-second;
-    margin-bottom: 8px;
-    background-color: $primary-background;
-     &:hover, &:focus{border-color: $placeholder-color}
-     @media screen and (min-width:712px){
-        width: 288px;
-        font-size: 24px;
-        line-height: 1.17;
-     }
-    }    
-.js-inputmask{
-    width: 100%;
-    display: block; 
-
-    font-family: 'Times New Roman';
-    font-weight: 700;
-    font-size: 20px;
-    line-height:1.15;
-    letter-spacing: 0.05em;
-
-    padding: 16px 12px;
-
-    cursor: pointer;
-    outline: none;
-
-    color:$placeholder-color;
-    border: 1px solid $accent-color-second;
-    margin-bottom: 8px;
-    background-color: $primary-background;
-    &:hover, &:focus{border-color: $placeholder-color}
-    @media screen and (min-width:712px){
-      width: 288px;
-      font-size: 24px;
-      line-height: 1.17;
-     }
+  }
 }
-.room-modal__label{
-    display: block;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height:1.21;
-  
-    letter-spacing: 0.02em;
-    
-    color:$accent-color-second;
-    padding-left: 12px;
-    margin-bottom: 20px;
-    @media screen and (min-width:712px){
-       margin-bottom: 28px;
-       }
-    }  
-.room-modal-form__select-one{
-    @media screen and (min-width:712px){
-        width: 288px;
-        margin-left: auto;
-    }
-}      
-.js-select{border: none;}    
-.nice-select{
-    display: flex;
-    justify-content:start;
-    align-items: center;
-    width: 100%;
-    height: 64px;
-    padding-left:12px;
-    margin-bottom: 8px;
-
-    font-family: 'Times New Roman';
-    font-weight: 700;
-    font-size: 20px;
-    line-height:1.15;
-    
-    letter-spacing: 0.05em;
-    
-    color: $placeholder-color;
-    background-color: $primary-background;
-    border: 1px solid $accent-color-second;
-    border-radius: 0;
-    &:hover{border-color: $placeholder-color;}
-    & .nice-select-search{background-color: $primary-background;
-        font-family: 'Times New Roman';
-        font-weight: 700;
-        font-size: 20px;
-        line-height:1.15;
-        
-        letter-spacing: 0.05em;
-         border: none;}
-    &.open .nice-select-dropdown{
-        width: 100%;
-        background-color:$primary-background;
-        border-radius: 0;
-    }
-    @media screen and (min-width:712px){
-        width: 288px;
-        font-size: 24px;
-        line-height: 1.17;
-        }
+.room-modal__label {
+  @media screen and (min-width: 712px) {
+    margin-bottom: 28px;
+  }
 }
-.nice-select::after{
-    content: "";
-    height: 15px;
-    width: 15px;
-    right: 20px;
-    top: 40%;
-    border-bottom:3px solid $accent-color-second;
-    border-right:3px solid $accent-color-second;}
-.room-modal-form__btn{
-    width: 100%;
-    display: block;
-    margin-top: 12px;
+.room-modal-form__select-one {
+  @media screen and (min-width: 712px) {
+    width: 288px;
     margin-left: auto;
-    margin-right: auto;
-    text-transform: uppercase;}  
+  }
+}
+.room-modal-form__btn {
+  width: 100%;
+  display: block;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+}
