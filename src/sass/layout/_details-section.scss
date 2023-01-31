@@ -19,10 +19,11 @@
 }
 
 .details-rest {
+  padding-bottom: 40px;
   position: relative;
   background-color: rgb(99, 95, 95);
   // width: 100vw;
-  height: 735px;
+  // height: 735px;
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 1;
@@ -35,7 +36,7 @@
   }
 
   @include minW-Tablet {
-    height: 620px;
+    // height: 620px;
     background-image: $gradient,
       url(../images/home-page/details-rest/background-tab.jpg);
 
@@ -46,7 +47,7 @@
   }
 
   @include minW-Dt {
-    height: 620px;
+    // height: 620px;
     background-image: $gradient,
       url(../images/home-page/details-rest/background-desk.jpg);
 
@@ -133,36 +134,37 @@
 .details-hotel {
   position: relative;
   // width: 100vw;
-  height: 735px;
+  // height: 735px;
+  padding-bottom: 40px;
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  background-image: l$gradient,
     url(../images/home-page/details-hotel/backgroung-mob.jpg);
 
   @include retina {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: $gradient,
       url(../images/home-page/details-hotel/backgroung-mob2x.jpg);
   }
 
   @include minW-Tablet {
-    height: 620px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    // height: 620px;
+    background-image: $gradient,
       url(../images/home-page/details-hotel/backgroung-tab.jpg);
 
     @include retina {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      background-image: $gradient,
         url(../images/home-page/details-hotel/backgroung-tab2x.jpg);
     }
   }
 
   @include minW-Dt {
-    height: 620px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    // height: 620px;
+    background-image: $gradient,
       url(../images/home-page/details-hotel/background-desk.jpg);
 
     @include retina {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      background-image: $gradient,
         url(../images/home-page/details-hotel/background-desk2x.jpg);
     }
   }
@@ -173,13 +175,15 @@
     padding-top: 48px;
     // margin-right: 253px;
     max-width: 595px;
-    margin: 0 auto;
+    // margin: 0 auto;
+    margin-right: 278px;
+    // text-align: end;
   }
 
   @include minW-Tablet {
-    margin: 0;
-    transform: translateX(231px);
-    // margin-right: 231px;
+    // margin: 0;
+    // transform: translateX(231px);
+    margin-right: 231px;
     min-width: 549px;
   }
 
@@ -236,8 +240,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 32px;
 
+  @include minW-Dt {
+    transform: translateY(20px);
+  }
+
+
+  // @include maxW-Tablet {
+  //  margin-left: auto;
+  //  margin-right: auto;
 }
+// }
 
 .button-service__details {
   margin-bottom: 16px;
@@ -245,12 +259,12 @@
 
 // //sliders
 // .details-hotel .swiper-and-buttons-container {
-//   padding-right: 40px;
-//   padding-left: 0;
+//   // padding-right: 40px;
+//   // padding-left: 0;
 //   @include minW-Tablet{
-//       flex-direction: row;
-//       padding-left: 0;
-//       padding-right: $paddingTablet;
+//       // flex-direction: row;
+//       padding-left: 50px;
+//       // padding-right: $paddingTablet;
 // }
 // }
 

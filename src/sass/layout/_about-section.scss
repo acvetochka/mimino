@@ -37,6 +37,12 @@
 
 .about {
     background-color: $primary-background;
+
+    
+    @include minW-Dt {
+        padding-bottom: 50px;
+    } 
+    
    
         // &__container {
         //     @include maxW-Tablet {
@@ -55,6 +61,7 @@
             gap: 28px;
             // justify-content: center;
         }
+
         &--rev {
             flex-direction: row-reverse;
         }
@@ -91,6 +98,10 @@
         text-align: end;
         font-size: 32px;
         line-height: 1.16;
+        }
+
+        .about-hotel-container & {
+            text-align: end;
         }
 
     }
@@ -196,6 +207,7 @@
 
 .about__hotel .logo {
     text-align: end;
+    transform: translateX(0.3em);
 }
 
 .revers.about__img-foto1 {
