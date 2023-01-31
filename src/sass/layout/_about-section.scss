@@ -1,22 +1,49 @@
-.about-main-container{
+// Для Свайпера
+.about-restaurant-container{
     padding-right: 0;
 
     @include minW(540px) {
         padding-right: $paddingPhone;
-
     }
 
+}
+.about-hotel-container{
+    padding-left: 0;
+
+    @include minW(540px) {
+        padding-left: $paddingPhone;
+    }
+}
+
+.about-kitchen-container{
+    padding-right: 0;
+    
+        @include minW(540px) {
+            padding-right: $paddingPhone;
+        }
+}
+// 
+
+
+.logo--hotel{
+    text-align: end;
+    @include minW-Tablet{
+        text-align: left;
+    }
+    @include minW-Dt{
+        text-align: end;
+    }
 }
 .about {
     background-color: $primary-background;
    
-        &__container {
-            @include maxW-Tablet {
-            max-width: 600px;
-            margin-right: auto;
-            margin-left: auto;
-            }
-        }
+        // &__container {
+        //     @include maxW-Tablet {
+        //     max-width: 600px;
+        //     margin-right: auto;
+        //     margin-left: auto;
+        //     }
+        // }
         &__img-content1 {
         display: flex;
         gap: 26px;
@@ -46,6 +73,7 @@
             max-width: 518px;
         }
     }
+
     &__subtitle {
         font-family: 'Times New Roman';
         font-size: 20px;
@@ -53,6 +81,7 @@
         color: $span-color;
 
         @include minW-Tablet {
+        text-align: end;
         font-size: 32px;
         line-height: 1.16;
         }

@@ -1,5 +1,5 @@
-<section class="container rooms">
-  <div class="position-wrapper">
+<section class="rooms" data-slider="home-slider">
+  <div class="position-wrapper container luxe-container">
     <div class="text-item-wrapper">
       <span class="rooms__phrase">Amet minim mollit non</span>
       <span class="logo rooms__logo">MIMIHO</span>
@@ -31,16 +31,12 @@
         />
       </picture>
     </div>
-  </div>
 
-  <!-- SWIPER- -->
-  <div class="second-position-wrapper">
-    <div>
-      <section class="slider-section" data-slider="home-slider">
+    <!-- SLIDER -->
+    <div class="swiper-and-buttons-luxe">
+      <div class="swiper-luxe-container">
         <div class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
               <picture class="rooms__img">
                 <source
@@ -198,21 +194,33 @@
               </picture>
             </div>
           </div>
-
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-luxe__buttons">
+            <button type="button" class="swiper-button-prev luxe-btn-prev">
+              <svg width="32" height="32">
+                <use href="./images/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <button type="button" class="swiper-button-next luxe-btn-next">
+              <svg width="32" height="32">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
         </div>
-      </section>
-    </div>
-    <div>
-      <a class="rooms__button button-service rooms__link link-button" href="/src/room.html">Детальніше</a>
-      <button
-        class="rooms__button rooms__button--fix button-service js-open-modal"
-        type="button"
-        data-modal="3"
-      >
-        Переглянути ціни
-      </button>
+      </div>
+
+      <div class="last-buttons-luxe">
+        <button class="rooms__button button-service" type="button">
+          <a class="rooms__link" href="/src/room.html">Детальніше</a>
+        </button>
+        <button
+          class="rooms__button rooms__button--fix button-service js-open-modal"
+          type="button"
+          data-modal="3"
+        >
+          Переглянути ціни
+        </button>
+      </div>
     </div>
   </div>
 </section>
