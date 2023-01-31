@@ -131,5 +131,9 @@
     @include minW-Tablet {
         margin-bottom: 32px;
     }
+
+    @include maxW-Phone {
+        width: 100%;
+    }
 }
 
