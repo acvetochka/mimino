@@ -2,7 +2,6 @@
 //     z-index: 0;
 // }
 
-
 // ABOUT-HOTEL-SLIDER
 .swiper-hotel-container {
     transform: scale(-1, 1);
@@ -45,6 +44,11 @@
         background-color: transparent;
         color: $secondary-color;
 
+        &:hover,
+        &:active {
+            color: $accent-color;
+        }
+
         & svg {
             fill: currentColor;
         }
@@ -64,6 +68,11 @@
         padding: 0;
         background-color: transparent;
         color: $secondary-color;
+
+        &:hover,
+        &:active {
+            color: $accent-color;
+        }
 
         & svg {
             fill: currentColor;
@@ -120,6 +129,11 @@
             padding: 0;
             background-color: transparent;
             color: $secondary-color;
+
+            &:hover,
+            &:active {
+                color: $accent-color;
+            }
         
             & svg {
                 fill: currentColor;
@@ -640,4 +654,13 @@
     .three-bed-btn-next::after {
         content: "";
     }
+}
+
+
+.swiper-button-prev:active,
+.swiper-button-prev:hover,
+.swiper-button-next:active,
+.swiper-button-next:hover {
+    color: $accent-color;
+
 }

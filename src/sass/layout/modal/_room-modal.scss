@@ -1,7 +1,13 @@
 .book-room-modal {
   // max-height: 780px;
+  top:10vh;
+  left:50%;
+  transform: translateX(-50%);
   @media screen and (min-width: 712px) {
     // max-height: 638px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 .room-modal-form__item {
@@ -24,10 +30,8 @@
   }
 }
 .room-modal-form__btn {
-  width: 100%;
-  display: block;
-  margin-top: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  text-transform: uppercase;
+  margin-top: 40px;
+  @media screen and (min-width: 712px) {
+    margin-top: 12px;
+  }
 }
