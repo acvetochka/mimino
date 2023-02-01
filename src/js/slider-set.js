@@ -9,12 +9,12 @@ function swiperSlider() {
       let arrowRight = slider.querySelector('.swiper-button-next');
       //   let pagination = slider.querySelector('.swiper-pagination');
       const swiper = new Swiper(slider.querySelector('.swiper'), {
-        speed: 1500,
+        // speed: 1500,
         // centeredSlides: true,
-        // autoplay: {
-        // //   delay: 3000,
-        //   disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
         // pagination: {
         //   el: pagination,
         //   clickable: true,
@@ -75,7 +75,7 @@ function swiperSlider() {
       let arrowRight = slider.querySelector('.swiper-button-next');
       //   let pagination = slider.querySelector('.swiper-pagination');
       const swiper = new Swiper(slider.querySelector('.swiper'), {
-        speed: 1500,
+        // speed: 500,
         // centeredSlides: true,
         // autoplay: {
         // //   delay: 3000,
