@@ -26,9 +26,9 @@
         align-items: center;
         justify-content: space-between;
 
-        @include minW(600px) {
-            justify-content: space-around;
-        }
+        // @include minW(600px) {
+        //     justify-content: space-around;
+        // }
         @include minW-Tablet {
             max-width: 1024px;
             justify-content: flex-start;
