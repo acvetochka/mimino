@@ -100,6 +100,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $accent-color-second;
+    transition: color 250ms $cubic;
 
     @include minW-Tablet {
         font-size: 20px;

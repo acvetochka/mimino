@@ -656,6 +656,10 @@
     }
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+    transition: color 250ms $cubic;
+}
 
 .swiper-button-prev:active,
 .swiper-button-prev:hover,
