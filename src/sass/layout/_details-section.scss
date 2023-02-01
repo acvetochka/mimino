@@ -1,17 +1,15 @@
 // DETAILS-RESTAURANT
 
-.details-restaurant-container{
+.details-restaurant-container {
   padding-right: 0;
 
-  @media screen and (min-width:540px) {
-    padding-right: $paddingPhone ;
+  @media screen and (min-width: 540px) {
+    padding-right: $paddingPhone;
   }
 
-  @include minW-Tablet{
+  @include minW-Tablet {
     padding-right: $paddingTablet;
-
   }
-
 }
 
 .details-restaurant-container {
@@ -19,41 +17,34 @@
 }
 
 .details-rest {
-  padding-bottom: 40px;
   position: relative;
   background-color: rgb(99, 95, 95);
-  // width: 100vw;
-  // height: 735px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 40px;
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 1;
-  background-image: $gradient,
-    url(../images/home-page/details-rest/backgroung-mob.jpg);
+  background-image: $gradient, url(../images/home-page/details-rest/backgroung-mob.jpg);
 
   @include retina {
-    background-image: $gradient,
-      url(../images/home-page/details-rest/backgroung-mob2x.jpg);
+    background-image: $gradient, url(../images/home-page/details-rest/backgroung-mob2x.jpg);
   }
 
   @include minW-Tablet {
-    // height: 620px;
-    background-image: $gradient,
-      url(../images/home-page/details-rest/background-tab.jpg);
+    background-image: $gradient, url(../images/home-page/details-rest/background-tab.jpg);
 
     @include retina {
-      background-image: $gradient,
-        url(../images/home-page/details-rest/background-tab2x.jpg);
+      background-image: $gradient, url(../images/home-page/details-rest/background-tab2x.jpg);
     }
   }
 
   @include minW-Dt {
     // height: 620px;
-    background-image: $gradient,
-      url(../images/home-page/details-rest/background-desk.jpg);
+    background-image: $gradient, url(../images/home-page/details-rest/background-desk.jpg);
 
     @include retina {
-      background-image: $gradient,
-        url(../images/home-page/details-rest/background-desk2x.jpg);
+      background-image: $gradient, url(../images/home-page/details-rest/background-desk2x.jpg);
     }
   }
 }
@@ -113,59 +104,47 @@
 //   border: none;
 // }
 
-
-
 // DETAILS-HOTEL
 
-.details-hotel-container{
+.details-hotel-container {
   padding-left: 0;
-  
-    @include minW(540px) {
-      padding-left: $paddingPhone ;
-    }
-  
-    @include minW-Tablet {
-      padding-left: $paddingTablet;
-  
-    }
-}
 
+  @include minW(540px) {
+    padding-left: $paddingPhone;
+  }
+
+  @include minW-Tablet {
+    padding-left: $paddingTablet;
+  }
+}
 
 .details-hotel {
   position: relative;
-  // width: 100vw;
-  // height: 735px;
+  max-width: 1280px;
+  margin: 0 auto;
   padding-bottom: 40px;
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 1;
-  background-image: l$gradient,
-    url(../images/home-page/details-hotel/backgroung-mob.jpg);
+  background-image: l$gradient, url(../images/home-page/details-hotel/backgroung-mob.jpg);
 
   @include retina {
-    background-image: $gradient,
-      url(../images/home-page/details-hotel/backgroung-mob2x.jpg);
+    background-image: $gradient, url(../images/home-page/details-hotel/backgroung-mob2x.jpg);
   }
 
   @include minW-Tablet {
-    // height: 620px;
-    background-image: $gradient,
-      url(../images/home-page/details-hotel/backgroung-tab.jpg);
+    background-image: $gradient, url(../images/home-page/details-hotel/backgroung-tab.jpg);
 
     @include retina {
-      background-image: $gradient,
-        url(../images/home-page/details-hotel/backgroung-tab2x.jpg);
+      background-image: $gradient, url(../images/home-page/details-hotel/backgroung-tab2x.jpg);
     }
   }
 
   @include minW-Dt {
-    // height: 620px;
-    background-image: $gradient,
-      url(../images/home-page/details-hotel/background-desk.jpg);
+    background-image: $gradient, url(../images/home-page/details-hotel/background-desk.jpg);
 
     @include retina {
-      background-image: $gradient,
-        url(../images/home-page/details-hotel/background-desk2x.jpg);
+      background-image: $gradient, url(../images/home-page/details-hotel/background-desk2x.jpg);
     }
   }
 }
@@ -246,7 +225,6 @@
     transform: translateY(20px);
   }
 
-
   // @include maxW-Tablet {
   //  margin-left: auto;
   //  margin-right: auto;
@@ -271,7 +249,6 @@
 // .details-hotel .swiper {
 //   flex-direction: row-reverse;
 // }
-
 
 // .swiper-details__slide.swiper-slide-next {
 //   width: 150px !important;
