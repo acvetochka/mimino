@@ -3,6 +3,15 @@
     gap: 20px;
 }
 
+.social__link{
+    color: $accent-color;
+
+    &:hover {
+        color: $accent-color-second;
+    }
+    
+}
+
 .social__icon {
-    fill: #F3C653;
+    fill: currentColor;
 }
