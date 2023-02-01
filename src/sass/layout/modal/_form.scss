@@ -11,26 +11,33 @@
 
   visibility: hidden;
   opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
   overflow: auto;
+
   &.active {
     visibility: visible;
     opacity: 1;
     pointer-events: all;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .modal {
   position: absolute;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   visibility: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   // overflow-y: auto;
-  width: 100%;
+  width: 90%;
   max-width: 414px;
   height: auto;
-
   border-radius: 2px;
   padding: 60px 15px;
   background-color: $primary-background;
@@ -42,7 +49,10 @@
     padding: 60px;
   }
   &.active {
+    opacity: 1;
     visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .modal__close-btn {
@@ -78,6 +88,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.21;
+  cursor: pointer;
 
   letter-spacing: 0.02em;
 
@@ -94,7 +105,7 @@
   justify-content: start;
   align-items: center;
   width: 100%;
-  height: 64px;
+  height: 54px;
   padding-left: 12px;
   margin-bottom: 8px;
 
@@ -129,6 +140,7 @@
   }
   @media screen and (min-width: 712px) {
     width: 288px;
+    height: 64px;
     font-size: 24px;
     line-height: 1.17;
   }
@@ -181,7 +193,7 @@
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
-  @media screen and (min-width: 712px){
+  @media screen and (min-width: 712px) {
     font-size: 24px;
   }
 }
