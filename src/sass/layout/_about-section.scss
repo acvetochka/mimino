@@ -76,6 +76,7 @@
     
     &__img {
         width:100%;
+        z-index: 1;
     }
 
     &__content {
@@ -150,7 +151,8 @@
         box-shadow: $img-shadow;
        
         @include minW(1024px) {
-            transform: translateY(-20px);
+            // transform: translateY(-20px);
+            margin-top: -20px;
            }
 
         @include minW-Tablet {
@@ -158,7 +160,8 @@
             max-width: 400px;
             // max-height: 524px;
             margin-left: 26px;
-            transform: translateY(-32px);
+            // transform: translateY(-32px);
+            margin-top: -32px;
         }
         @include minW-Dt {
             max-width: 460px;

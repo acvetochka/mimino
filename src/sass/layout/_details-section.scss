@@ -17,6 +17,8 @@
 }
 
 .details-rest {
+  z-index: -1;
+  
   @include maxW-Phone {
     padding-bottom: 40px;
     max-width: 414px;
