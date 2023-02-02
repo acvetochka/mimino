@@ -1,5 +1,5 @@
 .hero-background__home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: $gradient,
         url(../images/home-page/hero/background-desk.jpg);
 
     @include retina {
@@ -8,20 +8,20 @@
     }
 }
 .hero-background__hotel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: $gradient,
         url(../images/hotel-page/hero/background-desk.jpg);
 
     @include retina {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        background-image: $gradient,
             url(../images/hotel-page/hero/background-desk2x.jpg);
     }
 }
 .hero-background__rest {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        background-image: $gradient,
         url(../images/rest-page/hero/backgroung-desk.jpg);
 
     @include retina {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        background-image: $gradient,
             url(../images/rest-page/hero/backgroung-desk2x.jpg);
     }
 }
@@ -29,10 +29,14 @@
 .hero-background {
     position: relative;
     height: 740px;
+    max-width: 1280px;
     padding-top: 181px;
+    margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    
 
 @include minW-Tablet {
     height: 720px;
@@ -41,9 +45,8 @@
 @include minW-Dt {
     padding-top: 164px;
 }
-
-
 }
+
 .hero-text {
     overflow: hidden;
     color: $contrast-color;
@@ -76,6 +79,15 @@
 @include minW-Dt {
     margin: 32px 0 64px 0;
     }
+ &--hotel{
+    margin-bottom: 78px;
+   @include minW-Tablet {
+    margin-bottom: 97px;
+   } 
+   @include minW-Dt {
+    margin-bottom: 101px;
+   }
+ }
 }
 &__moto {
     font-family: 'Times New Roman';
@@ -85,12 +97,17 @@
     letter-spacing: 0.05em;
 }
 }
+.address-button{
+    display: flex;
+    justify-content: space-around;
+@include minW-Tablet {
+    margin-top: 137px;
+}
+ 
+}
 .address-frame {
     display: none;
 @include minW-Tablet {
-    position: absolute;
-    top: 64px;
-    right: 15px;
     display: flex;
     align-items: center;
     width: 210px;
@@ -99,8 +116,8 @@
     border-radius: 2px;
     width: 285px;
     height: 56px;
-    left: 47px;
-    top: 600px;
+    margin: 0 auto 0 0;
+   
 }
 @include minW-Dt {
     left: 85px;
@@ -131,21 +148,17 @@
 }
 }
 .hero-button {
-    position: relative;
     display: flex;
     align-items: center;
     gap: 24px;
     flex-direction: column;
-    margin-top: 113px;
+    margin: 113px auto 0 auto;
 @include minW-Tablet {
-    position: absolute;
-    right: 47px;
-    bottom: 64px;
     flex-direction: row;
     gap: 40px;
-}
+    margin: 0 0 0 auto;
+    }
 @include minW-Dt {
-    right: 85px;
     gap: 60px;
 }   
 }
