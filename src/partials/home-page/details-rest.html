@@ -1,8 +1,8 @@
 <section class="details-rest" data-slider="details-slider">
-  <div class="container details-container">
+  <div class="container details-restaurant-container">
     <!-- TEXT -->
     <div class="details-block">
-      <a href="./hotel.html" class="logo logo--white">MIMIHO</a>
+      <span class="logo logo--white">MIMIHO</span>
       <h2 class="details-block__title">Ресторан</h2>
       <p class="details-block__text">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
@@ -10,9 +10,9 @@
       </p>
     </div>
 
-    <div class="swiper-and-buttons-container">
+    <div class="swiper-and-buttons-restaurant-container">
       <!-- SWIPER -->
-      <div class="swiper-details-container">
+      <div class="swiper-restaurant-details-container">
         <div class="swiper swiper-details">
           <div class="swiper-wrapper">
             <div class="swiper-slide swiper-details__slide">
@@ -53,31 +53,31 @@
               <picture>
                 <source
                   srcset="
-                    ./images/home-page/details-rest/slide4-desk.jpg   1x,
-                    ./images/home-page/details-rest/slide4-desk2x.jpg 2x
+                    ./images/home-page/details-rest/slide2-desk.jpg   1x,
+                    ./images/home-page/details-rest/slide2-desk2x.jpg 2x
                   "
                   media="(min-width: 1280px)"
                 />
                 <source
                   srcset="
-                    ./images/home-page/details-rest/slide4-tab.jpg   1x,
-                    ./images/home-page/details-rest/slide4-tab2x.jpg 2x
+                    ./images/home-page/details-rest/slide2-tab.jpg   1x,
+                    ./images/home-page/details-rest/slide2-tab2x.jpg 2x
                   "
                   media="(min-width: 1024px)"
                 />
                 <source
                   srcset="
-                    ./images/home-page/details-rest/slide4-mob.jpg   1x,
-                    ./images/home-page/details-rest/slide4-mob2x.jpg 2x
+                    ./images/home-page/details-rest/slide2-mob.jpg   1x,
+                    ./images/home-page/details-rest/slide2-mob2x.jpg 2x
                   "
                   media="(min-width: 414px)"
                 />
                 <img
                   srcset="
-                    ./images/home-page/details-rest/slide4-mob.jpg   1x,
-                    ./images/home-page/details-rest/slide4-mob2x.jpg 2x
+                    ./images/home-page/details-rest/slide2-mob.jpg   1x,
+                    ./images/home-page/details-rest/slide2-mob2x.jpg 2x
                   "
-                  src="./images/home-page/details-rest/slide4-mob.jpg"
+                  src="./images/home-page/details-rest/slide2-mob.jpg"
                   alt="Десерт"
                 />
               </picture>
@@ -87,31 +87,31 @@
               <picture>
                 <source
                   srcset="
-                    ./images/home-page/details-rest/slide1-desk.jpg   1x,
-                    ./images/home-page/details-rest/slide1-desk2x.jpg 2x
+                    ./images/home-page/details-rest/slide3-desk.jpg   1x,
+                    ./images/home-page/details-rest/slide3-desk2x.jpg 2x
                   "
                   media="(min-width: 1280px)"
                 />
                 <source
                   srcset="
-                    ./images/home-page/details-rest/slide1-tab.jpg   1x,
-                    ./images/home-page/details-rest/slide1-tab2x.jpg 2x
+                    ./images/home-page/details-rest/slide3-tab.jpg   1x,
+                    ./images/home-page/details-rest/slide3-tab2x.jpg 2x
                   "
                   media="(min-width: 1024px)"
                 />
                 <source
                   srcset="
-                    ./images/home-page/details-rest/slide1-mob.jpg   1x,
-                    ./images/home-page/details-rest/slide1-mob2x.jpg 2x
+                    ./images/home-page/details-rest/slide3-mob.jpg   1x,
+                    ./images/home-page/details-rest/slide3-mob2x.jpg 2x
                   "
                   media="(min-width: 414px)"
                 />
                 <img
                   srcset="
-                    ./images/home-page/details-rest/slide1-mob.jpg   1x,
-                    ./images/home-page/details-rest/slide1-mob2x.jpg 2x
+                    ./images/home-page/details-rest/slide3-mob.jpg   1x,
+                    ./images/home-page/details-rest/slide3-mob2x.jpg 2x
                   "
-                  src="./images/home-page/details-rest/slide1-mob.jpg"
+                  src="./images/home-page/details-rest/slide3-mob.jpg"
                   alt="Стейк"
                 />
               </picture>
@@ -152,13 +152,13 @@
             </div>
           </div>
 
-          <div class="swiper-details__buttons">
-            <button type="button" class="swiper-button-prev details-btn-prev">
+          <div class="swiper-details-restaurant__buttons">
+            <button type="button" class="swiper-button-prev details-restaurant-btn-prev">
               <svg width="32" height="32">
                 <use href="./images/icons.svg#icon-arrow-left"></use>
               </svg>
             </button>
-            <button type="button" class="swiper-button-next details-btn-next">
+            <button type="button" class="swiper-button-next details-restaurant-btn-next">
               <svg width="32" height="32">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
@@ -168,8 +168,18 @@
       </div>
       <!-- BUTTONS -->
       <div class="details-btn-container">
-        <button type="button" class="details-btn-container__button">Забронювати столик</button>
-        <button type="button" class="details-btn-container__button">Переглянути меню</button>
+        <button
+          type="button"
+          class="details-btn-container__button button-service__details js-open-modal button-service"
+          data-modal="1"
+        >
+          Забронювати столик
+        </button>
+        <a
+          href="./restaurant.html#menu"
+          class="details-btn-container__button button-service link-button"
+          >Переглянути меню</a
+        >
       </div>
     </div>
   </div>

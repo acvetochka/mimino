@@ -3,6 +3,12 @@
     padding: 8px 6px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
+    color: $accent-color;
+    transition: border-color 250ms $cubic;
+
+    &:hover {
+        border-color: $accent-color-second;
+    }
 
     @include minW-Tablet {
         width: 285px;
@@ -34,6 +40,10 @@
         @include minW-Tablet {
             width: 24px;
             height: 24px;
+        }
+
+        .address:hover & {
+            fill: $accent-color-second;
         }
     }
 }

@@ -1,9 +1,15 @@
+// .hero__container {
+//     position: relative;
+//     padding-bottom: 102px;
+// }
+
+
 .hero-background__home {
     background-image: $gradient,
         url(../images/home-page/hero/background-desk.jpg);
 
     @include retina {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        background-image: $gradient,
             url(../images/home-page/hero/background-desk2x.jpg);
     }
 }
@@ -63,6 +69,10 @@
 @include minW-Tablet {
     font-size: 128px;
     }
+
+    @include maxW-Phone {
+        font-size: 80px;
+    }
 }
 &__location {
     margin: 24px 0 40px 0;
@@ -95,6 +105,10 @@
     font-size: 32px;
     line-height: 1.15;
     letter-spacing: 0.05em;
+
+    @include maxW-Phone {
+        font-size: 28px;
+    }
 }
 }
 .address-button{

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <include src="./partials/components/favicon.html"></include>
+    <title>Ресторан</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
@@ -17,9 +18,9 @@
     <include src="./partials/footer.html"></include>
 
     <div class="js-backdrop-modal">
+      <include src="./partials/modals/room-price-modal.html"></include>
       <include src="./partials/modals/book-room-modal.html"></include>
       <include src="./partials/modals/book-table.modal.html"></include>
-      <include src="./partials/modals/room-price-modal.html"></include>
     </div>
     
   </body>

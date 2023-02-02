@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <include src="./partials/components/favicon.html"></include>
+    <title>Міміно</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
@@ -19,18 +20,13 @@
     </main>
 
     <include src="./partials/footer.html"></include>
-    <button type="button" class="js-open-modal button" data-modal="1">ОТКРЫТЬ1</button>
-    <button type="button" class="js-open-modal button-service" data-modal="2">ОТКРЫТЬ2</button>
-    <button type="button" class="js-open-modal button-hero" data-modal="3">ОТКРЫТЬ3</button>
-
 
     <div class="js-backdrop-modal">
+      <include src="./partials/modals/room-price-modal.html"></include>
       <include src="./partials/modals/book-room-modal.html"></include>
       <include src="./partials/modals/book-table.modal.html"></include>
-      <include src="./partials/modals/room-price-modal.html"></include>
     </div>
   </body>
   <script src="./js/vendors/nice-select2.js"></script>
   <script src="./js/vendors/swiper-bundle.min.js"></script>
-
 </html>

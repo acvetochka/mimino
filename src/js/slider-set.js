@@ -9,14 +9,12 @@ function swiperSlider() {
       let arrowRight = slider.querySelector('.swiper-button-next');
       //   let pagination = slider.querySelector('.swiper-pagination');
       const swiper = new Swiper(slider.querySelector('.swiper'), {
-        speed: 1500,
+        // speed: 1500,
         // centeredSlides: true,
-        // autoplay: {
-        // //   delay: 3000,
-        //   disableOnInteraction: false,
-        // },
-        slidesPerView: 2,
-        spaceBetween: 20,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
         // pagination: {
         //   el: pagination,
         //   clickable: true,
@@ -24,6 +22,29 @@ function swiperSlider() {
         //     return '<li class="' + className + '"></li>';
         //   },
         // },
+
+        loop: true,
+        reverseDirection: false,
+        
+        slidesPerView: 1.3,
+        spaceBetween: 25,
+        
+        breakpoints: {
+          540: {
+            slidesPerView: 2,
+            spaceBetween: 40
+          },
+
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 40
+          },
+          1280: {
+            slidesPerView: 2,
+            spaceBetween: 40
+          }
+        },
+
         navigation: {
           nextEl: arrowRight,
           prevEl: arrowLeft,
@@ -54,7 +75,7 @@ function swiperSlider() {
       let arrowRight = slider.querySelector('.swiper-button-next');
       //   let pagination = slider.querySelector('.swiper-pagination');
       const swiper = new Swiper(slider.querySelector('.swiper'), {
-        speed: 1500,
+        // speed: 500,
         // centeredSlides: true,
         // autoplay: {
         // //   delay: 3000,
@@ -119,7 +140,7 @@ function swiperSlider() {
       let arrowLeft = slider.querySelector('.swiper-button-prev');
       let arrowRight = slider.querySelector('.swiper-button-next');
       //   let pagination = slider.querySelector('.swiper-pagination');
-      swiper = new Swiper(slider.querySelector('.swiper'), {
+      const swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
         // centeredSlides: true,
         // autoplay: {

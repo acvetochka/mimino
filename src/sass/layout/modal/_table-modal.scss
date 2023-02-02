@@ -1,195 +1,31 @@
-.modal {
-    max-width: 414px;
-    width: 100%;
-    border-radius: 2px;
-
-    padding: 60px 15px;
-
-
-    background: $primary-background;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    @media screen and (min-width: $tabletMin) {
-        max-width: 712px;
-        padding: 60px;
-    }
-        
-
+.book-table-modal {
+  max-height: 668px;
+  @media screen and (min-width: 712px) {
+    max-height: 522px;
+  }
 }
-
-.close {
-    background-color: $primary-background;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    margin-left: auto;
-    padding: 0;
-    display: block;
-    position: absolute;
-    top: 16px;
-    right: 16px;
-
-    &__icon {
-    margin: auto;
-    align-items: center;
-
-    .close:hover &,
-    .close:focus & {
-      color: $accent-color-second;
-    }
-
-
-    }
-}
-
 .form-table {
-    
-
-    @media screen and (min-width: $tabletMin) {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    &__title {
-        display: block;
-        font-family: Times New Roman,serif;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.17;
-        text-align: center;
-        text-transform: uppercase;
-
-        letter-spacing: 0.05em;
-        color: $secondary-color;
-        margin-top: 20px;
-        margin-bottom: 40px;
-
-        @media screen and (min-width: $tabletMin) {
-        font-size: 40px;
-        line-height: 1.15;
-
-    }  
-}
-
-    &__field {
+  @media screen and (min-width: 712px) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__field {
     position: relative;
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: $tabletMin) {
-        &:nth-child(2n+1) {
-            margin-left: 16px;
-        }
+    @media screen and (min-width: 712px) {
+      &:nth-child(2n + 1) {
+        margin-left: 16px;
+      }
     }
-
-    
-
+  }
+  &__label {
+    @media screen and (min-width: 712px) {
+      max-width: 262px;
+      font-size: 16px;
+      line-height: 1.25;
     }
-     
-     &__input { 
-        max-width: 384px;
-        width: 100%;
-        height: 54px;
-        padding: 16px 12px;
-        outline: none;
-        border: 1px solid $accent-color-second;
-        border-radius: 2px;
-
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
-        letter-spacing: 0.05em;
-        cursor: pointer;
-
-
-        color: $placeholder-color;
-
-        margin-bottom: 8px;
-
-        @media screen and (min-width: $tabletMin) {
-         height: 64px;
-         width: 288px;
-        //  margin-right: 16px;
-
-         font-size: 24px;
-        line-height: 1.17; 
-
-    }
-
-        &:focus {
-            outline: 1px solid $accent-color-second;
-        }
-     }
-
-     &__label {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.21;
-        letter-spacing: 0.02em;
-        color: $accent-color-second;
-        margin-left: 12px;
-        margin-bottom: 20px;
-
-        @media screen and (min-width: $tabletMin) {
-        max-width: 262px;
-        font-size: 16px;
-        line-height: 1.25;
-
-     }
-    }
-     &__select {
-        position: relative;
-        height: 54px;
-        padding-left: 12px;
-        margin-bottom: 8px;
-        border: 1px solid $accent-color-second;
-        border-radius: 2px;
-
-
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
-        letter-spacing: 0.05em;
-        color: $placeholder-color;
-
-        @media screen and (min-width: $tabletMin) {
-         height: 64px;
-         width: 288px;
-         font-size: 24px;
-        line-height: 1.17;
-    }
-
-
-        &:focus {
-            outline: 1px solid $accent-color-second;;
-        }
-     }
-
-
-}
-.button-select {
-    background-color: $primary-background;
-    fill: $accent-color-second;
-    position: absolute;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    margin-left: auto;
-    padding: 0;
-    display: block;
-    pointer-events: none;
-
-    top: 15%;
-    right: 5px;
-
-
-
-    &__icon {
-
-    }
+  }
 }

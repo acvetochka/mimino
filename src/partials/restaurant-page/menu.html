@@ -1,6 +1,6 @@
 <section class="restaurant-menu section"> 
     <div class="container">
-    <h2 class="restaurant-menu__title">МЕНЮ РЕСТОРАНУ</h2>
+    <h2 class="restaurant-menu__title" id="menu">МЕНЮ РЕСТОРАНУ</h2>
 
   <div class="restaurant-menu__type-dishes">
     <div class="restaurant-menu__type-dish">
@@ -173,7 +173,7 @@
                   <tbody class="table-dish__body">
                         <include src="./partials/components/dish-template--one-row.html">{
                             "title": "Чай чорний/зелений",                            
-                            "weight": "500 г",
+                            "weight": "500 мл",
                             "price": "100 грн"
                         }
                     </include>
@@ -216,7 +216,7 @@
 
         </div>
   </div>
-        <button class="btn-reserve-table" type="button">Забронювати столик</button>
+        <button class="btn-reserve-table js-open-modal button-service" type="button" data-modal="1">Забронювати столик</button>
 
     </div>
 </section>
