@@ -5,20 +5,23 @@
             <p class="hero-text__location">Готель</p>
             
         </div>
-        <div class="address-frame">
-            <a href="https://goo.gl/maps/bQpRyk2Er4yxsvf58">
-                <svg class="address-frame__icon">
-                    <use href="./images/icons.svg#icon-map">
-                </svg>
-            </a>
-            <a href="https://goo.gl/maps/bQpRyk2Er4yxsvf58" class="address-frame__link" target="_blank" rel="noopener noreferrer">
-                Україна, м. Полтава,<br>вул. Маршала Бірюзова, 15
-            </a>
+        <div class="address-button">
+            <div class="address-frame">
+                <!-- <include src="./partials/hotel-page/hotel-hero.html"></include> -->
+                <address class="address">
+                    <a href="https://goo.gl/maps/PxiSZAbsaJFjPWgw9" class="address__link" target="_blank" rel="noopener noreferrer">
+                        <svg class="address__icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-map"></use>
+                        </svg> Україна, м. Полтава, <br> вул. Маршала Бірюзова, 15
+                    </a>
+                </address>
+            </div>
+            <div class="hero-button">
+                <button type="button" class="js-open-modal button-hero" data-modal="2">Забронювати номер</button>
+                <button type="button" class="js-open-modal button-hero" data-modal="3">Переглянути ціни</button>
+            </div>
         </div>
-        <div class="hero-button">
-            <button type="button" class="js-open-modal button-hero" data-modal="2">Забронювати номер</button> 
-            <button type="button" class="js-open-modal button-hero" data-modal="3">Переглянути ціни</button>
-        </div>
+
         <div class="hero-socials">
             <include src="./partials/blocks/icons.html"></include>
         </div>

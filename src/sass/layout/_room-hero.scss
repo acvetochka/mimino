@@ -115,6 +115,7 @@
     padding-left: $paddingPhone;
     padding-right: $paddingPhone;
     margin: 0 auto;
+    position: relative;
 
     @include minW-Tablet {
         padding-left: $paddingTablet;

@@ -34,28 +34,22 @@
 
 .hero-background {
     position: relative;
-    // height: 740px;
-    max-width: 1280px;
+    height: 740px;
     padding-top: 181px;
-    padding-bottom: 20px;
-    margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-    
-
 @include minW-Tablet {
-    // height: 720px;
+    height: 720px;
     padding-top: 188px;
-    padding-bottom: 15px;
 }
 @include minW-Dt {
     padding-top: 164px;
-    padding-bottom: 64px;
-}
 }
 
+
+}
 .hero-text {
     overflow: hidden;
     color: $contrast-color;
@@ -92,15 +86,6 @@
 @include minW-Dt {
     margin: 32px 0 64px 0;
     }
- &--hotel{
-    margin-bottom: 78px;
-   @include minW-Tablet {
-    margin-bottom: 97px;
-   } 
-   @include minW-Dt {
-    margin-bottom: 101px;
-   }
- }
 }
 &__moto {
     font-family: 'Times New Roman';
@@ -114,19 +99,12 @@
     }
 }
 }
-.address-button{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 58px;
-@include minW-Tablet {
-    margin-top: 137px;
-    margin-bottom: 25px;
-}
- 
-}
 .address-frame {
     display: none;
 @include minW-Tablet {
+    position: absolute;
+    top: 64px;
+    right: 15px;
     display: flex;
     align-items: center;
     width: 210px;
@@ -135,8 +113,8 @@
     border-radius: 2px;
     width: 285px;
     height: 56px;
-    margin: 0 auto 0 0;
-   
+    left: 47px;
+    top: 600px;
 }
 @include minW-Dt {
     left: 85px;
@@ -167,28 +145,32 @@
 }
 }
 .hero-button {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 24px;
     flex-direction: column;
-    margin: 113px auto 0 auto;
+    margin-top: 113px;
 @include minW-Tablet {
+    position: absolute;
+    right: 47px;
+    bottom: 64px;
     flex-direction: row;
     gap: 40px;
-    margin: 0 0 0 auto;
-    }
+}
 @include minW-Dt {
+    right: 85px;
     gap: 60px;
 }   
 }
 .hero-socials{
-//     position: absolute;
-//     left: 16px;
-//     bottom: 21px;
-// @include minW-Tablet {
-//     left: 48px;
-//     bottom: 16px;
-// }
+    position: absolute;
+    left: 16px;
+    bottom: 21px;
+@include minW-Tablet {
+    left: 48px;
+    bottom: 16px;
+}
 @include minW-Dt {
     display: none;
     top: 41px;
