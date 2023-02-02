@@ -1,7 +1,8 @@
 .header__container {
   position: absolute;
   top: 16px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 100;
   width: 100%;
   padding-left: $paddingPhone;
@@ -39,6 +40,7 @@
     letter-spacing: 0.02em;
     color: $accent-color;
     margin-right: 6px;
+    transition: color 250ms $cubic;
 
     @include maxW-Phone {
       font-size: 14px;
@@ -49,6 +51,10 @@
       font-size: 20px;
       line-height: 1.2;
       margin-right: 32px;
+    }
+
+    &:hover, &:focus {
+      color: $accent-color-second;
     }
   }
 
@@ -72,7 +78,13 @@
       border: 1px solid rgba(243, 198, 83, 0.7);
       border-radius: 2px;
       margin-right: 72px;
+   }
+
+   &:hover {
+    @include minW-Tablet{
+      border-color: $accent-color-second;
     }
+  }
 
     &:last-child {
       margin-right: 0;
@@ -81,6 +93,13 @@
 
   &__icon {
     fill: $accent-color;
+    transition: color 250ms $cubic;
+
+    .nav__tel:hover & {
+      fill: $accent-color-second;
+    }
+
+
   }
 
   &__hidden {

@@ -19,6 +19,7 @@
 .details-rest {
   @include maxW-Phone {
     padding-bottom: 40px;
+    max-width: 414px;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,6 +33,7 @@
 
   @include maxW-Tablet {
     padding-bottom: 40px;
+    max-width: 1024px;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,11 +133,12 @@
 .details-hotel {
   @include maxW-Phone {
     position: relative;
+    max-width: $phoneMin;
     padding-bottom: 40px;
     background-repeat: no-repeat;
     background-size: cover;
     flex-grow: 1;
-    background-image: l$gradient, url(../images/home-page/details-hotel/backgroung-mob.jpg);
+    background-image: $gradient, url(../images/home-page/details-hotel/backgroung-mob.jpg);
   
     @include retina {
       background-image: $gradient, url(../images/home-page/details-hotel/backgroung-mob2x.jpg);
@@ -145,6 +148,7 @@
   
   @include maxW-Tablet {
     position: relative;
+    max-width: $tabletMin;
     padding-bottom: 40px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -158,7 +162,7 @@
 
   @include minW-Tablet {
     position: relative;
-    max-width: 1280px;
+    max-width: $desktopMin;
     margin: 0 auto;
     padding-bottom: 40px;
     background-repeat: no-repeat;
