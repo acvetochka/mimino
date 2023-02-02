@@ -2,9 +2,11 @@
 .button {
     @extend %btn-order;
 
-    @include minW-Phone {
-        padding: 20px auto;
-    }
+    // @include minW-Phone {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        // padding: 20px auto;
+    // }
 
     @include minW-Tablet {
         width: 434px;
@@ -27,6 +29,8 @@
 // кнопка сервісних служб (переглянути ціни, детальніше, забронювати столик)
 .button-service {
     @extend %btn-service;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
 
@@ -35,14 +39,16 @@
     @extend %btn-service;
     background-color: $button-opacity-bg;
 
-    @include minW-Phone {
+    // @include minW-Phone {
         width: fit-content;
         padding: 14px 24px;
-    }
+    // }
 
-    @include minW-Phone {
-        padding: 14px auto;
-    }
+    // @include minW-Phone {
+        // padding: 14px auto;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    // }
 
     @include minW-Dt {
         padding: 14px 35px;
