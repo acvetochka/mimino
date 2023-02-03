@@ -1,23 +1,33 @@
 .book-room-modal {
   // max-height: 780px;
-  top:10vh;
-  left:50%;
+  top: 10vh;
+  left: 50%;
   transform: translateX(-50%);
   @media screen and (min-width: 712px) {
     // max-height: 638px;
-    top:50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 }
-.room-modal-form__item {
+.room-modal-form {
   @media screen and (min-width: 712px) {
-    display: inline-block;
-    &--left {
-      margin-left: 11px;
-    }
+    display: flex;
+    flex-direction: column;
   }
 }
+.room-modal-form__box {
+  @media screen and (min-width: 712px){
+  display: flex;
+  justify-content: space-between;
+}}
+.room-modal-form__item {
+  @media screen and (min-width: 712px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.room-modal-form__input::placeholder{color: $placeholder-color;}
 .room-modal__label {
   @media screen and (min-width: 712px) {
     margin-bottom: 28px;
