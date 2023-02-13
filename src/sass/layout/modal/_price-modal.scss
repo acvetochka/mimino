@@ -11,7 +11,7 @@
   }
 }
   .form-price__category {
-    display: block;
+    display: flex;
     font-family: ‘Times New Roman’, Times, serif;
     font-weight: 700;
     font-size: 24px;
@@ -22,35 +22,22 @@
     @media screen and (min-width: 712px){
       display: flex;
       margin-bottom: 24px;
+      flex-direction: column;
     }
   }
-    // .form-price__label {
-    //   margin-bottom: 24px;
-    // }
-  // &__block {
-  //   @media screen and (min-width: 712px) {
-  //     display: flex;
-  //     margin: 0 auto;
-  //   }
-  // }
+  .form-price__block {
+    @media screen and (min-width: 712px) {
+    display: flex;
+    direction: row;
+  }
+}
   .form-price__field {
     @media screen and (min-width: 712px) {
-      display: inline-block;
-      &--left {
-        margin-left: 11px;
+            &:last-child {
+              margin-left: 16px;
+            }
       }
     }
-  }
-    // display: flex;
-    // position: relative;
-    // flex-direction: column;
-    // @media screen and (min-width: 712px) {
-    //   display: flex;
-    //   &:first-child {
-    //     margin-right: 16px;
-    //     margin-bottom: 20px;
-    //   }
-    // }
     .form-price__label {
       margin-left:0;
       font-size: 16px;
@@ -61,6 +48,7 @@
       }
       @media screen and (min-width: 712px) {
         margin-bottom: 24px;
+        max-width: 288px;
       }
     }
   .list-select {
@@ -85,6 +73,9 @@
     font-size:24px;
     letter-spacing: 0.05em;
     color: $placeholder-color;
+    &:disabled{
+    color: $placeholder-color;
+    }
     @media screen and (min-width: 712px) {
       width: 288px;
       height: 64px;
@@ -97,6 +88,6 @@
 .form-price__btn {
   margin-top: 40px;
   @media screen and (min-width: 712px) {
-    margin-top: 15px;
+    margin-top: 16px;
   }
 }
