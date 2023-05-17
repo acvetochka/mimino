@@ -3,11 +3,12 @@ body {
     margin: 0 auto;
     max-width: 1280px;
     padding: 0;
+    overflow: overlay;
     // background-color: $secondary-color;
 
     &.modal-open {
         overflow: hidden;
-      }
+    }
 }
 
 /* Скидання базових властивостей для посилань (a або клас .link */
@@ -36,11 +37,12 @@ ul {
 
 /* Властивості для коректного відображення зображень */
 img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
+
 /* Свойства для обнуления курсива у address */
 address {
-	font-style: normal;
+    font-style: normal;
 }
