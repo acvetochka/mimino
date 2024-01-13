@@ -6,13 +6,18 @@ Website of the hotel and restaurant complex.
 
 ## Key Features
 
-1. **Home Page**: Welcome guests with a greeting message and highlight the main advantages of your complex.
+1. **Home Page**: The main page contains essential information about the Mimino Restaurant-Hotel Complex
 
-2. **Rooms and Services**: Showcase various accommodation options and services offered by your hotel.
+2. **Restaurant**: The restaurant page features the complex's menu. 
 
-3. **Restaurant**: Display your complex's restaurant, menu, and recipes for exquisite dishes.
+![Menu](./assets/mimino-menu.png)
 
-4. **Online Booking**: Allow guests to easily and conveniently book rooms or tables in the restaurant through the online reservation system.
+3. **Hotel**: On the hotel page, users can choose a room for accommodation.
+
+4. **Room Pages**: On the page, you will find photos of the room, a description of amenities, and the option to book the room.
+
+![Room](./assets/mimino-hotel-details.png)
+
 
 ## How to Run the Project
 To start using our website, visit the [Mimino](https://acvetochka.github.io/mimino/)
