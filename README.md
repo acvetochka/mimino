@@ -65,7 +65,7 @@ To start using our website, visit the [Mimino](https://acvetochka.github.io/mimi
 
  [Nataliia Skhovka](https://github.com/NataliiaSkhovka) - Developer
  
- [Tetiana Skiriohod](https://github.com/Tanya8135) - Developer
+ [Tetiana Skorohod](https://github.com/Tanya8135) - Developer
 
  
 
