@@ -22,6 +22,7 @@
     "imask": "^6.4.3",
     "jquery": "^3.6.3",
     "modern-normalize": "^1.1.0",
+    "moment": "^2.30.1",
     "nice-select2": "^2.1.0",
     "swiper": "^8.4.5"
   },
