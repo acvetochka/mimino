@@ -479,13 +479,13 @@
 }
 
 .swiper-luxe-container {
-    transform: scale(-1, 1);
+    // transform: scale(-1, 1);
     // margin-top: 32px;
     margin-right: auto;
     max-width: 305px;
 
     @include maxW-Phone {
-        transform: scale();
+        // transform: scale(1);
     }
 
     @include minW-Tablet {
@@ -497,6 +497,12 @@
         max-width: 548px;
     }
 
+    .swiper {
+        @include maxW-Phone {
+            margin-left: -150px;
+        }
+    }
+
     .swiper-luxe__buttons {
         display: flex;
         justify-content: flex-end;
@@ -504,6 +510,10 @@
         height: 32px;
         margin-top: 20px;
         margin-bottom: 20px;
+
+        @include maxW-Phone {
+            transform: translateX(150px) scale(-1,1) ;
+        }
     }
 
     .luxe-btn-prev {
@@ -551,6 +561,7 @@
     flex-direction: column;
     @include minW-Tablet{
         flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
 
@@ -558,7 +569,7 @@
 
 .swiper-two-bed-container {
     // margin-top: 32px;
-    margin-left: auto;
+    // margin-left: auto;
     max-width: 305px;
 
     @include maxW-Phone {
@@ -573,6 +584,12 @@
         max-width: 548px;
     }
 
+    .swiper {
+        @include maxW-Phone {
+            margin-right: -150px;
+        }
+    }
+
     .swiper-two-bed__buttons {
         display: flex;
         justify-content: flex-end;
@@ -580,6 +597,15 @@
         height: 32px;
         margin-top: 20px;
         margin-bottom: 20px;
+        
+        @include maxW-Phone {
+            // transform: scale(-1,1);
+            transform: translateX(-150px);
+        }
+        
+        @include minW-Phone {
+            transform: scale(-1,1);
+        }
     }
 
     .two-bed-btn-prev {
@@ -604,7 +630,7 @@
     .two-bed-btn-next {
         transform: translateY(0);
         position: relative;
-        margin-right: 15px;
+        // margin-right: 15px;
         width: 32px;
         height: 32px;
         border: none;
@@ -614,6 +640,10 @@
 
         & svg {
             fill: currentColor;
+        }
+
+        @include minW-Tablet {
+            margin-right: 0;
         }
     }
 
@@ -635,13 +665,13 @@
 }
 
 .swiper-three-bed-container {
-    transform: scale(-1, 1);
+    // transform: scale(-1, 1);
     margin-top: 32px;
     margin-right: auto;
     max-width: 305px;
 
     @include maxW-Phone {
-        transform: scale();
+        // transform: scale();
     }
 
     @include minW-Tablet {
@@ -653,6 +683,12 @@
         max-width: 548px;
     }
 
+    .swiper {
+        @include maxW-Phone {
+            margin-left: -150px;
+        }
+    }
+
     .swiper-three-bed__buttons {
         display: flex;
         justify-content: flex-end;
@@ -660,6 +696,10 @@
         height: 32px;
         margin-top: 20px;
         margin-bottom: 20px;
+
+        @include maxW-Phone {
+            transform: translateX(150px) scale(-1,1) ;
+        }
     }
 
     .three-bed-btn-prev {
