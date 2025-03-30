@@ -24,9 +24,9 @@ function swiperSlider() {
         // },
 
         loop: true,
-        reverseDirection: false,
+        // reverseDirection: false,
         
-        slidesPerView: 1.3,
+        slidesPerView: 2,
         spaceBetween: 25,
         
         breakpoints: {
@@ -92,7 +92,7 @@ function swiperSlider() {
 
         loop: true,
 
-        slidesPerView: 1.3,
+        slidesPerView: 2,
         spaceBetween: 20,
         
         breakpoints: {
