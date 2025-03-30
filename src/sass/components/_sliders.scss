@@ -135,7 +135,10 @@
         height: 32px;
         margin-top: 20px;
         margin-bottom: 20px;
-        transform: translateX(-150px);
+
+        @include maxW-Phone {
+            transform: translateX(-150px);
+        }
     }
 
     .restaurant-btn-prev {
