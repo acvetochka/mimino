@@ -393,6 +393,7 @@
     @include maxW-Phone {
         min-height: 245px;
         max-width: 305px;
+        overflow: hidden;
     }
 
     @include minW-Tablet {
@@ -407,6 +408,12 @@
         max-width: 548px;
     }
 
+    .swiper {
+        @include maxW-Phone {
+            margin-right: -150px;
+        }
+    }
+
     .swiper-kitchen__buttons {
         display: flex;
         justify-content: flex-end;
@@ -414,6 +421,10 @@
         height: 32px;
         margin-top: 20px;
         margin-bottom: 20px;
+
+        @include maxW-Phone {
+            transform: translateX(-150px);
+        }
     }
 
     .kitchen-btn-prev {
